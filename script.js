@@ -1,4 +1,6 @@
-//Adaptive function
+// //Adaptive
+
+// //function
 // $(window).resize(function(event) {
 //     adaptive_function();
 // });
@@ -42,7 +44,7 @@
 // }
 // adaptive_function();
 
-//header_menu
+// //header_menu
 
 // $('.header-menu__icon').click(function(event) {
 //     $(this).toggleClass('active');
@@ -56,28 +58,14 @@
 //     }
 // });
 
-//ibg
 
-function ibg() {
-    $.each($('.ibg'), function(index, val) {
-        if ($(this).find('img').length > 0) {
-            $(this).css('background-image', 'url("' + $(this).find('img').attr('src') + '")');
-        }
-    });
-}
-// ibg();
 
-//Клик вне области
-$(document).on('click touchstart', function(e) {
-    if (!$(e.target).is(".select *")) {
-        $('.select').removeClass('active');
-    }
-});
+
 //перемещение меню для мобильной адаптации
 $(document).ready(function() {
-    var menu = $('.header-body').find('.header__column').eq(1);
+    var menu = $('.header-body').find('.header__column-menu');
     var w = $(window).outerWidth();
-    if (w < 769) {
+    if (w < 780) {
         $('header').append($(menu));
     }
 });
@@ -102,10 +90,41 @@ if ($('.sidebar-filters__list-items').hasClass('.sidebar-filters__list-items--ac
         $(this).find('.square').next().addClass('active');
     });
 }
-$(document).ready(function() {
-    var w = $(window).outerWidth();
-    if (w < 930) {
-        $('.header__column-logo').children().attr('src', '/img/logo-black.svg');
-    }
+//Вызов фильтров в мобильном меню
+$('.header-menu__icon').on('click', function() {
+    if ($(this).find('.active')) {
 
+        $(this).toggleClass('active');
+        $('.sidebar-filters').css('display', 'block');
+    } else {
+        console.log($(this).find('.active'));
+        $(this).removeClass('active');
+        $('.sidebar-filters').css('display', 'none');
+    }
+});
+
+$(document).mouseup(function(e) { // событие клика по веб-документу
+    var div = $('.sidebar-filters'); // тут указываем ID элемента
+    if (!div.is(e.target) // если клик был не по нашему блоку
+        &&
+        div.has(e.target).length === 0) { // и не по его дочерним элементам
+        div.hide(); // скрываем его
+        $('.header-menu__icon').removeClass('active');
+    }
+});
+
+//вызов модального окна "Еще"
+$('.header-bottom-menu__list').find('li').eq(3).on('click', function() {
+    // $(this).toggleClass('active');
+    $('.more').css('display', 'block');
+    // $('.sidebar-filters').toggleClass('active');
+});
+
+$(document).mouseup(function(e) { // событие клика по веб-документу
+    var div = $('.more'); // тут указываем ID элемента
+    if (!div.is(e.target) // если клик был не по нашему блоку
+        &&
+        div.has(e.target).length === 0) { // и не по его дочерним элементам
+        div.hide(); // скрываем его
+    }
 });
