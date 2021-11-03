@@ -90,41 +90,41 @@ if ($('.sidebar-filters__list-items').hasClass('.sidebar-filters__list-items--ac
         $(this).find('.square').next().addClass('active');
     });
 }
-//Вызов фильтров в мобильном меню
-$('.header-menu__icon').on('click', function() {
-    if ($(this).find('.active')) {
+// //Вызов фильтров в мобильном меню
+// $('.header-menu__icon').on('click', function() {
+//     if ($(this).find('.active')) {
 
-        $(this).toggleClass('active');
-        $('.sidebar-filters').css('display', 'block');
-    } else {
-        console.log($(this).find('.active'));
-        $(this).removeClass('active');
-        $('.sidebar-filters').css('display', 'none');
-    }
-});
+//         $(this).toggleClass('active');
+//         $('.sidebar-filters').css('display', 'block');
+//     } else {
+//         console.log($(this).find('.active'));
+//         $(this).removeClass('active');
+//         $('.sidebar-filters').css('display', 'none');
+//     }
+// });
 
-$(document).mouseup(function(e) { // событие клика по веб-документу
-    var div = $('.sidebar-filters'); // тут указываем ID элемента
-    if (!div.is(e.target) // если клик был не по нашему блоку
-        &&
-        div.has(e.target).length === 0) { // и не по его дочерним элементам
-        div.hide(); // скрываем его
-        $('.header-menu__icon').removeClass('active');
-    }
-});
+// $(document).mouseup(function(e) { // событие клика по веб-документу
+//     var div = $('.sidebar-filters'); // тут указываем ID элемента
+//     if (!div.is(e.target) // если клик был не по нашему блоку
+//         &&
+//         div.has(e.target).length === 0) { // и не по его дочерним элементам
+//         div.hide(); // скрываем его
+//         $('.header-menu__icon').removeClass('active');
+//     }
+// });
 
-//вызов модального окна "Еще"
-$('.header-bottom-menu__list').find('li').eq(3).on('click', function() {
-    // $(this).toggleClass('active');
-    $('.more').css('display', 'block');
-    // $('.sidebar-filters').toggleClass('active');
-});
+// //вызов модального окна "Еще"
+// $('.header-bottom-menu__list').find('li').eq(3).on('click', function() {
+//     // $(this).toggleClass('active');
+//     $('.more').css('display', 'block');
+//     // $('.sidebar-filters').toggleClass('active');
+// });
 
-$(document).mouseup(function(e) { // событие клика по веб-документу
-    var div = $('.more'); // тут указываем ID элемента
-    if (!div.is(e.target) // если клик был не по нашему блоку
-        &&
-        div.has(e.target).length === 0) { // и не по его дочерним элементам
-        div.hide(); // скрываем его
-    }
-});
+// $(document).mouseup(function(e) { // событие клика по веб-документу
+//     var div = $('.more'); // тут указываем ID элемента
+//     if (!div.is(e.target) // если клик был не по нашему блоку
+//         &&
+//         div.has(e.target).length === 0) { // и не по его дочерним элементам
+//         div.hide(); // скрываем его
+//     }
+// });
