@@ -1123,6 +1123,10 @@ li.more__list-item a {
   padding-bottom: 15px;
 }
 
+.options__name {
+  font-weight: 600;
+}
+
 .options__title {
   font-weight: normal;
   line-height: 25px;
