@@ -1283,34 +1283,54 @@ li.more__list-item {
     flex-direction: column;
     align-items: center;
     padding: 30px 0px;
+    @media (max-width: $md5+px) {
+        padding: 13px 0px;
+    }
 }
 
 .pagination__row {
     display: flex;
     &:first-child {
         padding: 0px 0px 15px 0px;
+        @media (max-width: $md5+px) {
+            padding: 0px 0px 6px 0px;
+        }
     }
 }
 
 .pagination__prev {
     padding: 0px 6.5px 0px 0px;
     cursor: pointer;
+    @media (max-width: $md5+px) {
+        padding: 0px;
+    }
     img {
-        margin: 8px 0px 0px 0px;
+        margin: 3px 0px 0px 0px;
+        @media (max-width: $md5+px) {
+            width: 16px;
+            height: 16px;
+            margin: 5px 0px 0px 0px;
+        }
     }
 }
 
-.pagination__items {}
+.pagination__items {
+    display: flex;
+}
 
 .pagination__list {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     li {
         padding: 0px 6.5px;
         a {
             font-size: 18px;
             line-height: 25px;
             color: #000000;
+            @media (max-width: $md5+px) {
+                font-size: 12px;
+                line-height: 16px;
+            }
         }
     }
     .active {
@@ -1319,20 +1339,36 @@ li.more__list-item {
         border: 1px solid #e5e5e5;
         box-sizing: border-box;
         border-radius: 5px;
+        padding: 1px 6px;
+        @media (max-width: $md5+px) {
+            padding: 0px 6px 5px 6px;
+        }
     }
 }
 
 .pagination__next {
     cursor: pointer;
     padding: 0px 0px 0px 6.5px;
+    @media (max-width: $md5+px) {
+        padding: 0px;
+    }
     img {
-        margin: 8px 0px 0px 0px;
+        margin: 3px 0px 0px 0px;
+        @media (max-width: $md5+px) {
+            width: 16px;
+            height: 16px;
+            margin: 5px 0px 0px 0px;
+        }
     }
 }
 
 .pagination__page {
     line-height: 25px;
     color: #000000;
+    @media (max-width: $md5+px) {
+        font-size: 12px;
+        line-height: 16px;
+    }
 }
 
 .pagination__veiw {
@@ -1346,10 +1382,20 @@ li.more__list-item {
         left: 0px;
         width: 10px;
     }
+    @media (max-width: $md5+px) {
+        font-size: 12px;
+        line-height: 16px;
+    }
 }
 
 //pagination end
 //footer
+footer {
+    @media (max-width: 1220px) {
+        display: none;
+    }
+}
+
 .footer-body {
     display: flex;
     font-family: "ProximaNova-Regular", sans-serif;
