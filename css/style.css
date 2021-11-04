@@ -1146,6 +1146,33 @@ li.more__list-item a {
   font-size: 18px;
 }
 
+@media (max-width: 1704px) {
+  .vacancy-body {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1440.98px) {
+  .vacancy-body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1070px) {
+  .vacancy-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 425px) {
+  .vacancy-body {
+    font-size: 12px;
+  }
+}
+
 .vacancy-body:hover .vacancy-info__title {
   color: #5898ff;
 }
@@ -1167,45 +1194,65 @@ li.more__list-item a {
           justify-content: space-between;
 }
 
+@media (max-width: 1070px) {
+  .vacancy__column {
+    padding: 20px 30px 30px 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .vacancy__column {
+    padding: 10px 12px 18px 12px;
+  }
+}
+
 .vacancy__column:last-child {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 35%;
           flex: 1 1 35%;
-  padding: 30px 30px 40px 30px;
   border-left: 2px solid #e5e5e5;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #fafafa;
 }
 
-.vacancy__column:last-child .vacancy__options:first-child::before {
+@media (max-width: 1070px) {
+  .vacancy__column:last-child {
+    display: none;
+    border-top: 2px solid #e5e5e5;
+    border-left: none;
+  }
+}
+
+.vacancy__column:last-child .vacancy__options::before {
   content: " ";
   position: absolute;
-  background: url("/img/main/vacancy/calculator.svg");
   width: 18px;
   height: 18px;
   left: 0;
   top: 4px;
+}
+
+@media (max-width: 425px) {
+  .vacancy__column:last-child .vacancy__options::before {
+    width: 12px;
+    height: 12px;
+    background-size: 12px !important;
+    top: 2px;
+    left: 4px;
+  }
+}
+
+.vacancy__column:last-child .vacancy__options:first-child::before {
+  background: url("/img/main/vacancy/calculator.svg");
 }
 
 .vacancy__column:last-child .vacancy__options:nth-child(2)::before {
-  content: " ";
-  position: absolute;
   background: url("/img/main/vacancy/options.svg");
-  width: 18px;
-  height: 18px;
-  left: 0;
-  top: 4px;
 }
 
 .vacancy__column:last-child .vacancy__options:nth-child(3)::before {
-  content: " ";
-  position: absolute;
   background: url("/img/main/vacancy/date.svg");
-  width: 18px;
-  height: 18px;
-  left: 0;
-  top: 4px;
 }
 
 .vacancy-header {
@@ -1218,9 +1265,22 @@ li.more__list-item a {
   padding: 0px 0px 12px 0px;
 }
 
+@media (max-width: 425px) {
+  .vacancy-header {
+    padding: 0px 0px 14px 0px;
+  }
+}
+
 .vacancy-header__id {
   position: relative;
-  padding-left: 22px;
+  padding-left: 18px;
+  cursor: pointer;
+}
+
+@media (max-width: 425px) {
+  .vacancy-header__id {
+    padding-left: 16px;
+  }
 }
 
 .vacancy-header__id::before {
@@ -1233,6 +1293,21 @@ li.more__list-item a {
   top: 1px;
 }
 
+@media (max-width: 1440.98px) {
+  .vacancy-header__id::before {
+    top: -3px;
+  }
+}
+
+@media (max-width: 425px) {
+  .vacancy-header__id::before {
+    top: 0px;
+    width: 12px;
+    height: 12px;
+    background-size: 12px;
+  }
+}
+
 .vacancy-header-right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1241,8 +1316,14 @@ li.more__list-item a {
 
 .vacancy-header__edit {
   position: relative;
-  padding-left: 24px;
+  padding-left: 20px;
   cursor: pointer;
+}
+
+@media (max-width: 425px) {
+  .vacancy-header__edit {
+    padding-left: 16px;
+  }
 }
 
 .vacancy-header__edit::before {
@@ -1255,11 +1336,32 @@ li.more__list-item a {
   top: -1px;
 }
 
+@media (max-width: 1440.98px) {
+  .vacancy-header__edit::before {
+    top: -4px;
+  }
+}
+
+@media (max-width: 425px) {
+  .vacancy-header__edit::before {
+    top: 0px;
+    width: 12px;
+    height: 12px;
+    background-size: 12px;
+  }
+}
+
 .vacancy-header__more {
   position: relative;
-  padding-left: 28px;
+  padding-left: 24px;
   margin: 0px 0px 0px 30px;
   cursor: pointer;
+}
+
+@media (max-width: 425px) {
+  .vacancy-header__more {
+    padding-left: 20px;
+  }
 }
 
 .vacancy-header__more::before {
@@ -1272,6 +1374,21 @@ li.more__list-item a {
   top: -2px;
 }
 
+@media (max-width: 1440.98px) {
+  .vacancy-header__more::before {
+    top: -5px;
+  }
+}
+
+@media (max-width: 425px) {
+  .vacancy-header__more::before {
+    top: -2px;
+    width: 16px;
+    height: 16px;
+    background-size: 16px;
+  }
+}
+
 .vacancy-info__title {
   font-weight: 600;
   font-size: 30px;
@@ -1279,10 +1396,39 @@ li.more__list-item a {
   padding-bottom: 12px;
 }
 
+@media (max-width: 1704px) {
+  .vacancy-info__title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 1440.98px) {
+  .vacancy-info__title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .vacancy-info__title {
+    font-size: 18px;
+    line-height: 25px;
+    padding-bottom: 14px;
+  }
+}
+
 .vacancy-info__offer {
   line-height: 25px;
   position: relative;
   padding-left: 28px;
+  padding-bottom: 8px;
+}
+
+@media (max-width: 425px) {
+  .vacancy-info__offer {
+    line-height: 16px;
+    padding-left: 16px;
+    padding-bottom: 4px;
+  }
 }
 
 .vacancy-info__offer::before {
@@ -1294,10 +1440,28 @@ li.more__list-item a {
   left: 0;
 }
 
+@media (max-width: 425px) {
+  .vacancy-info__offer::before {
+    width: 12px;
+    height: 12px;
+    background-size: 12px;
+    top: 2px;
+  }
+}
+
 .vacancy-info__phone {
   line-height: 25px;
   position: relative;
   padding-left: 28px;
+  padding-bottom: 8px;
+}
+
+@media (max-width: 425px) {
+  .vacancy-info__phone {
+    line-height: 16px;
+    padding-left: 16px;
+    padding-bottom: 4px;
+  }
 }
 
 .vacancy-info__phone::before {
@@ -1309,10 +1473,26 @@ li.more__list-item a {
   left: 0;
 }
 
+@media (max-width: 425px) {
+  .vacancy-info__phone::before {
+    width: 12px;
+    height: 12px;
+    background-size: 12px;
+    top: 2px;
+  }
+}
+
 .vacancy-info__location {
   line-height: 25px;
   position: relative;
   padding-left: 28px;
+}
+
+@media (max-width: 425px) {
+  .vacancy-info__location {
+    line-height: 16px;
+    padding-left: 16px;
+  }
 }
 
 .vacancy-info__location::before {
@@ -1322,6 +1502,30 @@ li.more__list-item a {
   width: 24px;
   height: 24px;
   left: 0;
+}
+
+@media (max-width: 425px) {
+  .vacancy-info__location::before {
+    width: 12px;
+    height: 12px;
+    background-size: 12px;
+    top: 2px;
+  }
+}
+
+@media (max-width: 1070px) {
+  .vacancy-btn {
+    padding-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .vacancy-btn__response {
@@ -1338,6 +1542,54 @@ li.more__list-item a {
   color: #ffffff;
 }
 
+@media (max-width: 425px) {
+  .vacancy-btn__response a {
+    line-height: 16px;
+    padding: 6px;
+  }
+}
+
+.vacancy-btn__more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.vacancy-btn__more a {
+  border-radius: 4px;
+  padding: 12px 24px;
+  line-height: 25px;
+  color: #000;
+  position: relative;
+}
+
+@media (max-width: 425px) {
+  .vacancy-btn__more a {
+    line-height: 16px;
+    padding: 6px 20px 6px 6px;
+  }
+}
+
+.vacancy-btn__more a::before {
+  content: " ";
+  position: absolute;
+  background: url("/img/main/vacancy/arrow_down.svg") center center no-repeat;
+  background-size: 18px;
+  height: 18px;
+  width: 18px;
+  right: 0;
+  top: 14px;
+}
+
+@media (max-width: 425px) {
+  .vacancy-btn__more a::before {
+    background-size: 16px;
+    height: 16px;
+    width: 16px;
+    top: 7px;
+  }
+}
+
 .vacancy__options {
   line-height: 25px;
   position: relative;
@@ -1345,8 +1597,26 @@ li.more__list-item a {
   padding-bottom: 15px;
 }
 
+@media (max-width: 1070px) {
+  .vacancy__options {
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  .vacancy__options {
+    padding-left: 18px;
+  }
+}
+
 .options__name {
   font-weight: 600;
+}
+
+@media (max-width: 425px) {
+  .options__name {
+    line-height: 16px;
+  }
 }
 
 .options__title {
@@ -1354,11 +1624,24 @@ li.more__list-item a {
   line-height: 25px;
 }
 
+@media (max-width: 425px) {
+  .options__title {
+    line-height: 16px;
+  }
+}
+
 .links__item {
   line-height: 22px;
   position: relative;
   padding-left: 24px;
   cursor: pointer;
+}
+
+@media (max-width: 425px) {
+  .links__item {
+    line-height: 15px;
+    padding-left: 14px;
+  }
 }
 
 .links__item a {
@@ -1374,6 +1657,15 @@ li.more__list-item a {
   height: 20px;
   left: 0;
   top: 1px;
+}
+
+@media (max-width: 425px) {
+  .links__item::before {
+    width: 12px;
+    height: 12px;
+    background-size: 12px;
+    top: 2px;
+  }
 }
 
 .pagination {

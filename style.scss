@@ -817,19 +817,16 @@ li.more__list-item {
     @media (max-width: $md5+px) {
         font-size: 12px;
         line-height: 16px;
-        padding: 3px 17px 3px 4px;
-    }
-    &::before {
-        background-size: 12px;
-        width: 12px;
-        height: 12px;
-        top: 5px;
-        right: 4px;
+        padding: 3px 32px 3px 12px;
+        &::before {
+            background-size: 12px;
+            width: 12px;
+            height: 12px;
+            top: 5px;
+        }
     }
 }
 
-
-}
 .top-filters__row-search {
     display: flex;
     cursor: pointer;
@@ -852,11 +849,11 @@ li.more__list-item {
             padding: 3px 12px;
         }
     }
-    
     @media (max-width: 630px) {
         margin-bottom: 12px;
     }
 }
+
 .top-filters__row-search-btn {
     display: flex;
     justify-content: center;
@@ -871,7 +868,6 @@ li.more__list-item {
     @media (max-width: $md5+px) {
         flex: 0 0 40px;
     }
-    
     img {
         width: 18px;
         height: 18px;
@@ -881,79 +877,114 @@ li.more__list-item {
         }
     }
 }
+
 //top-filters end
 //vacancy
 .vacancy {
     padding: 10px 0px;
 }
+
 .vacancy-body {
     display: flex;
     border: 2px solid #e5e5e5;
     box-sizing: border-box;
     border-radius: 4px;
     font-size: 18px;
+    @media (max-width: 1704px) {
+        font-size: 16px;
+    }
+    @media (max-width: $md2+px) {
+        font-size: 14px;
+    }
+    @media (max-width: 1070px) {
+        flex-direction: column;
+    }
+    @media (max-width: $md5+px) {
+        font-size: 12px;
+    }
     &:hover {
         .vacancy-info__title {
             color: #5898ff;
         }
     }
 }
+
 .vacancy__column {
     display: flex;
     flex-direction: column;
     flex: 1 1 65%;
     padding: 30px 40px 40px 30px;
     justify-content: space-between;
+    @media (max-width: 1070px) {
+        padding: 20px 30px 30px 20px;
+    }
+    @media (max-width: $md5+px) {
+        padding: 10px 12px 18px 12px;
+    }
     &:last-child {
         flex: 1 1 35%;
-        padding: 30px 30px 40px 30px;
+        // padding: 30px 30px 40px 30px;
         border-left: 2px solid #e5e5e5;
         box-sizing: border-box;
         background: #fafafa;
-        .vacancy__options:first-child {
+        @media (max-width: 1070px) {
+            display: none;
+            border-top: 2px solid #e5e5e5;
+            border-left: none;
+        }
+        .vacancy__options {
             &::before {
                 content: " ";
                 position: absolute;
-                background: url("/img/main/vacancy/calculator.svg");
                 width: 18px;
                 height: 18px;
                 left: 0;
                 top: 4px;
+                @media (max-width: $md5+px) {
+                    width: 12px;
+                    height: 12px;
+                    background-size: 12px !important;
+                    top: 2px;
+                    left: 4px;
+                }
+            }
+        }
+        .vacancy__options:first-child {
+            &::before {
+                background: url("/img/main/vacancy/calculator.svg");
             }
         }
         .vacancy__options:nth-child(2) {
             &::before {
-                content: " ";
-                position: absolute;
                 background: url("/img/main/vacancy/options.svg");
-                width: 18px;
-                height: 18px;
-                left: 0;
-                top: 4px;
             }
         }
         .vacancy__options:nth-child(3) {
             &::before {
-                content: " ";
-                position: absolute;
                 background: url("/img/main/vacancy/date.svg");
-                width: 18px;
-                height: 18px;
-                left: 0;
-                top: 4px;
             }
         }
     }
 }
+
 .vacancy-header {
     display: flex;
     justify-content: space-between;
     padding: 0px 0px 12px 0px;
+    @media (max-width: $md5+px) {
+        padding: 0px 0px 14px 0px;
+    }
 }
+
 .vacancy-header-left {}
+
 .vacancy-header__id {
     position: relative;
-    padding-left: 22px;
+    padding-left: 18px;
+    cursor: pointer;
+    @media (max-width: $md5+px) {
+        padding-left: 16px;
+    }
     &::before {
         content: " ";
         position: absolute;
@@ -962,15 +993,29 @@ li.more__list-item {
         height: 18px;
         left: 0;
         top: 1px;
+        @media (max-width: $md2+px) {
+            top: -3px;
+        }
+        @media (max-width: $md5+px) {
+            top: 0px;
+            width: 12px;
+            height: 12px;
+            background-size: 12px;
+        }
     }
 }
+
 .vacancy-header-right {
     display: flex;
 }
+
 .vacancy-header__edit {
     position: relative;
-    padding-left: 24px;
+    padding-left: 20px;
     cursor: pointer;
+    @media (max-width: $md5+px) {
+        padding-left: 16px;
+    }
     &::before {
         content: " ";
         position: absolute;
@@ -979,13 +1024,26 @@ li.more__list-item {
         height: 20px;
         left: 0;
         top: -1px;
+        @media (max-width: $md2+px) {
+            top: -4px;
+        }
+        @media (max-width: $md5+px) {
+            top: 0px;
+            width: 12px;
+            height: 12px;
+            background-size: 12px;
+        }
     }
 }
+
 .vacancy-header__more {
     position: relative;
-    padding-left: 28px;
+    padding-left: 24px;
     margin: 0px 0px 0px 30px;
     cursor: pointer;
+    @media (max-width: $md5+px) {
+        padding-left: 20px;
+    }
     &::before {
         content: " ";
         position: absolute;
@@ -994,19 +1052,48 @@ li.more__list-item {
         height: 24px;
         left: 0;
         top: -2px;
+        @media (max-width: $md2+px) {
+            top: -5px;
+        }
+        @media (max-width: $md5+px) {
+            top: -2px;
+            width: 16px;
+            height: 16px;
+            background-size: 16px;
+        }
     }
 }
+
 .vacancy-info {}
+
 .vacancy-info__title {
     font-weight: 600;
     font-size: 30px;
     line-height: 41px;
     padding-bottom: 12px;
+    @media (max-width: 1704px) {
+        font-size: 26px;
+    }
+    @media (max-width: $md2+px) {
+        font-size: 20px;
+    }
+    @media (max-width: $md5+px) {
+        font-size: 18px;
+        line-height: 25px;
+        padding-bottom: 14px;
+    }
 }
+
 .vacancy-info__offer {
     line-height: 25px;
     position: relative;
     padding-left: 28px;
+    padding-bottom: 8px;
+    @media (max-width: $md5+px) {
+        line-height: 16px;
+        padding-left: 16px;
+        padding-bottom: 4px;
+    }
     &::before {
         content: " ";
         position: absolute;
@@ -1014,12 +1101,25 @@ li.more__list-item {
         width: 24px;
         height: 24px;
         left: 0;
+        @media (max-width: $md5+px) {
+            width: 12px;
+            height: 12px;
+            background-size: 12px;
+            top: 2px;
+        }
     }
 }
+
 .vacancy-info__phone {
     line-height: 25px;
     position: relative;
     padding-left: 28px;
+    padding-bottom: 8px;
+    @media (max-width: $md5+px) {
+        line-height: 16px;
+        padding-left: 16px;
+        padding-bottom: 4px;
+    }
     &::before {
         content: " ";
         position: absolute;
@@ -1027,12 +1127,23 @@ li.more__list-item {
         width: 24px;
         height: 24px;
         left: 0;
+        @media (max-width: $md5+px) {
+            width: 12px;
+            height: 12px;
+            background-size: 12px;
+            top: 2px;
+        }
     }
 }
+
 .vacancy-info__location {
     line-height: 25px;
     position: relative;
     padding-left: 28px;
+    @media (max-width: $md5+px) {
+        line-height: 16px;
+        padding-left: 16px;
+    }
     &::before {
         content: " ";
         position: absolute;
@@ -1040,9 +1151,24 @@ li.more__list-item {
         width: 24px;
         height: 24px;
         left: 0;
+        @media (max-width: $md5+px) {
+            width: 12px;
+            height: 12px;
+            background-size: 12px;
+            top: 2px;
+        }
     }
 }
-.vacancy-btn {}
+
+.vacancy-btn {
+    @media (max-width: 1070px) {
+        padding-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
 .vacancy-btn__response {
     display: flex;
     a {
@@ -1051,32 +1177,88 @@ li.more__list-item {
         padding: 12px 24px;
         line-height: 25px;
         color: #ffffff;
+        @media (max-width: $md5+px) {
+            line-height: 16px;
+            padding: 6px;
+        }
     }
 }
+
+.vacancy-btn__more {
+    display: flex;
+    // display: none;
+    a {
+        border-radius: 4px;
+        padding: 12px 24px;
+        line-height: 25px;
+        color: #000;
+        position: relative;
+        @media (max-width: $md5+px) {
+            line-height: 16px;
+            padding: 6px 20px 6px 6px;
+        }
+        &::before {
+            content: " ";
+            position: absolute;
+            background: url('/img/main/vacancy/arrow_down.svg') center center no-repeat;
+            background-size: 18px;
+            height: 18px;
+            width: 18px;
+            right: 0;
+            top: 14px;
+            @media (max-width: $md5+px) {
+                background-size: 16px;
+                height: 16px;
+                width: 16px;
+                top: 7px;
+            }
+        }
+    }
+}
+
 .vacancy__options {
     line-height: 25px;
     position: relative;
     padding-left: 22px;
     padding-bottom: 15px;
+    @media (max-width: 1070px) {
+        padding-bottom: 10px;
+    }
+    @media (max-width: $md5+px) {
+        padding-left: 18px;
+    }
 }
+
 .options__name {
     font-weight: 600;
+    @media (max-width: $md5+px) {
+        line-height: 16px;
+    }
 }
+
 .options__title {
     font-weight: normal;
     line-height: 25px;
+    @media (max-width: $md5+px) {
+        line-height: 16px;
+    }
 }
+
 .vacancy__links {}
+
 .links__item {
     line-height: 22px;
     position: relative;
     padding-left: 24px;
     cursor: pointer;
+    @media (max-width: $md5+px) {
+        line-height: 15px;
+        padding-left: 14px;
+    }
     a {
         font-family: "Proxima-Regular", sans-serif;
         color: #5898ff;
     }
-    
     &::before {
         content: " ";
         position: absolute;
@@ -1085,8 +1267,15 @@ li.more__list-item {
         height: 20px;
         left: 0;
         top: 1px;
+        @media (max-width: $md5+px) {
+            width: 12px;
+            height: 12px;
+            background-size: 12px;
+            top: 2px;
+        }
     }
 }
+
 //vacancy end
 //pagination
 .pagination {
@@ -1095,12 +1284,14 @@ li.more__list-item {
     align-items: center;
     padding: 30px 0px;
 }
+
 .pagination__row {
     display: flex;
     &:first-child {
         padding: 0px 0px 15px 0px;
     }
 }
+
 .pagination__prev {
     padding: 0px 6.5px 0px 0px;
     cursor: pointer;
@@ -1108,7 +1299,9 @@ li.more__list-item {
         margin: 8px 0px 0px 0px;
     }
 }
+
 .pagination__items {}
+
 .pagination__list {
     display: flex;
     align-items: center;
@@ -1120,7 +1313,6 @@ li.more__list-item {
             color: #000000;
         }
     }
-    
     .active {
         padding: 6px 8px;
         background: #fafafa;
@@ -1129,6 +1321,7 @@ li.more__list-item {
         border-radius: 5px;
     }
 }
+
 .pagination__next {
     cursor: pointer;
     padding: 0px 0px 0px 6.5px;
@@ -1136,10 +1329,12 @@ li.more__list-item {
         margin: 8px 0px 0px 0px;
     }
 }
+
 .pagination__page {
     line-height: 25px;
     color: #000000;
 }
+
 .pagination__veiw {
     line-height: 25px;
     color: #000000;
@@ -1152,6 +1347,7 @@ li.more__list-item {
         width: 10px;
     }
 }
+
 //pagination end
 //footer
 .footer-body {
@@ -1163,23 +1359,29 @@ li.more__list-item {
     padding-bottom: 33px;
     justify-content: space-between;
 }
+
 .footer__column {
     flex: 0 1 auto;
 }
+
 .footer__column-body {
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: space-between;
 }
+
 .footer__company {}
+
 .company__logo {}
+
 .company__description {
     padding-top: 20px;
     font-size: 14px;
     line-height: 17px;
     letter-spacing: -0.01em;
 }
+
 .company__copywrite {
     padding-top: 20px;
     font-size: 14px;
@@ -1187,28 +1389,28 @@ li.more__list-item {
     letter-spacing: -0.01em;
     opacity: 0.7;
 }
+
 .footer__sales {}
+
 .footer__subtitle {
     padding-bottom: 5px;
     /* identical to box height, or 109% */
-    
     letter-spacing: 0.01em;
     /* Основной текст */
-    
     color: #1f2127;
     opacity: 0.7;
 }
+
 .footer__title {
     font-weight: 600;
     font-size: 22px;
     line-height: 24px;
     /* identical to box height, or 109% */
-    
     letter-spacing: 0.01em;
     /* Основной текст */
-    
     color: #1f2127;
 }
+
 .sales__phone {
     a {
         font-weight: 600;
@@ -1220,6 +1422,7 @@ li.more__list-item {
         color: #1f2127;
     }
 }
+
 .sales__email {
     a {
         font-weight: 600;
@@ -1231,7 +1434,9 @@ li.more__list-item {
         color: #1f2127;
     }
 }
+
 .footer__products {}
+
 .footer__list {
     padding-top: 18px;
     .active {
@@ -1239,20 +1444,19 @@ li.more__list-item {
             color: #0e65f3;
         }
     }
-    
     li {
         padding: 8px 0px;
         &:first-child {
             padding: 0px 0px 8px 0px;
         }
     }
-    
     a {
         color: #1f2127;
         opacity: 0.7;
         line-height: 24px;
     }
 }
+
 .footer__documents-close {
     a {
         font-weight: 600;
@@ -1262,6 +1466,9 @@ li.more__list-item {
         color: #1f2127;
     }
 }
+
 .footer__about {}
+
 .footer__documents {}
+
 //foooter end
