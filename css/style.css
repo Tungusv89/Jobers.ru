@@ -1273,7 +1273,7 @@ li.more__list-item a {
 
 .vacancy-header__id {
   position: relative;
-  padding-left: 18px;
+  padding-left: 22px;
   cursor: pointer;
 }
 
@@ -1290,7 +1290,7 @@ li.more__list-item a {
   width: 18px;
   height: 18px;
   left: 0;
-  top: 1px;
+  top: -1px;
 }
 
 @media (max-width: 1440.98px) {
@@ -1316,7 +1316,7 @@ li.more__list-item a {
 
 .vacancy-header__edit {
   position: relative;
-  padding-left: 20px;
+  padding-left: 24px;
   cursor: pointer;
 }
 
@@ -1333,7 +1333,7 @@ li.more__list-item a {
   width: 20px;
   height: 20px;
   left: 0;
-  top: -1px;
+  top: -3px;
 }
 
 @media (max-width: 1440.98px) {
@@ -1353,7 +1353,7 @@ li.more__list-item a {
 
 .vacancy-header__more {
   position: relative;
-  padding-left: 24px;
+  padding-left: 28px;
   margin: 0px 0px 0px 30px;
   cursor: pointer;
 }
@@ -1371,7 +1371,7 @@ li.more__list-item a {
   width: 24px;
   height: 24px;
   left: 0;
-  top: -2px;
+  top: -4px;
 }
 
 @media (max-width: 1440.98px) {
