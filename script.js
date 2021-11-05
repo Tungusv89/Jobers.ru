@@ -128,3 +128,18 @@ if ($('.sidebar-filters__list-items').hasClass('.sidebar-filters__list-items--ac
 //         div.hide(); // скрываем его
 //     }
 // });
+//Вызов окна в вакансиях в мобильной версии
+$('.vacancy-btn__more').click(function() {
+    var elem = $(this).parent().parent().next();
+    if (!elem.hasClass('active')) {
+
+        elem.addClass('active');
+        // $(this).addClass('active');
+        elem.show(2000);
+    } else {
+
+        elem.removeClass('active');
+        // $(this).removeClass('active');
+        elem.hide(2000);
+    }
+});
