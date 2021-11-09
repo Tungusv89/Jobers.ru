@@ -130,8 +130,14 @@ $('.vacancy-btn__more').click(function() {
 
 //изменение свойства meta тега viewport
 function viewport() {
+    console.log(window.screen.width);
+    console.log(document.documentElement.scrollWidth);
     if (window.screen.width < 1100) {
         document.querySelector('meta[name="viewport"]').setAttribute("content", "width=device-width, initial-scale=1.0");
-    } else { document.querySelector('meta[name="viewport"]').setAttribute("content", "width=1920, initial-scale=1.0"); }
+        console.log('device-width');
+    } else {
+        document.querySelector('meta[name="viewport"]').setAttribute("content", "width=1920, initial-scale=1.0");
+        console.log("1920");
+    }
 };
 viewport();

@@ -186,10 +186,17 @@ header {
 
 @media (max-width: 1100px) {
   .header__column:first-child {
-    background: #fff;
+    background: #fafafa;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 54px;
             flex: 0 0 54px;
+    border-bottom: 2px solid #e5e5e5;
+  }
+}
+
+@media (max-width: 780px) {
+  .header__column:first-child {
+    border-bottom: none;
   }
 }
 
@@ -663,6 +670,12 @@ li.more__list-item a {
   background: #fafafa;
 }
 
+@media (max-width: 1100px) {
+  .main__column:last-child {
+    display: none;
+  }
+}
+
 .main__column:nth-child(2) {
   background-color: #fff;
   max-width: 1304px;
@@ -680,20 +693,18 @@ li.more__list-item a {
   left: 0;
 }
 
-@media (max-width: 930px) {
+@media (max-width: 1100px) {
   .sidebar-filters {
     display: none;
+    position: absolute;
+    z-index: 1;
+    max-width: 320px;
+    height: auto;
   }
 }
 
 .sidebar-filters.active {
   display: block;
-}
-
-@media (max-width: 769px) {
-  .sidebar-filters.active {
-    height: auto;
-  }
 }
 
 .sidebar-filters-body {
@@ -777,6 +788,18 @@ li.more__list-item a {
   padding: 20px 0px 10px 0px;
 }
 
+@media (max-width: 1100px) {
+  .top-filters-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 @media (max-width: 630px) {
   .top-filters-body {
     -webkit-box-align: stretch;
@@ -792,6 +815,12 @@ li.more__list-item a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 1100px) {
+  .top-filters__row:first-child {
+    margin-bottom: 12px;
+  }
 }
 
 @media (max-width: 630px) {
@@ -1057,6 +1086,12 @@ li.more__list-item a {
   font-size: 18px;
 }
 
+@media (max-width: 1100px) {
+  .vacancy-body {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 1070px) {
   .vacancy-body {
     -webkit-box-orient: vertical;
@@ -1093,7 +1128,7 @@ li.more__list-item a {
           justify-content: space-between;
 }
 
-@media (max-width: 1070px) {
+@media (max-width: 1100px) {
   .vacancy__column {
     padding: 20px 30px 30px 20px;
   }
@@ -1229,7 +1264,7 @@ li.more__list-item a {
   top: -3px;
 }
 
-@media (max-width: 1440.98px) {
+@media (max-width: 1100px) {
   .vacancy-header__edit::before {
     top: -4px;
   }
@@ -1267,7 +1302,7 @@ li.more__list-item a {
   top: -4px;
 }
 
-@media (max-width: 1440.98px) {
+@media (max-width: 1100px) {
   .vacancy-header__more::before {
     top: -5px;
   }
@@ -1292,6 +1327,12 @@ li.more__list-item a {
 @media (max-width: 1704px) {
   .vacancy-info__title {
     font-size: 26px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .vacancy-info__title {
+    font-size: 20px;
   }
 }
 
