@@ -90,56 +90,48 @@ if ($('.sidebar-filters__list-items').hasClass('.sidebar-filters__list-items--ac
         $(this).find('.square').next().addClass('active');
     });
 }
-// //Вызов фильтров в мобильном меню
-// $('.header-menu__icon').on('click', function() {
-//     if ($(this).find('.active')) {
+//Вызов фильтров в мобильном меню
+$('.header-menu__icon').on('click', function() {
+    if (!$(this).hasClass('active')) {
+        $(this).addClass('active');
+        $('.sidebar-filters').css('display', 'block');
+    } else {
+        $(this).removeClass('active');
+        $('.sidebar-filters').css('display', 'none');
+    }
+});
 
-//         $(this).toggleClass('active');
-//         $('.sidebar-filters').css('display', 'block');
-//     } else {
-//         console.log($(this).find('.active'));
-//         $(this).removeClass('active');
-//         $('.sidebar-filters').css('display', 'none');
-//     }
-// });
+//вызов модального окна "Еще"
+$('.header-bottom-menu__list').find('li').eq(3).on('click', function() {
+    if (!$('.more').hasClass('active')) {
+        $('.more').addClass('active');
+        $('.more').css('display', 'block');
+    } else {
+        $('.more').removeClass('active');
+        $('.more').css('display', 'none');
+    }
 
-// $(document).mouseup(function(e) { // событие клика по веб-документу
-//     var div = $('.sidebar-filters'); // тут указываем ID элемента
-//     if (!div.is(e.target) // если клик был не по нашему блоку
-//         &&
-//         div.has(e.target).length === 0) { // и не по его дочерним элементам
-//         div.hide(); // скрываем его
-//         $('.header-menu__icon').removeClass('active');
-//     }
-// });
 
-// //вызов модального окна "Еще"
-// $('.header-bottom-menu__list').find('li').eq(3).on('click', function() {
-//     // $(this).toggleClass('active');
-//     $('.more').css('display', 'block');
-//     // $('.sidebar-filters').toggleClass('active');
-// });
+});
 
-// $(document).mouseup(function(e) { // событие клика по веб-документу
-//     var div = $('.more'); // тут указываем ID элемента
-//     if (!div.is(e.target) // если клик был не по нашему блоку
-//         &&
-//         div.has(e.target).length === 0) { // и не по его дочерним элементам
-//         div.hide(); // скрываем его
-//     }
-// });
-//Вызов окна в вакансиях в мобильной версии
 $('.vacancy-btn__more').click(function() {
     var elem = $(this).parent().parent().next();
     if (!elem.hasClass('active')) {
-
         elem.addClass('active');
-        // $(this).addClass('active');
+        $(this).addClass('active');
         elem.show(2000);
-    } else {
 
+    } else {
         elem.removeClass('active');
-        // $(this).removeClass('active');
+        $(this).removeClass('active');
         elem.hide(2000);
     }
 });
+
+//изменение свойства meta тега viewport
+function viewport() {
+    if (window.screen.width < 1100) {
+        document.querySelector('meta[name="viewport"]').setAttribute("content", "width=device-width, initial-scale=1.0");
+    } else { document.querySelector('meta[name="viewport"]').setAttribute("content", "width=1920, initial-scale=1.0"); }
+};
+viewport();
