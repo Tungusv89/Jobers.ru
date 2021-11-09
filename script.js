@@ -136,7 +136,7 @@ function viewport() {
         document.querySelector('meta[name="viewport"]').setAttribute("content", "width=device-width, initial-scale=1.0");
         console.log('device-width');
     } else {
-        document.querySelector('meta[name="viewport"]').setAttribute("content", "width=1920, initial-scale=1.0");
+        document.querySelector('meta[name="viewport"]').setAttribute("content", "width=1920");
         console.log("1920");
     }
 };
