@@ -104,7 +104,7 @@
     /*Оболочка*/
     
     .wrapper {
-        width: 100%;
+        width: 1920px;
         min-height: 100%;
         overflow: hidden; // &.loaded{}
     }
@@ -112,9 +112,9 @@
     /*Основная сетка*/
     
     .container {
-        width: 100%;
+        // width: 1304px;
         margin: 0 auto;
-        width: 100%;
+        // width: 100%;
         padding: 0 30px;
         @media (max-width: $md4+px) {
             padding: 0 15px;
@@ -144,6 +144,7 @@
         font-weight: 400;
         font-size: 18px;
         background: #fafafa;
+        min-width: 1920px;
     }
     /*header*/
     
@@ -183,8 +184,8 @@
         }
         &:nth-child(2) {
             display: flex;
-            // flex: 1 1 1304px;
-            flex: 1 1 100%;
+            flex: 1 0 1304px;
+            // flex: 1 1 100%;
             .container {
                 display: flex;
                 @media (max-width: 1140px) {
@@ -196,7 +197,7 @@
             }
         }
         &:nth-child(3) {
-            flex: 1 1 271px;
+            flex: 1 0 271px;
             @media (max-width: 1100px) {
                 display: none;
             }

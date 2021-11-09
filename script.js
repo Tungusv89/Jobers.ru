@@ -129,11 +129,11 @@ $('.vacancy-btn__more').click(function() {
 });
 
 //изменение свойства meta тега viewport
-function viewport() {
-    if (window.screen.width < 1100) {
-        document.querySelector('meta[name="viewport"]').setAttribute("content", "width=device-width, initial-scale=1.0");
-    } else {
-        document.querySelector('meta[name="viewport"]').setAttribute("content", "width=1920");
-    }
-};
-viewport();
+// function viewport() {
+//     if (window.screen.width < 1100) {
+//         document.querySelector('meta[name="viewport"]').setAttribute("content", "width=device-width, initial-scale=1.0");
+//     } else {
+//         document.querySelector('meta[name="viewport"]').setAttribute("content", "width=1920");
+//     }
+// };
+// viewport();
