@@ -102,6 +102,7 @@ h6 {
 /*-----Оболочка------*/
 /*Основная сетка*/
 .container {
+  width: 100%;
   margin: 0 auto;
   width: 100%;
   padding: 0 30px;
@@ -204,8 +205,8 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 1304px;
-          flex: 1 1 1304px;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
 }
 
 .header__column:nth-child(2) .container {
@@ -677,7 +678,6 @@ li.more__list-item a {
 
 .main__column:nth-child(2) {
   background-color: #fff;
-  max-width: 1304px;
   width: 100%;
   border-right: 2px solid #e5e5e5;
 }
