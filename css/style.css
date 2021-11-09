@@ -717,8 +717,20 @@ li.more__list-item a {
   padding: 30px 0px 0px 0px;
 }
 
+@media (max-width: 1100px) {
+  .sidebar-filters__item {
+    padding: 20px 0px 0px 0px;
+  }
+}
+
 .sidebar-filters__item:first-child {
   padding: 34px 0px 0px 0px;
+}
+
+@media (max-width: 1100px) {
+  .sidebar-filters__item:first-child {
+    padding: 18px 0px 0px 0px;
+  }
 }
 
 .sidebar-filters__item-title {
@@ -730,12 +742,24 @@ li.more__list-item a {
   display: flex;
 }
 
+@media (max-width: 1100px) {
+  .sidebar-filters__item-title {
+    font-size: 18px;
+  }
+}
+
 .sidebar-filters__item-title img {
   padding: 0px 8px 0px 0px;
 }
 
 .sidebar-filters__list {
   padding: 24px 0px 30px 0px;
+}
+
+@media (max-width: 1100px) {
+  .sidebar-filters__list {
+    padding: 20px 0px;
+  }
 }
 
 .sidebar-filters__list-items {
@@ -753,6 +777,12 @@ li.more__list-item a {
   line-height: 25px;
   color: #b2b2b2;
   padding: 0px 4px 0px 0px;
+}
+
+@media (max-width: 1100px) {
+  .sidebar-filters__list-items span {
+    font-size: 14px;
+  }
 }
 
 .sidebar-filters__list-items .active {
@@ -776,6 +806,12 @@ li.more__list-item a {
   font-size: 18px;
   line-height: 25px;
   color: #ffffff;
+}
+
+@media (max-width: 1100px) {
+  .sidebar-filters_btn a {
+    font-size: 14px;
+  }
 }
 
 .top-filters-body {

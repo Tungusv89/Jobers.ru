@@ -559,14 +559,14 @@
     .sidebar-filters__item {
         border-bottom: 2px solid #4f4f4f;
         padding: 30px 0px 0px 0px;
-        // @media (max-width: 1140px) {
-        //     padding: 20px 0px 0px 0px;
-        // }
+        @media (max-width: 1100px) {
+            padding: 20px 0px 0px 0px;
+        }
         &:first-child {
             padding: 34px 0px 0px 0px;
-            // @media (max-width: 1140px) {
-            //     padding: 18px 0px 0px 0px;
-            // }
+            @media (max-width: 1100px) {
+                padding: 18px 0px 0px 0px;
+            }
         }
     }
     
@@ -575,9 +575,9 @@
         line-height: 30px;
         color: #5898ff;
         display: flex;
-        // @media (max-width: 1140px) {
-        //     font-size: 18px;
-        // }
+        @media (max-width: 1100px) {
+            font-size: 18px;
+        }
         img {
             padding: 0px 8px 0px 0px;
         }
@@ -585,9 +585,9 @@
     
     .sidebar-filters__list {
         padding: 24px 0px 30px 0px;
-        // @media (max-width: 1140px) {
-        //     padding: 20px 0px;
-        // }
+        @media (max-width: 1100px) {
+            padding: 20px 0px;
+        }
     }
     
     .sidebar-filters__list-items {
@@ -599,9 +599,9 @@
             line-height: 25px;
             color: #b2b2b2;
             padding: 0px 4px 0px 0px;
-            // @media (max-width: 1140px) {
-            //     font-size: 14px;
-            // }
+            @media (max-width: 1100px) {
+                font-size: 14px;
+            }
         }
         .active {
             font-weight: 600;
@@ -620,9 +620,9 @@
             font-size: 18px;
             line-height: 25px;
             color: #ffffff;
-            // @media (max-width: 1140px) {
-            //     font-size: 14px;
-            // }
+            @media (max-width: 1100px) {
+                font-size: 14px;
+            }
         }
     }
     
