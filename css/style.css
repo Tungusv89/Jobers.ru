@@ -102,7 +102,6 @@ h6 {
 /*-----Оболочка------*/
 /*Основная сетка*/
 .container {
-  max-width: 1304px;
   margin: 0 auto;
   width: 100%;
   padding: 0 30px;
