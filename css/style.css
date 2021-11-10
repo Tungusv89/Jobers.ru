@@ -94,8 +94,10 @@ h6 {
 /*--------------------*/
 /*Оболочка*/
 .wrapper {
-  min-height: 100%;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /*-----Оболочка------*/
@@ -134,6 +136,12 @@ body {
   font-size: 18px;
   background: #fafafa;
   min-width: 1920px;
+}
+
+div {
+  background: #0e65f3;
+  height: 30%;
+  margin: 0 15px;
 }
 
 /*header*/
