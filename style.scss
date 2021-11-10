@@ -104,7 +104,7 @@
     /*Оболочка*/
     
     .wrapper {
-        width: 1920px;
+        // width: 1920px;
         min-height: 100%;
         overflow: hidden; // &.loaded{}
     }
@@ -144,7 +144,7 @@
         font-weight: 400;
         font-size: 18px;
         background: #fafafa;
-        min-width: 1920px;
+        min-width: 1100px;
     }
     /*header*/
     
@@ -188,6 +188,7 @@
             // flex: 1 1 100%;
             .container {
                 display: flex;
+                margin: 0;
                 @media (max-width: 1140px) {
                     justify-content: space-between;
                 }
@@ -515,7 +516,7 @@
     //main
     .main {
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
     }
     
     .main__column {
@@ -528,8 +529,8 @@
         }
         &:nth-child(2) {
             background-color: #fff;
-            // max-width: 1304px;
-            width: 100%;
+            max-width: 1304px;
+            // width: 100%;
             border-right: 2px solid #e5e5e5;
         }
     }
