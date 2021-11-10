@@ -184,8 +184,9 @@
         }
         &:nth-child(2) {
             display: flex;
-            flex: 0 0 1334px;
+            flex: 0 0 1274px;
             // flex: 1 1 100%;
+            padding: 0 30px;
             .container {
                 flex: 0 0 1304px;
                 display: flex;
@@ -199,6 +200,7 @@
             }
         }
         &:nth-child(3) {
+            display: flex;
             flex: 0 0 271px;
             // @media (max-width: 1100px) {
             //     display: none;

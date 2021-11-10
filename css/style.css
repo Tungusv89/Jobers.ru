@@ -178,8 +178,9 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 1334px;
-          flex: 0 0 1334px;
+      -ms-flex: 0 0 1274px;
+          flex: 0 0 1274px;
+  padding: 0 30px;
 }
 
 .header__column:nth-child(2) .container {
@@ -193,6 +194,9 @@ header {
 }
 
 .header__column:nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 271px;
           flex: 0 0 271px;
