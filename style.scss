@@ -149,7 +149,7 @@
     /*header*/
     
     header {
-        // height: 100px;
+        height: 100px;
         background: #fafafa;
         border-bottom: 2px solid #e5e5e5;
     }
@@ -159,7 +159,7 @@
         align-items: center;
         justify-content: flex-start;
         min-width: 1920px;
-        // height: 100px;
+        height: 100px;
         @media (max-width: 780px) {
             height: 60px;
         }
@@ -169,7 +169,7 @@
         &:first-child {
             flex: 0 0 315px;
             background: #303030;
-            // height: 100px;
+            height: 100px;
             display: flex;
             justify-content: center;
             align-items: center;
