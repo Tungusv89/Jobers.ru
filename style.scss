@@ -186,7 +186,7 @@
             display: flex;
             // flex: 0 0 69.5%;
             // flex: 1 1 100%;
-            padding: 0 30px;
+            // padding: 0 30px;
             justify-content: flex-start;
             .container {
                 flex: 0 0 1304px;
@@ -294,13 +294,13 @@
     // }
     .btn {
         a {
-            padding: 12px 24px;
+            // padding: 12px 24px;
             border-radius: 4px;
         }
     }
     
     .header__column-btn {
-        margin-right: 75px;
+        // margin-right: 75px;
         display: flex;
         a {
             background: #5898ff;
@@ -334,7 +334,7 @@
         // }
         li {
             display: flex;
-            padding: 0px 25px;
+            // padding: 0px 25px;
             cursor: pointer;
             .active {
                 border-bottom: 2px solid #5898ff;
@@ -350,8 +350,8 @@
             font-weight: 600;
             line-height: 25px;
             color: #000000;
-            padding: 0px 0px 8px 0px;
-            margin: 0px 0px -8px 0px;
+            // padding: 0px 0px 8px 0px;
+            // margin: 0px 0px -8px 0px;
             // @media (max-width: 780px) {
             //     padding: 0px 0px 4px 0px;
             //     margin: 0px 0px -4px 0px;
@@ -371,7 +371,7 @@
     }
     
     .header-bottom-menu__list-icon {
-        padding: 0px 4px 0px 0px;
+        // padding: 0px 4px 0px 0px;
         // @media (max-width: $md4+px) {
         //     padding: 5px 4px 0px 0px;
         // }
@@ -399,7 +399,7 @@
     }
     
     .header__column-login-column-icon {
-        padding: 0px 12px 0px 0px;
+        // padding: 0px 12px 0px 0px;
         @media (max-width: $md6+px) {
             display: none;
         }
