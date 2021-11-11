@@ -184,7 +184,7 @@
         }
         &:nth-child(2) {
             display: flex;
-            flex: 0 0 69.5%;
+            flex-basis: 69.5%;
             // flex: 1 1 100%;
             padding: 0 30px;
             justify-content: flex-start;

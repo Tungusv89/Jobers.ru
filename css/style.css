@@ -173,9 +173,8 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 69.5%;
-          flex: 0 0 69.5%;
+  -ms-flex-preferred-size: 69.5%;
+      flex-basis: 69.5%;
   padding: 0 30px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
