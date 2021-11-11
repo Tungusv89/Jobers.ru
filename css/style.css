@@ -173,6 +173,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0 30px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -209,10 +210,12 @@ header {
 }
 
 .btn a {
+  padding: 12px 24px;
   border-radius: 4px;
 }
 
 .header__column-btn {
+  margin-right: 1.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -243,6 +246,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0px 25px;
   cursor: pointer;
 }
 
@@ -254,6 +258,12 @@ header {
   font-weight: 600;
   line-height: 25px;
   color: #000000;
+  padding: 0px 0px 8px 0px;
+  margin: 0px 0px -8px 0px;
+}
+
+.header-bottom-menu__list-icon {
+  padding: 0px 4px 0px 0px;
 }
 
 .header__column-login {
@@ -283,6 +293,10 @@ header {
   .header__column-login-column {
     display: none;
   }
+}
+
+.header__column-login-column-icon {
+  padding: 0px 12px 0px 0px;
 }
 
 @media (max-width: 375px) {
