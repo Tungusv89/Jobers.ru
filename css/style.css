@@ -173,6 +173,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 69.5%;
+          flex: 0 0 69.5%;
   padding: 0 30px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -246,7 +249,6 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0px 25px;
   cursor: pointer;
 }
 
