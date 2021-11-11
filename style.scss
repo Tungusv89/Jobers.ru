@@ -144,7 +144,7 @@
         font-weight: 400;
         font-size: 18px;
         background: #fafafa;
-        min-width: 1100px;
+        min-width: 1920px;
     }
     /*header*/
     
@@ -167,7 +167,7 @@
     
     .header__column {
         &:first-child {
-            // flex: 0 0 16.4%;
+            flex: 0 0 16.4%;
             background: #303030;
             height: 100px;
             display: flex;
@@ -202,7 +202,7 @@
         }
         &:nth-child(3) {
             display: flex;
-            // flex: 0 0 14.1%;
+            flex: 0 0 14.1%;
             // @media (max-width: 1100px) {
             //     display: none;
             // }
@@ -300,7 +300,7 @@
     }
     
     .header__column-btn {
-        margin-right: 1.5%;
+        margin-right: 75px;
         display: flex;
         a {
             background: #5898ff;
@@ -334,7 +334,7 @@
         // }
         li {
             display: flex;
-            // padding: 0px 25px;
+            padding: 0px 25px;
             // padding: 0 4.6%;
             cursor: pointer;
             .active {
@@ -541,7 +541,8 @@
     .sidebar-filters {
         min-height: 100vh;
         background: #303030;
-        flex: 0 0 315px;
+        // flex: 0 0 315px;
+        flex: 0 0 16.4%;
         position: relative;
         left: 0;
         @media (max-width: 1100px) {

@@ -132,7 +132,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   background: #fafafa;
-  min-width: 1100px;
+  min-width: 1920px;
 }
 
 /*header*/
@@ -156,6 +156,9 @@ header {
 }
 
 .header__column:first-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 16.4%;
+          flex: 0 0 16.4%;
   background: #303030;
   height: 100px;
   display: -webkit-box;
@@ -195,6 +198,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 14.1%;
+          flex: 0 0 14.1%;
 }
 
 .header__column-logo {
@@ -217,7 +223,7 @@ header {
 }
 
 .header__column-btn {
-  margin-right: 1.5%;
+  margin-right: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -248,6 +254,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0px 25px;
   cursor: pointer;
 }
 
@@ -461,8 +468,8 @@ li.more__list-item a {
   min-height: 100vh;
   background: #303030;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 315px;
-          flex: 0 0 315px;
+      -ms-flex: 0 0 16.4%;
+          flex: 0 0 16.4%;
   position: relative;
   left: 0;
 }
