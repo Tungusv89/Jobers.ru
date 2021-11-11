@@ -132,7 +132,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   background: #fafafa;
-  min-width: 1920px;
+  min-width: 1100px;
 }
 
 /*header*/
@@ -157,8 +157,8 @@ header {
 
 .header__column:first-child {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 315px;
-          flex: 0 0 315px;
+      -ms-flex: 0 0 16.4%;
+          flex: 0 0 16.4%;
   background: #303030;
   height: 100px;
   display: -webkit-box;
