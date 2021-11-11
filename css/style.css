@@ -156,9 +156,6 @@ header {
 }
 
 .header__column:first-child {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 16.4%;
-          flex: 0 0 16.4%;
   background: #303030;
   height: 100px;
   display: -webkit-box;
@@ -176,9 +173,6 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 69.5%;
-          flex: 0 0 69.5%;
   padding: 0 30px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -199,9 +193,6 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 14.1%;
-          flex: 0 0 14.1%;
 }
 
 .header__column-logo {
