@@ -228,6 +228,9 @@ header {
 .header__column-btn {
   margin-right: 75px;
   display: inline-block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .header__column-btn a {
