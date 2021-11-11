@@ -302,7 +302,8 @@
     
     .header__column-btn {
         margin-right: 75px;
-        display: flex;
+        display: inline-block;
+        // width: 60%;
         a {
             background: #5898ff;
             color: #fff;
