@@ -1,66 +1,3 @@
-// //Adaptive
-
-// //function
-// $(window).resize(function(event) {
-//     adaptive_function();
-// });
-
-// function adaptive_header(w, h) {
-//     var headerMenu = $('.header-menu');
-//     var headerLang = $('.header-top-lang');
-//     if (w < 767) {
-//         if (!headerLang.hasClass('done')) {
-//             headerLang.addClass('done').appendTo(headerMenu);
-//         }
-//     } else {
-//         if (headerLang.hasClass('done')) {
-//             headerLang.removeClass('done').prependTo('.header-top');
-//         }
-//     }
-
-//     if (w < 767) {
-//         if (!$('.header-bottom-menu').hasClass('done')) {
-//             $('.header-bottom-menu').addClass('done').appendTo(headerMenu);
-//         }
-//     } else {
-//         $.each($('.header-bottom-menu'), function(index, val) {
-//             if ($(this).hasClass('header-bottom-menu--right')) {
-//                 if ($(this).hasClass('done')) {
-//                     $(this).removeClass('done').prependTo($('.header-bottom__column').eq(2));
-//                 }
-//             } else {
-//                 if ($(this).hasClass('done')) {
-//                     $(this).removeClass('done').prependTo($('.header-bottom__column').eq(0));
-//                 }
-//             }
-//         })
-//     }
-// }
-
-// function adaptive_function() {
-//     var w = $(window).outerWidth();
-//     var h = $(window).outerHeight();
-//     adaptive_header(w, h);
-// }
-// adaptive_function();
-
-// //header_menu
-
-// $('.header-menu__icon').click(function(event) {
-//     $(this).toggleClass('active');
-//     $('.header-menu').toggleClass('active');
-//     if ($(this).hasClass('active')) {
-//         $('body').data('scroll', $(window).scrollTop());
-//     }
-//     $('body').toggleClass('lock');
-//     if (!$(this).hasClass('active')) {
-//         $('body,html').scrollTop(parseInt($('body').data('scroll')))
-//     }
-// });
-
-
-
-
 //перемещение меню для мобильной адаптации
 $(document).ready(function() {
     var menu = $('.header-body').find('.header__column-menu');
@@ -102,38 +39,36 @@ $('.header-menu__icon').on('click', function() {
 });
 
 //вызов модального окна "Еще"
-// $('.header-bottom-menu__list').find('li').eq(3).on('click', function() {
-//     if (!$('.more').hasClass('active')) {
-//         $('.more').addClass('active');
-//         $('.more').css('display', 'block');
-//     } else {
-//         $('.more').removeClass('active');
-//         $('.more').css('display', 'none');
-//     }
+$('.header-bottom-menu__list').find('li').eq(3).on('click', function() {
+    if (!$('.more').hasClass('active')) {
+        $('.more').addClass('active');
+        $('.more').css('display', 'block');
+    } else {
+        $('.more').removeClass('active');
+        $('.more').css('display', 'none');
+    }
+});
+//вызов модального окна "Профиль"
+$('.header__column-login').on('click', function() {
+    if (!$('.profile').hasClass('active')) {
+        $('.profile').addClass('active');
+        $('.profile').css('display', 'block');
+    } else {
+        $('.profile').removeClass('active');
+        $('.profile').css('display', 'none');
+    }
+});
 
+$('.vacancy-btn__more').click(function() {
+    var elem = $(this).parent().parent().next();
+    if (!elem.hasClass('active')) {
+        elem.addClass('active');
+        $(this).addClass('active');
+        elem.show(2000);
 
-// });
-
-// $('.vacancy-btn__more').click(function() {
-//     var elem = $(this).parent().parent().next();
-//     if (!elem.hasClass('active')) {
-//         elem.addClass('active');
-//         $(this).addClass('active');
-//         elem.show(2000);
-
-//     } else {
-//         elem.removeClass('active');
-//         $(this).removeClass('active');
-//         elem.hide(2000);
-//     }
-// });
-
-//изменение свойства meta тега viewport
-// function viewport() {
-//     if (window.screen.width < 1100) {
-//         document.querySelector('meta[name="viewport"]').setAttribute("content", "width=device-width, initial-scale=1.0");
-//     } else {
-//         document.querySelector('meta[name="viewport"]').setAttribute("content", "width=1920");
-//     }
-// };
-// viewport();
+    } else {
+        elem.removeClass('active');
+        $(this).removeClass('active');
+        elem.hide(2000);
+    }
+});

@@ -646,6 +646,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .header__column-login-column {
@@ -771,24 +772,37 @@ header {
   position: absolute;
   top: 34px;
   width: 300px;
-  height: 201px;
+  height: 187px;
   background: #ffffff;
   border: 1px solid #e5e5e5 !important;
   border-radius: 4px;
   z-index: 1;
 }
 
+@media (max-width: 1440px) {
+  .more {
+    width: 200px;
+    height: 137px;
+  }
+}
+
+@media (max-width: 1220px) {
+  .more {
+    width: 200px;
+    height: 122px;
+  }
+}
+
 @media (max-width: 1100px) {
   .more {
-    width: 165px;
+    width: 200px;
     height: 158px;
-    right: 76px;
   }
 }
 
 @media (max-width: 1035px) {
   .more {
-    height: 204px;
+    height: 175px;
     right: 0;
   }
 }
@@ -808,9 +822,21 @@ header {
           justify-content: center;
 }
 
+@media (max-width: 1440px) {
+  .more-body {
+    padding: 20px 30px;
+  }
+}
+
+@media (max-width: 1220px) {
+  .more-body {
+    padding: 20px 27px;
+  }
+}
+
 @media (max-width: 1100px) {
   .more-body {
-    padding: 20px 15px;
+    padding: 20px 30px;
   }
 }
 
@@ -843,10 +869,24 @@ li.more__list-item a {
   color: #000000;
 }
 
+@media (max-width: 1440px) {
+  li.more__list-item a {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+@media (max-width: 1220px) {
+  li.more__list-item a {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
 @media (max-width: 1100px) {
   li.more__list-item a {
     font-size: 14px;
-    line-height: 23px;
+    line-height: 19px;
   }
 }
 
@@ -867,6 +907,139 @@ li.more__list-item a {
     display: flex;
   }
   .more.active li.more__list-item:nth-child(7) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.profile {
+  display: none;
+  position: absolute;
+  top: 57px;
+  width: 239px;
+  height: 137px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5 !important;
+  border-radius: 4px;
+  z-index: 1;
+  left: 0;
+}
+
+@media (max-width: 1440px) {
+  .profile {
+    width: 200px;
+    height: 99px;
+  }
+}
+
+@media (max-width: 1220px) {
+  .profile {
+    width: 200px;
+    height: 90px;
+  }
+}
+
+.profile-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 1440px) {
+  .profile-body {
+    padding: 20px 30px;
+  }
+}
+
+@media (max-width: 1220px) {
+  .profile-body {
+    padding: 20px 27px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .profile-body {
+    padding: 20px 30px;
+  }
+}
+
+li.profile__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px;
+}
+
+li.profile__list-item:nth-child(6) {
+  display: none;
+}
+
+li.profile__list-item:nth-child(7) {
+  display: none;
+}
+
+li.profile__list-item img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 4px;
+}
+
+li.profile__list-item a {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+}
+
+@media (max-width: 1440px) {
+  li.profile__list-item a {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+@media (max-width: 1220px) {
+  li.profile__list-item a {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 1100px) {
+  li.profile__list-item a {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+@media (max-width: 1035px) {
+  .profile.active li.profile__list-item:nth-child(3) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .profile.active li.profile__list-item:nth-child(5) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .profile.active li.profile__list-item:nth-child(6) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .profile.active li.profile__list-item:nth-child(7) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2540,7 +2713,7 @@ li.more__list-item a {
   background-size: 18px;
   height: 18px;
   width: 18px;
-  right: 0;
+  right: -3px;
   top: 10px;
 }
 
@@ -2550,6 +2723,7 @@ li.more__list-item a {
     height: 16px;
     width: 16px;
     top: 7px;
+    right: 0;
   }
 }
 
