@@ -59,6 +59,18 @@ $('.header__column-login').on('click', function() {
     }
 });
 
+//вызов модального окна "Поддержка"
+$('.support').parent().on('click', function() {
+    console.log($('.support').parent());
+    if (!$('.support').hasClass('active')) {
+        $('.support').addClass('active');
+        $('.support').css('display', 'block');
+    } else {
+        $('.support').removeClass('active');
+        $('.support').css('display', 'none');
+    }
+});
+
 $('.vacancy-btn__more').click(function() {
     var elem = $(this).parent().parent().next();
     if (!elem.hasClass('active')) {
