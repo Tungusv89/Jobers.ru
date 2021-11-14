@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //выбор активного элемента в сайтбаре слева
 $('.sidebar-filters__list-items').click(function() {
-    if (!$(this).hasClass('.sidebar-filters__list-items--active')) {
+    if (!$(this).hasClass('sidebar-filters__list-items--active')) {
         console.log("ненашел");
         $(this).find('.circle').children().attr('src', '/img/sidebar/icons/checkedcircle.svg');
         $(this).find('.square').children().attr('src', '/img/sidebar/icons/checkedsquare.svg');
