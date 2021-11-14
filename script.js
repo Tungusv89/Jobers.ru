@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }, false);
 
 //выбор активного элемента в сайтбаре слева
-$('.sidebar-filters__list-items').on('click', function() {
+$('.sidebar-filters__list-items').click(function() {
     if (!$(this).hasClass('.sidebar-filters__list-items--active')) {
         console.log("ненашел");
         $(this).find('.circle').children().attr('src', '/img/sidebar/icons/checkedcircle.svg');
@@ -18,7 +18,7 @@ $('.sidebar-filters__list-items').on('click', function() {
         $(this).addClass('sidebar-filters__list-items--active');
         $(this).find('.circle').next().addClass('active');
         $(this).find('.square').next().addClass('active');
-    } else if ($(this).hasClass('.sidebar-filters__list-items--active')) {
+    } else {
         console.log("нашел");
         $(this).find('.circle').next().removeClass('active');
         $(this).find('.square').next().removeClass('active');
@@ -29,15 +29,29 @@ $('.sidebar-filters__list-items').on('click', function() {
     }
 });
 //Вызов фильтров в мобильном меню
-$('.header-menu__icon').on('click', function() {
-    if (!$(this).hasClass('active')) {
-        $(this).addClass('active');
-        $('.sidebar-filters').css('display', 'block');
-    } else {
-        $(this).removeClass('active');
-        $('.sidebar-filters').css('display', 'none');
+const mobilMenu = document.querySelector('.header-menu__icon')
+const sidebar = document.querySelector('.sidebar-filters')
+document.addEventListener('click', burger)
+
+function burger(event) {
+    if (event.target.closest('.header-menu__icon')) {
+        if (!mobilMenu.classList.contains('active')) {
+            mobilMenu.classList.add('active')
+            sidebar.style.display = "block"
+        } else {
+            mobilMenu.classList.remove('active');
+            sidebar.style.display = "none"
+        }
     }
-});
+    if (!event.target.closest('.header-menu__icon') && !event.target.closest('.sidebar-filters')) {
+        console.log('click');
+        if (mobilMenu.classList.contains('active')) {
+            mobilMenu.classList.remove('active');
+            sidebar.style.display = "none"
+        }
+    }
+}
+
 
 //вызов модального окна "Еще"
 $('.header-bottom-menu__list').find('li').eq(3).on('click', function() {
