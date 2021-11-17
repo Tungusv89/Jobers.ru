@@ -99,3 +99,23 @@ $('.vacancy-btn__more').click(function() {
         elem.hide(2000);
     }
 });
+//адаптация 
+document.addEventListener('DOMContentLoaded', function() {
+    var filterOn = document.body.querySelector('.top-filters__row-setting')
+    var upRow = document.body.querySelector('.top-filters__row-action-list--btn')
+    var buttons = document.body.querySelector('.top-filters__row-action-btn')
+
+    var w = $(window).outerWidth();
+    //фильтров
+    if (w < 1020) {
+        upRow.append(filterOn)
+        upRow.after(buttons)
+    }
+    //полей зарплаты
+
+    var groupFields = document.body.querySelector('.list-mobile ')
+    var elemInput = document.body.querySelectorAll('input')
+    if (w < 425) {
+        elemInput.setAttribute('size', '4')
+    }
+}, false);
