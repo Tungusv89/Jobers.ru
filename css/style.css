@@ -4104,6 +4104,244 @@ div.list-mobile li:last-child {
   }
 }
 
+.vacancy__description-response {
+  padding-bottom: 33px;
+}
+
+padding-bo .vacancy-header--response {
+  padding-bottom: 30px;
+}
+
+.vacancy-header__id--response {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  padding-left: 28px;
+}
+
+.vacancy-header__id--response::before {
+  background: url("/img/main/vacancy/checksquare-blue.svg");
+  width: 24px;
+  height: 24px;
+  background-size: 24px;
+  top: 1px;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 6px;
+}
+
+.vacancy-info--response {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.vacancy__img {
+  margin: 0px;
+}
+
+.vacancy-info--response-right {
+  margin-left: 26px;
+}
+
+.vacancy-info__title-response {
+  padding-bottom: 8px;
+}
+
+.vacancy-info__location-response {
+  padding-bottom: 8px;
+}
+
+.vacancy-info__phone img:first-child {
+  margin-left: 12px;
+}
+
+.vacancy-info__phone img:last-child {
+  margin-left: 8px;
+}
+
+.vacancy-info__email {
+  position: relative;
+  padding-left: 28px;
+}
+
+.vacancy-info__email::before {
+  content: " ";
+  position: absolute;
+  background: url("/img/main/vacancy/email.svg");
+  width: 24px;
+  height: 24px;
+  left: 0;
+}
+
+.vacancy-btn-response {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.vacancy-btn__deny {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 20px;
+}
+
+.vacancy-btn__deny a {
+  background: #A2A2A2;
+  border-radius: 4px;
+  padding: 12px 24px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+.vacancy__action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 30px;
+}
+
+.vacancy__action a {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+}
+
+.moving {
+  padding-left: 32px;
+  position: relative;
+}
+
+.moving::before {
+  content: " ";
+  position: absolute;
+  background: url("/img/main/vacancy/folder.svg") no-repeat;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+  left: 0;
+  top: 6px;
+}
+
+.moving a {
+  padding: 4px 32px 4px 12px;
+  background: #FAFAFA;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+  position: relative;
+}
+
+.moving a:before {
+  content: " ";
+  position: absolute;
+  background: url(/img/main/top-filters/arrow_down-black.svg) no-repeat;
+  background-size: 16px;
+  width: 16px;
+  height: 16px;
+  right: 12px;
+  top: 9px;
+}
+
+.action-print {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.download {
+  padding-left: 32px;
+  margin: auto auto auto 30px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+  position: relative;
+}
+
+.download::before {
+  content: " ";
+  position: absolute;
+  background: url("/img/main/vacancy/down.svg") no-repeat;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+  left: 0;
+  top: 0px;
+}
+
+.print {
+  padding-left: 32px;
+  margin: auto auto auto 30px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+  position: relative;
+}
+
+.print::before {
+  content: " ";
+  position: absolute;
+  background: url("/img/main/vacancy/print.svg") no-repeat;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+  left: 0;
+  top: 0px;
+}
+
+.vacancy__column-keis {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.vacancy__keis {
+  padding-bottom: 16px;
+  border-bottom: 2px solid #E5E5E5;
+  padding-top: 18px;
+}
+
+.vacancy__keis:first-child {
+  padding-top: 0px;
+}
+
+.keis__name {
+  padding-left: 28px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  position: relative;
+}
+
+.keis__name::before {
+  content: " ";
+  position: absolute;
+  background: url("/img/main/vacancy/keis.svg") no-repeat;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+  left: 0;
+  top: 0px;
+}
+
+.keis__subtitle {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.keis__title {
+  padding-top: 4px;
+  font-size: 14px;
+  line-height: 19px;
+}
+
 .pagination {
   display: -webkit-box;
   display: -ms-flexbox;
