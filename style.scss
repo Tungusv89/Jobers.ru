@@ -197,8 +197,14 @@
             align-items: center;
             .container {
                 display: flex;
+                margin: 0px;
+                @media (max-width: 1140px) {
+                    // margin: 0px;
+                    padding: 0 30px;
+                    // justify-content: flex-start;
+                }
                 @media (max-width: 1200px) {
-                    padding: 0 15px;
+                    // padding: 0 15px;
                 }
                 @media (max-width: 780px) {
                     margin: 0;
