@@ -87,6 +87,7 @@ $('.support').parent().on('click', function() {
 });
 
 $('.vacancy-btn__more').click(function() {
+    console.log('gjlhj,ytt');
     var elem = $(this).parent().parent().next();
     if (!elem.hasClass('active')) {
         elem.addClass('active');
@@ -111,11 +112,30 @@ document.addEventListener('DOMContentLoaded', function() {
         upRow.append(filterOn)
         upRow.after(buttons)
     }
-    //полей зарплаты
-
-    var groupFields = document.body.querySelector('.list-mobile ')
-    var elemInput = document.body.querySelectorAll('input')
-    if (w < 425) {
-        elemInput.setAttribute('size', '4')
-    }
 }, false);
+//адаптация полей зарплаты
+$(document).ready(function() {
+    var groupFields = document.body.querySelector('.list-mobile')
+    var elemInput = groupFields.querySelectorAll('input')
+    var w = $(window).outerWidth();
+    var attr = 4;
+
+    if (w < 425) {
+        elemInput.attr('size', '4')
+    }
+});
+
+//настройка/сохранение воронки
+var btnSet = document.body.querySelector('.sidebar-filters__setting')
+var btnSave = document.body.querySelector('.none')
+var list = document.body.querySelector('.sidebar-filters__list')
+btnSet.addEventListener('click', function(e) {
+    btnSet.style.display = 'none'
+    btnSave.style.display = 'block'
+    list.classList.add('setting')
+});
+btnSave.addEventListener('click', function(e) {
+    btnSave.style.display = 'none'
+    btnSet.style.display = 'block'
+    list.classList.remove('setting')
+});
