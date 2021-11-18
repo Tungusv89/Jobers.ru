@@ -4109,6 +4109,18 @@ div.list-mobile li:last-child {
   padding-bottom: 33px;
 }
 
+@media (max-width: 1440px) {
+  .vacancy__description-response {
+    padding-bottom: 25px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .vacancy__description-response {
+    padding-bottom: 11px;
+  }
+}
+
 padding-bo .vacancy-header--response {
   padding-bottom: 30px;
 }
@@ -4120,6 +4132,38 @@ padding-bo .vacancy-header--response {
   padding-left: 28px;
 }
 
+@media (max-width: 1440px) {
+  .vacancy-header__id--response {
+    font-size: 14px;
+    line-height: 19px;
+    padding-left: 21px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .vacancy-header__id--response {
+    font-size: 12px;
+    line-height: 16px;
+    padding-left: 19px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .vacancy-header__id--response {
+    font-size: 14px;
+    line-height: 19px;
+    padding-left: 21px;
+  }
+}
+
+@media (max-width: 425px) {
+  .vacancy-header__id--response {
+    font-size: 12px;
+    line-height: 16px;
+    padding-left: 21px;
+  }
+}
+
 .vacancy-header__id--response::before {
   background: url("/img/main/vacancy/checksquare-blue.svg");
   width: 24px;
@@ -4128,10 +4172,66 @@ padding-bo .vacancy-header--response {
   top: 1px;
 }
 
+@media (max-width: 1440px) {
+  .vacancy-header__id--response::before {
+    width: 18px;
+    background-size: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .vacancy-header__id--response::before {
+    width: 15px;
+    background-size: 15px;
+    height: 15px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .vacancy-header__id--response::before {
+    width: 18px;
+    height: 18px;
+    background-size: 18px;
+  }
+}
+
+@media (max-width: 425px) {
+  .vacancy-header__id--response::before {
+    width: 12px;
+    background-size: 12px;
+    height: 12px;
+  }
+}
+
 .text {
   font-size: 18px;
   line-height: 25px;
   margin-top: 6px;
+}
+
+@media (max-width: 1440px) {
+  .text {
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .text {
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 4px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .text {
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 5px;
+  }
 }
 
 .vacancy-info--response {
@@ -4148,25 +4248,167 @@ padding-bo .vacancy-header--response {
   margin-left: 26px;
 }
 
+@media (max-width: 1440px) {
+  .vacancy-info--response-right {
+    margin-left: 19px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .vacancy-info--response-right {
+    margin-left: 17px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .vacancy-info--response-right {
+    margin-left: 19px;
+  }
+}
+
 .vacancy-info__title-response {
   padding-bottom: 8px;
 }
 
+@media (max-width: 1440px) {
+  .vacancy-info__title-response {
+    padding-bottom: 6px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .vacancy-info__title-response {
+    padding-bottom: 5px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .vacancy-info__title-response {
+    padding-bottom: 6px;
+  }
+}
+
 .vacancy-info__location-response {
   padding-bottom: 8px;
+  padding-bottom: 8px;
+}
+
+@media (max-width: 1440px) {
+  .vacancy-info__location-response {
+    padding-bottom: 6px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .vacancy-info__location-response {
+    padding-bottom: 5px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .vacancy-info__location-response {
+    padding-bottom: 6px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .vacancy-info__phone img {
+    width: 19px;
+    height: 19px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .vacancy-info__phone img {
+    width: 17px;
+    height: 17px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .vacancy-info__phone img {
+    width: 19px;
+    height: 19px;
+  }
 }
 
 .vacancy-info__phone img:first-child {
   margin-left: 12px;
 }
 
+@media (max-width: 1440px) {
+  .vacancy-info__phone img:first-child {
+    margin-left: 9px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .vacancy-info__phone img:first-child {
+    margin-left: 8px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .vacancy-info__phone img:first-child {
+    margin-left: 9px;
+  }
+}
+
 .vacancy-info__phone img:last-child {
   margin-left: 8px;
 }
 
+@media (max-width: 1440px) {
+  .vacancy-info__phone img:last-child {
+    margin-left: 6px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .vacancy-info__phone img:last-child {
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .vacancy-info__phone img:last-child {
+    margin-left: 6px;
+  }
+}
+
 .vacancy-info__email {
   position: relative;
+  line-height: 25px;
   padding-left: 28px;
+}
+
+@media (max-width: 1440px) {
+  .vacancy-info__email {
+    line-height: 19px;
+    padding: 0px 0px 6px 22px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .vacancy-info__email {
+    line-height: 16px;
+    padding: 0px 0px 5px 21px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .vacancy-info__email {
+    line-height: 19px;
+    padding: 0px 0px 6px 22px;
+  }
+}
+
+@media (max-width: 425px) {
+  .vacancy-info__email {
+    line-height: 16px;
+    padding-left: 16px;
+    padding-bottom: 4px;
+  }
 }
 
 .vacancy-info__email::before {
@@ -4178,7 +4420,43 @@ padding-bo .vacancy-header--response {
   left: 0;
 }
 
+@media (max-width: 1440px) {
+  .vacancy-info__email::before {
+    width: 18px;
+    height: 18px;
+    background-size: 18px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .vacancy-info__email::before {
+    width: 16px;
+    height: 16px;
+    background-size: 16px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .vacancy-info__email::before {
+    width: 18px;
+    height: 18px;
+    background-size: 18px;
+  }
+}
+
+@media (max-width: 425px) {
+  .vacancy-info__email::before {
+    width: 12px;
+    height: 12px;
+    background-size: 12px;
+    top: 2px;
+  }
+}
+
 .vacancy-btn-response {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4188,10 +4466,31 @@ padding-bo .vacancy-header--response {
 }
 
 .vacancy-btn__deny {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-left: 20px;
+}
+
+@media (max-width: 1440px) {
+  .vacancy-btn__deny {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .vacancy-btn__deny {
+    padding-left: 13px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .vacancy-btn__deny {
+    padding-left: 15px;
+  }
 }
 
 .vacancy-btn__deny a {
@@ -4202,11 +4501,57 @@ padding-bo .vacancy-header--response {
   color: #ffffff;
 }
 
+@media (max-width: 1440px) {
+  .vacancy-btn__deny a {
+    padding: 9px 18px;
+    line-height: 19px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .vacancy-btn__deny a {
+    padding: 6px 12px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .vacancy-btn__deny a {
+    padding: 9px 18px;
+    line-height: 19px;
+  }
+}
+
+@media (max-width: 425px) {
+  .vacancy-btn__deny a {
+    line-height: 16px;
+    padding: 6px;
+  }
+}
+
 .vacancy__action {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-top: 30px;
+}
+
+@media (max-width: 1440px) {
+  .vacancy__action {
+    padding-top: 23px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .vacancy__action {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .vacancy__action {
+    padding-top: 23px;
+  }
 }
 
 .vacancy__action a {
@@ -4216,9 +4561,48 @@ padding-bo .vacancy-header--response {
   color: #000000;
 }
 
+@media (max-width: 1440px) {
+  .vacancy__action a {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .vacancy__action a {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .vacancy__action a {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
 .moving {
   padding-left: 32px;
   position: relative;
+}
+
+@media (max-width: 1440px) {
+  .moving {
+    padding-left: 24px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .moving {
+    padding-left: 21px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .moving {
+    padding-left: 24px;
+  }
 }
 
 .moving::before {
@@ -4230,6 +4614,30 @@ padding-bo .vacancy-header--response {
   height: 24px;
   left: 0;
   top: 6px;
+}
+
+@media (max-width: 1440px) {
+  .moving::before {
+    background-size: 18px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .moving::before {
+    background-size: 16px;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .moving::before {
+    background-size: 18px;
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .moving a {
@@ -4266,6 +4674,30 @@ padding-bo .vacancy-header--response {
   position: relative;
 }
 
+@media (max-width: 1440px) {
+  .download {
+    padding-left: 24px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .download {
+    padding-left: 21px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .download {
+    padding-left: 24px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
 .download::before {
   content: " ";
   position: absolute;
@@ -4277,6 +4709,30 @@ padding-bo .vacancy-header--response {
   top: 0px;
 }
 
+@media (max-width: 1440px) {
+  .download::before {
+    background-size: 18px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .download::before {
+    background-size: 16px;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .download::before {
+    background-size: 18px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
 .print {
   padding-left: 32px;
   margin: auto auto auto 30px;
@@ -4284,6 +4740,30 @@ padding-bo .vacancy-header--response {
   line-height: 25px;
   color: #000000;
   position: relative;
+}
+
+@media (max-width: 1440px) {
+  .print {
+    padding-left: 24px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .print {
+    padding-left: 21px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .print {
+    padding-left: 24px;
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
 
 .print::before {
@@ -4295,6 +4775,30 @@ padding-bo .vacancy-header--response {
   height: 24px;
   left: 0;
   top: 0px;
+}
+
+@media (max-width: 1440px) {
+  .print::before {
+    background-size: 18px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .print::before {
+    background-size: 16px;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .print::before {
+    background-size: 18px;
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .vacancy__column-keis {
@@ -4309,6 +4813,27 @@ padding-bo .vacancy-header--response {
   padding-top: 18px;
 }
 
+@media (max-width: 1440px) {
+  .vacancy__keis {
+    padding-bottom: 12px;
+    padding-top: 14px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .vacancy__keis {
+    padding-bottom: 11px;
+    padding-top: 12px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .vacancy__keis {
+    padding-bottom: 12px;
+    padding-top: 14px;
+  }
+}
+
 .vacancy__keis:first-child {
   padding-top: 0px;
 }
@@ -4319,6 +4844,30 @@ padding-bo .vacancy-header--response {
   font-size: 18px;
   line-height: 25px;
   position: relative;
+}
+
+@media (max-width: 1440px) {
+  .keis__name {
+    padding-left: 21px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .keis__name {
+    padding-left: 19px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .keis__name {
+    padding-left: 21px;
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
 
 .keis__name::before {
@@ -4332,15 +4881,81 @@ padding-bo .vacancy-header--response {
   top: 0px;
 }
 
+@media (max-width: 1440px) {
+  .keis__name::before {
+    background-size: 18px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .keis__name::before {
+    background-size: 16px;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .keis__name::before {
+    background-size: 18px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
 .keis__subtitle {
   font-size: 18px;
   line-height: 25px;
+}
+
+@media (max-width: 1440px) {
+  .keis__subtitle {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .keis__subtitle {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .keis__subtitle {
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
 
 .keis__title {
   padding-top: 4px;
   font-size: 14px;
   line-height: 19px;
+}
+
+@media (max-width: 1440px) {
+  .keis__title {
+    font-size: 10px;
+    line-height: 14px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .keis__title {
+    font-size: 9px;
+    line-height: 13px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .keis__title {
+    font-size: 10px;
+    line-height: 14px;
+  }
 }
 
 .pagination {
