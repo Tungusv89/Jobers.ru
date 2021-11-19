@@ -126,7 +126,7 @@
                                     <ul class="profile__list ">
                                         <li class="profile__list-item ">
                                             <img src="/img/pop-up/icons/03.svg " alt=" ">
-                                            <a href="profile.html>Профиль</a>
+                                            <a href="profile.html">Профиль</a>
                                         </li>
                                         <li class=" profile__list-item ">
                                             <img src="/img/pop-up/icons/04.svg " alt=" ">
@@ -146,62 +146,63 @@
         </header>
         <div class="main ">
             <aside class="main__column sidebar-filters ">
-                <div class="sidebar-filters-body ">
+                <form class="sidebar-filters-body ">
                     <div class="sidebar-filters__item ">
                         <div class="sidebar-filters__item-title "><img src="/img/sidebar/icons/circles.svg " alt=" ">Статус</div>
                         <ul class="sidebar-filters__list ">
-                            <li class="sidebar-filters__list-items ">
-                                <span class="circle "><img src="/img/sidebar/icons/checkcircle.svg " alt=" "></span>
-                                <span>Все — 13</span>
+                            <li class="sidebar-filters__list-items radio">
+                                <input class="radio__input" type="radio" name="status" id="all">
+                                <label class="radio__label" for="all">Все — 13</label>
                             </li>
-                            <li class="sidebar-filters__list-items ">
-                                <span class="circle "><img src="/img/sidebar/icons/checkcircle.svg " alt=" "></span>
-                                <span>Активные — 8</span>
+                            <li class="sidebar-filters__list-items radio">
+                                <input class="radio__input" type="radio" name="status" id="active">
+                                <label class="radio__label" for="active">Активные — 8</label>
                             </li>
-                            <li class="sidebar-filters__list-items ">
-                                <span class="circle "><img src="/img/sidebar/icons/checkcircle.svg " alt=" "></span>
-                                <span>Архив — 5</span>
+                            <li class="sidebar-filters__list-items radio">
+                                <input class="radio__input" type="radio" name="status" id="archive">
+                                <label class="radio__label" for="archive">Архив — 5</label>
                             </li>
                         </ul>
                     </div>
                     <div class="sidebar-filters__item ">
                         <div class="sidebar-filters__item-title "><img src="/img/sidebar/icons/map.svg " alt=" ">Регион</div>
                         <ul class="sidebar-filters__list ">
-                            <li class="sidebar-filters__list-items ">
-                                <span class="square "><img src="/img/sidebar/icons/checksquare.svg " alt=" "></span>
-                                <span>Москва</span>
+                            <li class="sidebar-filters__list-items checkbox">
+                                <input class="checkbox__input" type="checkbox" name="location" id="msk">
+                                <label class="checkbox__label" for="msk">Москва</label>
                             </li>
                             <li class="sidebar-filters__list-items sidebar-filters__list-items--active ">
-                                <span class="square "><img src="/img/sidebar/icons/checksquare.svg " alt=" "></span>
-                                <span>Санкт-Петербург</span>
+                                <input class="checkbox__input" type="checkbox" name="location" id="spb">
+                                <label class="checkbox__label" for="spb">Санкт-Петербург</label>
                             </li>
                             <li class="sidebar-filters__list-items ">
-                                <span class="square "><img src="/img/sidebar/icons/checksquare.svg " alt=" "></span>
-                                <span>Троицк</span>
+                                <input class="checkbox__input" type="checkbox" name="location" id="trc">
+                                <label class="checkbox__label" for="trc">Троицк</label>
                             </li>
                         </ul>
                     </div>
                     <div class="sidebar-filters__item ">
                         <div class="sidebar-filters__item-title "><img src="/img/sidebar/icons/calculator.svg " alt=" ">Тариф</div>
                         <ul class="sidebar-filters__list ">
-                            <li class="sidebar-filters__list-items ">
-                                <span class="circle "><img src="/img/sidebar/icons/checkcircle.svg " alt=" "></span>
-                                <span>Стартовый — 13</span>
+                            <li class="sidebar-filters__list-items radio">
+                                <input class="radio__input" type="radio" name="tarif" id="start">
+                                <label class="radio__label" for="start">Стартовый — 13</label>
                             </li>
-                            <li class="sidebar-filters__list-items ">
-                                <span class="circle "><img src="/img/sidebar/icons/checkcircle.svg " alt=" "></span>
-                                <span>Расширенный — 8</span>
+                            <li class="sidebar-filters__list-items radio">
+                                <input class="radio__input" type="radio" name="tarif" id="advanced">
+                                <label class="radio__label" for="advanced">Расширенный — 8</label>
                             </li>
-                            <li class="sidebar-filters__list-items ">
-                                <span class="circle "><img src="/img/sidebar/icons/checkcircle.svg " alt=" "></span>
-                                <span>Стартовый с автообновлением— 5</span>
+                            <li class="sidebar-filters__list-items radio">
+                                <input class="radio__input" type="radio" name="tarif" id="autosave">
+                                <label class="radio__label" for="autosave">Стартовый с автообновлением— 5</label>
                             </li>
+
                         </ul>
                     </div>
                     <div class="sidebar-filters__btn btn ">
                         <a href=" ">Купить тариф</a>
                     </div>
-                </div>
+                </form>
             </aside>
             <section class="main__column ">
                 <div class="top-filters ">
@@ -210,7 +211,10 @@
                             <div class="top-filters__row ">
                                 <ul class="top-filters__row-action-list ">
                                     <div class="top-filters__row-action-list--left ">
-                                        <li><img src="/img/main/top-filters/01.svg " alt=" ">Выбрать все</li>
+                                        <li class="checkbox checkbox__top-filters">
+                                            <input class="checkbox__input checkbox__input__top-filters" type="checkbox" name="Выбрать все " id="select_all ">
+                                            <label class="checkbox__label checkbox__label__top-filters" for="select_all ">Выбрать все</label>
+                                        </li>
                                     </div>
                                     <div class="top-filters__row-action-list--right ">
                                         <li><img src="/img/main/top-filters/02.svg " alt=" ">Снять с публикации</li>

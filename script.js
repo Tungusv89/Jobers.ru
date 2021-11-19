@@ -9,25 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 }, false);
 
-//выбор активного элемента в сайтбаре слева
-$('.sidebar-filters__list-items').click(function() {
-    if (!$(this).hasClass('sidebar-filters__list-items--active')) {
-        console.log("ненашел");
-        $(this).find('.circle').children().attr('src', '/img/sidebar/icons/checkedcircle.svg');
-        $(this).find('.square').children().attr('src', '/img/sidebar/icons/checkedsquare.svg');
-        $(this).addClass('sidebar-filters__list-items--active');
-        $(this).find('.circle').next().addClass('active');
-        $(this).find('.square').next().addClass('active');
-    } else {
-        console.log("нашел");
-        $(this).find('.circle').next().removeClass('active');
-        $(this).find('.square').next().removeClass('active');
-        $(this).find('.circle').children().attr('src', '/img/sidebar/icons/checkcircle.svg');
-        $(this).find('.square').children().attr('src', '/img/sidebar/icons/checksquare.svg');
-        $(this).removeClass('sidebar-filters__list-items--active');
 
-    }
-});
 //Вызов фильтров в мобильном меню
 const mobilMenu = document.querySelector('.header-menu__icon')
 const sidebar = document.querySelector('.sidebar-filters')
@@ -114,28 +96,28 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 }, false);
 //адаптация полей зарплаты
-$(document).ready(function() {
-    var groupFields = document.body.querySelector('.list-mobile')
-    var elemInput = groupFields.querySelectorAll('input')
-    var w = $(window).outerWidth();
-    var attr = 4;
+// $(document).ready(function() {
+//     var groupFields = document.body.querySelector('.list-mobile')
+//     var elemInput = groupFields.querySelectorAll('input')
+//     var w = $(window).outerWidth();
+//     var attr = 4;
 
-    if (w < 425) {
-        elemInput.attr('size', '4')
-    }
-});
+//     if (w < 425) {
+//         elemInput.attr('size', '4')
+//     }
+// });
 
 //настройка/сохранение воронки
-var btnSet = document.body.querySelector('.sidebar-filters__setting')
-var btnSave = document.body.querySelector('.none')
-var list = document.body.querySelector('.sidebar-filters__list')
-btnSet.addEventListener('click', function(e) {
-    btnSet.style.display = 'none'
-    btnSave.style.display = 'block'
-    list.classList.add('setting')
-});
-btnSave.addEventListener('click', function(e) {
-    btnSave.style.display = 'none'
-    btnSet.style.display = 'block'
-    list.classList.remove('setting')
-});
+// var btnSet = document.body.querySelector('.sidebar-filters__setting')
+// var btnSave = document.body.querySelector('.none')
+// var list = document.body.querySelector('.sidebar-filters__list')
+// btnSet.addEventListener('click', function(e) {
+//     btnSet.style.display = 'none'
+//     btnSave.style.display = 'block'
+//     list.classList.add('setting')
+// });
+// btnSave.addEventListener('click', function(e) {
+//     btnSave.style.display = 'none'
+//     btnSet.style.display = 'block'
+//     list.classList.remove('setting')
+// });
