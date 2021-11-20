@@ -3308,81 +3308,6 @@ div.list-mobile li:last-child {
   }
 }
 
-.vacancy-header__id {
-  position: relative;
-  padding-left: 22px;
-  cursor: pointer;
-}
-
-@media (max-width: 1440px) {
-  .vacancy-header__id {
-    padding-left: 18px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .vacancy-header__id {
-    padding-left: 16px;
-  }
-}
-
-@media (max-width: 1100px) {
-  .vacancy-header__id {
-    padding-left: 18px;
-  }
-}
-
-.vacancy-header__id::before {
-  content: " ";
-  position: absolute;
-  background: url("/img/main/vacancy/checksquare.svg") no-repeat;
-  width: 18px;
-  height: 18px;
-  left: 0;
-  top: 1px;
-}
-
-@media (max-width: 1440px) {
-  .vacancy-header__id::before {
-    width: 14px;
-    height: 14px;
-    background-size: 14px;
-    top: 0px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .vacancy-header__id::before {
-    width: 12px;
-    height: 12px;
-    background-size: 12px;
-  }
-}
-
-@media (max-width: 1100px) {
-  .vacancy-header__id::before {
-    width: 14px;
-    height: 14px;
-    background-size: 14px;
-    top: 0px;
-  }
-}
-
-@media (max-width: 425px) {
-  .vacancy-header__id::before {
-    padding: 10px 12px 18px 12px;
-  }
-}
-
-@media (max-width: 425px) {
-  .vacancy-header__id::before {
-    top: 0px;
-    width: 12px;
-    height: 12px;
-    background-size: 12px;
-  }
-}
-
 .vacancy-header-right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5970,6 +5895,99 @@ padding-bo .vacancy-header--response {
 @media (max-width: 1100px) {
   .checkbox__input__top-filters:checked + .checkbox__label__top-filters:before {
     background-size: 18px;
+  }
+}
+
+.checkbox__label__vacancy {
+  padding-left: 22px;
+  color: #000000;
+}
+
+@media (max-width: 1440px) {
+  .checkbox__label__vacancy {
+    padding-left: 18px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .checkbox__label__vacancy {
+    padding-left: 16px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .checkbox__label__vacancy {
+    padding-left: 18px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.checkbox__label__vacancy:before {
+  width: 18px;
+  height: 18px;
+  background: url(/img/main/vacancy/squarecheck.svg) no-repeat;
+  background-size: 18px;
+  top: 4px;
+  left: 0;
+}
+
+@media (max-width: 1440px) {
+  .checkbox__label__vacancy:before {
+    width: 14px;
+    height: 14px;
+    background-size: 14px;
+    top: 3px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .checkbox__label__vacancy:before {
+    width: 12px;
+    height: 12px;
+    background-size: 12px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .checkbox__label__vacancy:before {
+    width: 14px;
+    height: 14px;
+    background-size: 14px;
+    top: 3px;
+  }
+}
+
+.checkbox__input__vacancy:checked + .checkbox__label__vacancy {
+  font-weight: 400;
+  color: #000000;
+}
+
+.checkbox__input__vacancy:checked + .checkbox__label__vacancy:before {
+  opacity: 1;
+  background: url(/img/main/vacancy/squarechecked.svg) no-repeat;
+  z-index: 2;
+}
+
+@media (max-width: 1440px) {
+  .checkbox__input__vacancy:checked + .checkbox__label__vacancy:before {
+    background-size: 14px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .checkbox__input__vacancy:checked + .checkbox__label__vacancy:before {
+    background-size: 12px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .checkbox__input__vacancy:checked + .checkbox__label__vacancy:before {
+    background-size: 14px;
   }
 }
 

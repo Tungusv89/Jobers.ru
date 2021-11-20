@@ -2242,55 +2242,7 @@ div.list-mobile {
 
 .vacancy-header-left {}
 
-.vacancy-header__id {
-    position: relative;
-    padding-left: 22px;
-    cursor: pointer;
-    @media (max-width: 1440px) {
-        padding-left: 18px;
-    }
-    @media (max-width: 1200px) {
-        padding-left: 16px;
-    }
-    @media (max-width: 1100px) {
-        padding-left: 18px;
-    }
-    &::before {
-        content: " ";
-        position: absolute;
-        background: url("/img/main/vacancy/checksquare.svg")no-repeat;
-        width: 18px;
-        height: 18px;
-        left: 0;
-        top: 1px;
-        @media (max-width: 1440px) {
-            width: 14px;
-            height: 14px;
-            background-size: 14px;
-            top: 0px;
-        }
-        @media (max-width: 1200px) {
-            width: 12px;
-            height: 12px;
-            background-size: 12px;
-        }
-        @media (max-width: 1100px) {
-            width: 14px;
-            height: 14px;
-            background-size: 14px;
-            top: 0px;
-        }
-        @media (max-width: $md5+px) {
-            padding: 10px 12px 18px 12px;
-        }
-        @media (max-width: $md5+px) {
-            top: 0px;
-            width: 12px;
-            height: 12px;
-            background-size: 12px;
-        }
-    }
-}
+.vacancy-header__id {}
 
 .vacancy-header-right {
     display: flex;
@@ -4053,6 +4005,74 @@ footer {
     }
     @media (max-width: 1100px) {
         background-size: 18px;
+    }
+}
+
+.checkbox__label__vacancy {
+    padding-left: 22px;
+    color: #000000;
+    // position: relative;
+    // line-height: 25px;
+    @media (max-width: 1440px) {
+        padding-left: 18px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    @media (max-width: 1200px) {
+        padding-left: 16px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    @media (max-width: 1100px) {
+        padding-left: 18px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+}
+
+.checkbox__label__vacancy:before {
+    width: 18px;
+    height: 18px;
+    background: url(/img/main/vacancy/squarecheck.svg) no-repeat;
+    background-size: 18px;
+    top: 4px;
+    left: 0;
+    @media (max-width: 1440px) {
+        width: 14px;
+        height: 14px;
+        background-size: 14px;
+        top: 3px;
+    }
+    @media (max-width: 1200px) {
+        width: 12px;
+        height: 12px;
+        background-size: 12px;
+    }
+    @media (max-width: 1100px) {
+        width: 14px;
+        height: 14px;
+        background-size: 14px;
+        top: 3px;
+    }
+}
+
+.checkbox__input__vacancy:checked+.checkbox__label__vacancy {
+    font-weight: 400;
+    color: #000000;
+}
+
+.checkbox__input__vacancy:checked+.checkbox__label__vacancy:before {
+    opacity: 1;
+    background: url(/img/main/vacancy/squarechecked.svg) no-repeat;
+    z-index: 2;
+    @media (max-width: 1440px) {
+        background-size: 14px;
+    }
+    @media (max-width: 1200px) {
+        background-size: 12px;
+    }
+    @media (max-width: 1100px) {
+        background-size: 14px;
     }
 }
 
