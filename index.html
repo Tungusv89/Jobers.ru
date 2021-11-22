@@ -224,12 +224,17 @@
                                 </ul>
                             </div>
                             <div class="top-filters__row ">
-                                <div class="top-filters__row-sort "><img src="/img/main/top-filters/04.svg " alt=" ">
-                                    <div class="top-filters__row-sort-date ">по дате публикации</div>
+
+                                <div class="select">
+                                    <img src="/img/main/top-filters/04.svg " alt=" ">
+                                    <select class="top-filters__row-sort" name="type">                                        
+                                        <option class="top-filters__row-sort-date  value="1">по дате публикации</option>                                                                                
+                                    </select>
                                 </div>
+
                                 <form class="top-filters__row-search ">
                                     <input type="search " placeholder="Название или id ">
-                                    <div class="top-filters__row-search-btn ">
+                                    <div class="top-filters__row-search-btn">
                                         <img src="/img/main/top-filters/05.svg " alt=" ">
                                     </div>
                                 </form>
@@ -276,7 +281,7 @@
                                     <div class="options__name ">Тариф</div>
                                     <div class="options__title ">Стартовый</div>
                                 </div>
-                                <div class="vacancy__options ">
+                                <div class="vacancy__options optional">
                                     <div class="options__name ">Опции</div>
                                     <div class="options__title ">смс рассылка, рмерайтинг вакансии</div>
                                 </div>
@@ -339,7 +344,7 @@
                                     <div class="options__name ">Тариф</div>
                                     <div class="options__title ">Стартовый</div>
                                 </div>
-                                <div class="vacancy__options ">
+                                <div class="vacancy__options optional">
                                     <div class="options__name ">Опции</div>
                                     <div class="options__title ">смс рассылка, рмерайтинг вакансии</div>
                                 </div>
@@ -496,6 +501,7 @@
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js " integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin=" anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="script.js "></script>
 </body>
 

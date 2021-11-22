@@ -121,3 +121,11 @@ document.addEventListener('DOMContentLoaded', function() {
 //     btnSet.style.display = 'block'
 //     list.classList.remove('setting')
 // });
+
+$('.select').click(function() {
+    if (!$(this).hasClass('revert')) {
+        $(this).addClass('revert')
+    } else {
+        $(this).removeClass('revert')
+    }
+});
