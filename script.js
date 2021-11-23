@@ -26,7 +26,6 @@ function burger(event) {
         }
     }
     if (!event.target.closest('.header-menu__icon') && !event.target.closest('.sidebar-filters')) {
-        console.log('click');
         if (mobilMenu.classList.contains('active')) {
             mobilMenu.classList.remove('active');
             sidebar.style.display = "none"
@@ -58,7 +57,6 @@ $('.header__column-login').on('click', function() {
 
 //вызов модального окна "Поддержка"
 $('.support').parent().on('click', function() {
-    console.log($('.support').parent());
     if (!$('.support').hasClass('active')) {
         $('.support').addClass('active');
         $('.support').css('display', 'block');
@@ -69,7 +67,6 @@ $('.support').parent().on('click', function() {
 });
 
 $('.vacancy-btn__more').click(function() {
-    console.log('gjlhj,ytt');
     var elem = $(this).parent().parent().next();
     if (!elem.hasClass('active')) {
         elem.addClass('active');
@@ -96,36 +93,75 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 }, false);
 //адаптация полей зарплаты
-// $(document).ready(function() {
-//     var groupFields = document.body.querySelector('.list-mobile')
-//     var elemInput = groupFields.querySelectorAll('input')
-//     var w = $(window).outerWidth();
-//     var attr = 4;
+$(document).ready(function() {
+    // var groupFields = document.body.querySelector('.list-mobile')
+    var elemInput = $('.list-mobile').find('input')
+    var w = $(window).outerWidth();
+    var attr = 4;
 
-//     if (w < 425) {
-//         elemInput.attr('size', '4')
-//     }
-// });
+    if (w < 425) {
+        elemInput.attr('size', '1')
+    }
+});
 
-//настройка/сохранение воронки
-// var btnSet = document.body.querySelector('.sidebar-filters__setting')
-// var btnSave = document.body.querySelector('.none')
-// var list = document.body.querySelector('.sidebar-filters__list')
-// btnSet.addEventListener('click', function(e) {
-//     btnSet.style.display = 'none'
-//     btnSave.style.display = 'block'
-//     list.classList.add('setting')
-// });
-// btnSave.addEventListener('click', function(e) {
-//     btnSave.style.display = 'none'
-//     btnSet.style.display = 'block'
-//     list.classList.remove('setting')
-// });
+// настройка / сохранение воронки
+var btnSet = document.body.querySelector('.sidebar-filters__setting')
+var btnSave = document.body.querySelector('.none')
+var list = document.body.querySelector('.sidebar-filters__list')
+btnSet.addEventListener('click', function(e) {
+    btnSet.style.display = 'none'
+    btnSave.style.display = 'block'
+    list.classList.add('setting')
+});
+btnSave.addEventListener('click', function(e) {
+    btnSave.style.display = 'none'
+    btnSet.style.display = 'block'
+    list.classList.remove('setting')
+});
 
 $('.select').click(function() {
     if (!$(this).hasClass('revert')) {
-        $(this).addClass('revert')
+        $(this).addClass('revert').focus();
     } else {
         $(this).removeClass('revert')
     }
 });
+$(document).ready(function() {
+    var w = $(window).outerWidth();
+    const btn = $('.top-filters__row-action-btn').find('a').eq(2)
+    if (w < 350) {
+
+        btn.html('В папку')
+    }
+
+})
+
+//Показать, скрыть фильтры
+$('.top-filters__row-setting').click(function() {
+    if ($('.advansed-filters').hasClass('active')) {
+        $('.advansed-filters').hide()
+        $('.advansed-filters').removeClass('active')
+        $('.top-filters__row--second').find('.top-filters__row-setting-title').html('Показать фильтры')
+        $('.btn__group').find('.top-filters__row-setting-title').html('Показать фильтры')
+            // $(this).
+    } else if (!$('.advansed-filters').hasClass('active')) {
+
+        $('.advansed-filters').show()
+        $('.advansed-filters').addClass('active')
+        $('.top-filters__row--second').find('.top-filters__row-setting-title').html('Скрыть фильтры')
+        $('.btn__group').find('.top-filters__row-setting-title').html('Скрыть фильтры')
+    }
+
+})
+
+//Кнопки по чекбоксу
+$('.vacancy-header__id--response').click(function() {
+
+    const i = $('.main').find('.checkbox__input__vacancy--response')
+    console.log(i)
+    if (i.is(':checked')) {
+        $('.top-filters__row-action-btn').css('display', 'flex')
+    } else {
+        $('.top-filters__row-action-btn').css('display', 'none')
+    }
+})

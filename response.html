@@ -149,33 +149,33 @@
                     <div class="sidebar-filters__item ">
                         <div class="sidebar-filters__item-title "><img src="/img/sidebar/icons/filter.svg " alt=" ">Воронка найма</div>
                         <ul class="sidebar-filters__list ">
-                            <li class="sidebar-filters__list-items ">
-                                <span class="square "><img src="/img/sidebar/icons/checksquare.svg " alt=" "></span>
-                                <span>Все — 13 </span>
+                            <li class="sidebar-filters__list-items checkbox">
+                                <input class="checkbox__input" type="checkbox" name="type" id="all">
+                                <label class="checkbox__label" for="all">Все — 13</label>
                             </li>
-                            <li class="sidebar-filters__list-items sidebar-filters__list-items--active ">
-                                <span class="square "><img src="/img/sidebar/icons/checksquare.svg " alt=" "></span>
-                                <span>Новые — 8</span>
+                            <li class="sidebar-filters__list-items checkbox">
+                                <input class="checkbox__input" type="checkbox" name="type" id="new">
+                                <label class="checkbox__label" for="new">Новые — 8</label>
                             </li>
-                            <li class="sidebar-filters__list-items ">
-                                <span class="square "><img src="/img/sidebar/icons/checksquare.svg " alt=" "></span>
-                                <span>Неразобранные — 5</span>
+                            <li class="sidebar-filters__list-items checkbox">
+                                <input class="checkbox__input" type="checkbox" name="type" id="unassembled">
+                                <label class="checkbox__label" for="unassembled">Неразобранные — 5</label>
                             </li>
-                            <li class="sidebar-filters__list-items ">
-                                <span class="square "><img src="/img/sidebar/icons/checksquare.svg " alt=" "></span>
-                                <span>Подумать — 13</span>
+                            <li class="sidebar-filters__list-items checkbox">
+                                <input class="checkbox__input" type="checkbox" name="type" id="think">
+                                <label class="checkbox__label" for="think">Подумать — 13</label>
                             </li>
-                            <li class="sidebar-filters__list-items ">
-                                <span class="square "><img src="/img/sidebar/icons/checksquare.svg " alt=" "></span>
-                                <span>Телефонное интервью — 2</span>
+                            <li class="sidebar-filters__list-items checkbox">
+                                <input class="checkbox__input" type="checkbox" name="type" id="interview">
+                                <label class="checkbox__label" for="interview">Телефонное интервью — 2</label>
                             </li>
-                            <li class="sidebar-filters__list-items ">
-                                <span class="square "><img src="/img/sidebar/icons/checksquare.svg " alt=" "></span>
-                                <span>Подходящие — 1</span>
+                            <li class="sidebar-filters__list-items checkbox">
+                                <input class="checkbox__input" type="checkbox" name="type" id="suitable">
+                                <label class="checkbox__label" for="suitable">Подходящие — 1</label>
                             </li>
-                            <li class="sidebar-filters__list-items ">
-                                <span class="square "><img src="/img/sidebar/icons/checksquare.svg " alt=" "></span>
-                                <span>Отклонённые — 0</span>
+                            <li class="sidebar-filters__list-items checkbox">
+                                <input class="checkbox__input" type="checkbox" name="type" id="rejected">
+                                <label class="checkbox__label" for="rejected">Отклонённые — 0</label>
                             </li>
                         </ul>
                     </div>
@@ -194,9 +194,10 @@
                         <div class="top-filters-body top-filters-body--advansed">
                             <div class="top-filters__row top-filters__row--btn">
                                 <ul class="top-filters__row-action-list top-filters__row-action-list--btn">
-                                    <div class="top-filters__row-action-list--left ">
-                                        <li><img src="/img/main/top-filters/01.svg " alt=" ">Выбрать все</li>
-                                    </div>
+                                    <li class="checkbox checkbox__top-filters">
+                                        <input class="checkbox__input checkbox__input__top-filters" type="checkbox" name="Выбрать все " id="select_all ">
+                                        <label class="checkbox__label checkbox__label__top-filters" for="select_all ">Выбрать все</label>
+                                    </li>
                                     <div class="top-filters__row-action-btn">
                                         <div class="invite">
                                             <a>Принять</a>
@@ -210,9 +211,12 @@
                                     </div>
                                 </ul>
                             </div>
-                            <div class="top-filters__row ">
-                                <div class="top-filters__row-sort top-filters__row-sort--advansed"><img src="/img/main/top-filters/04.svg " alt=" ">
-                                    <div class="top-filters__row-sort-date ">по дате публикации</div>
+                            <div class="top-filters__row top-filters__row--second">
+                                <div class="select top-filters__row-sort--advansed">
+                                    <img src="/img/main/top-filters/04.svg " alt=" ">
+                                    <select class="top-filters__row-sort" name="type">                                        
+                                        <option class="top-filters__row-sort-date  value="1">по дате публикации</option>                                                                                
+                                    </select>
                                 </div>
                                 <div class="top-filters__row-setting"><img src="/img/main/top-filters/setting.svg" alt=" ">
                                     <div class="top-filters__row-setting-title ">Показать фильтры</div>
@@ -231,8 +235,10 @@
                                     <div class="advansed-filters__list-row">
                                         <li>
                                             <div class="name">Вакансии</div>
-                                            <div class="input input-first">
-                                                <input size="10" type="text" placeholder="все вакансии">
+                                            <div class="select">
+                                                <select name="vacancy">
+                                                    <option value="1">все вакансии</option>
+                                                </select>
                                             </div>
                                         </li>
                                         <div class="list-mobile ">
@@ -260,34 +266,44 @@
                                         </li>
                                         <li>
                                             <div class="name ">Город</div>
-                                            <div class="input input-first ">
-                                                <input size="16" placeholder="не имеет значения ">
+                                            <div class="select">
+                                                <select name="location">
+                                                    <option value="1">не имеет значения</option>
+                                                </select>
                                             </div>
                                         </li>
                                     </div>
                                     <div class="advansed-filters__list-row ">
                                         <li>
                                             <div class="name ">Гражданство</div>
-                                            <div class="input input-first ">
-                                                <input size="16" placeholder="не имеет значения ">
+                                            <div class="select">
+                                                <select name="citizenship">
+                                                    <option value="1">не имеет значения</option>
+                                                </select>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="name ">Пол</div>
-                                            <div class="input input-first ">
-                                                <input size="16" placeholder="не имеет значения ">
+                                            <div class="select">
+                                                <select name="gender">
+                                                    <option value="1">не имеет значения</option>
+                                                </select>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="name ">Источник</div>
-                                            <div class="input input-first ">
-                                                <input size="16" placeholder="не имеет значения ">
+                                            <div class="select">
+                                                <select name="source">
+                                                    <option value="1">не имеет значения</option>
+                                                </select>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="name ">Опыт работы</div>
-                                            <div class="input input-first ">
-                                                <input size="16" placeholder="не имеет значения ">
+                                            <div class="select">
+                                                <select name="experience">
+                                                    <option value="1">не имеет значения</option>
+                                                </select>
                                             </div>
                                         </li>
                                     </div>
@@ -311,18 +327,20 @@
                     </div>
                 </div>
 
-                <article class="vacancy ">
+                <article class="vacancy vacancy--response">
                     <div class="container ">
                         <div class="vacancy-body ">
                             <div class="vacancy__column column-first">
                                 <div class="vacancy__description vacancy__description-response">
                                     <div class="vacancy-header vacancy-header--response">
                                         <div class="vacancy-header-left ">
-                                            <div class="vacancy-header__id vacancy-header__id--response">Менеджер по транспортной логистике (СНГ, Европа, Китай)</div>
+                                            <div class="vacancy-header__id checkbox vacancy-header__id--response">
+                                                <input class="checkbox__input checkbox__input__vacancy--response" type="checkbox" name="id" id="id_vacancy1">
+                                                <label class="checkbox__label checkbox__label__vacancy--response" for="id_vacancy1">Менеджер по транспортной логистике (СНГ, Европа, Китай)</label>
+                                            </div>
                                             <div class="vacancy-header__action text">Откликнулся 09.02.2021 в 10:11 на вакансию id234972 - Водитель-экспедитор</div>
                                             <div class="vacancy-header__step text">Этап воронки: телефонное интервью</div>
                                         </div>
-
                                     </div>
                                     <div class="vacancy-info  vacancy-info--response">
                                         <div class="vacancy-info--response-left">
@@ -349,8 +367,11 @@
                                     </div>
                                 </div>
                                 <div class="vacancy__action">
-                                    <div class="action-moving">
-                                        <div class="moving"><a href="">переместить в папку</a></div>
+                                    <div class="select">
+                                        <img src="/img/main/vacancy/folder.svg " alt=" ">
+                                        <select class="top-filters__row-sort" name="type">                                        
+                                            <option class="top-filters__row-sort-date  value="1">переместить в папку</option>                                                                                
+                                        </select>
                                     </div>
                                     <div class="action-print">
                                         <div class="download"><a href="">Скачать</a></div>
@@ -381,14 +402,17 @@
                         </div>
                     </div>
                 </article>
-                <article class="vacancy ">
+                <article class="vacancy vacancy--response">
                     <div class="container ">
                         <div class="vacancy-body ">
                             <div class="vacancy__column column-first">
                                 <div class="vacancy__description vacancy__description-response">
                                     <div class="vacancy-header vacancy-header--response">
                                         <div class="vacancy-header-left ">
-                                            <div class="vacancy-header__id vacancy-header__id--response">Менеджер по транспортной логистике (СНГ, Европа, Китай)</div>
+                                            <div class="vacancy-header__id checkbox vacancy-header__id--response">
+                                                <input class="checkbox__input checkbox__input__vacancy--response" type="checkbox" name="id" id="id_vacancy2">
+                                                <label class="checkbox__label checkbox__label__vacancy--response" for="id_vacancy2">Менеджер по транспортной логистике (СНГ, Европа, Китай)</label>
+                                            </div>
                                             <div class="vacancy-header__action text">Откликнулся 09.02.2021 в 10:11 на вакансию id234972 - Водитель-экспедитор</div>
                                             <div class="vacancy-header__step text">Этап воронки: телефонное интервью</div>
                                         </div>
@@ -419,8 +443,11 @@
                                     </div>
                                 </div>
                                 <div class="vacancy__action">
-                                    <div class="action-moving">
-                                        <div class="moving"><a href="">переместить в папку</a></div>
+                                    <div class="select">
+                                        <img src="/img/main/vacancy/folder.svg " alt=" ">
+                                        <select class="top-filters__row-sort" name="type">                                        
+                                            <option class="top-filters__row-sort-date  value="1">переместить в папку</option>                                                                                
+                                        </select>
                                     </div>
                                     <div class="action-print">
                                         <div class="download"><a href="">Скачать</a></div>
