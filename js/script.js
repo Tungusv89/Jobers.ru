@@ -69,12 +69,12 @@ $('.vacancy-btn__more').click(function() {
     if (!elem.hasClass('active')) {
         elem.addClass('active');
         $(this).addClass('active');
-        elem.show(2000);
+        elem.show();
 
     } else {
         elem.removeClass('active');
         $(this).removeClass('active');
-        elem.hide(2000);
+        elem.hide();
     }
 });
 

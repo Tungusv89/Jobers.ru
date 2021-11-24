@@ -126,7 +126,7 @@
         @font-face {
             font-family: "ProximaNova-Regular";
             src: url("fonts/ProximaNova-Regular.eot");
-            src: local("☺"), url("fonts/ProximaNova-Regular.woff") format("woff"), url("fonts/ProximaNova-Regular.ttf") format("truetype"), url("fonts/ProximaNova-Regular.svg") format("svg");
+            src: local("☺"), url("/fonts/ProximaNova-Regular.woff") format("woff"), url("/fonts/ProximaNova-Regular.ttf") format("ttf"), url("fonts/ProximaNova-Regular.svg") format("svg");
             font-weight: normal;
             font-style: normal;
         }
@@ -2058,6 +2058,7 @@
                 padding: 12px 24px;
                 line-height: 25px;
                 color: #ffffff;
+                font-size: 18px;
                 @media (max-width: 1440px) {
                     padding: 9px 18px;
                     font-size: 14px;
@@ -2083,6 +2084,7 @@
         .text-blue {
             margin-left: 24px;
             cursor: pointer;
+            background: none;
             @media (max-width: 1440px) {
                 margin-left: 18px;
             }
@@ -2169,6 +2171,8 @@
             flex: 1 1 65%;
             padding: 30px 40px 40px 30px;
             justify-content: space-between;
+            // max-height: 491px;
+            // overflow: auto;
             @media (max-width: 1440px) {
                 padding: 23px 30px 30px 23px;
             }
@@ -2566,27 +2570,33 @@
         
         .vacancy-btn__response {
             display: flex;
+            font-size: 18px;
             a {
                 background: #5898ff;
                 border-radius: 4px;
                 padding: 12px 24px;
                 line-height: 25px;
                 color: #ffffff;
+                font-size: 18px;
                 @media (max-width: 1440px) {
                     padding: 9px 18px;
                     line-height: 19px;
+                    font-size: 14px;
                 }
                 @media (max-width: 1200px) {
                     padding: 6px 12px;
                     line-height: 16px;
+                    font-size: 12px;
                 }
                 @media (max-width: 1100px) {
                     padding: 9px 18px;
                     line-height: 19px;
+                    font-size: 14px;
                 }
                 @media (max-width: $md5+px) {
                     line-height: 16px;
                     padding: 6px;
+                    font-size: 12px;
                 }
             }
         }
@@ -3031,15 +3041,20 @@
         .vacancy-btn__deny {
             align-items: center;
             display: flex;
-            padding-left: 20px;
+            margin-left: 20px;
+            font-size: 18px;
+            
             @media (max-width: 1440px) {
-                padding-left: 15px;
+                margin-left: 15px;
+                
             }
             @media (max-width: 1200px) {
-                padding-left: 13px;
+                margin-left: 13px;
+                
             }
             @media (max-width: 1100px) {
-                padding-left: 15px;
+                margin-left: 15px;
+                
             }
             a {
                 background: #a2a2a2;
@@ -3050,18 +3065,22 @@
                 @media (max-width: 1440px) {
                     padding: 9px 18px;
                     line-height: 19px;
+                    font-size: 14px;
                 }
                 @media (max-width: 1200px) {
                     padding: 6px 12px;
                     line-height: 16px;
+                    font-size: 12px;
                 }
                 @media (max-width: 1100px) {
                     padding: 9px 18px;
                     line-height: 19px;
+                    font-size: 14px;
                 }
                 @media (max-width: $md5+px) {
                     line-height: 16px;
                     padding: 6px;
+                    font-size: 12px;
                 }
             }
         }
@@ -4604,5 +4623,27 @@
             @media (max-width: 425px) {
                 width: 12px;
                 height: 12px;
+            }
+        }
+        .scroll{
+            max-height: 378px;
+            overflow-y: auto;
+            @media (max-width: 1060px){
+                max-height: 166px;
+            }
+            @media (max-width: 425px){
+                max-height: 170px;
+            }
+            .vacancy__keis{
+                padding-top: 18px;
+                @media (max-width: 1440px) {
+                    padding-top: 12px;
+                }
+                @media (max-width: 1200px) {
+                    padding-top: 12px;
+                }
+                @media (max-width: 1100px) {
+                    padding-top: 12px;
+                }
             }
         }
