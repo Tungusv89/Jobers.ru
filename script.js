@@ -4,8 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
     var w = $(window).outerWidth();
     if (w < 780) {
         $('header').append($(menu));
-        // document.getElementsByTagName('header').insertAdjacentHTML('afterend', menu);
-
     }
 }, false);
 
@@ -79,19 +77,21 @@ $('.vacancy-btn__more').click(function() {
         elem.hide(2000);
     }
 });
-//адаптация 
+
+//адаптация фильтров
 document.addEventListener('DOMContentLoaded', function() {
     var filterOn = document.body.querySelector('.top-filters__row-setting')
     var upRow = document.body.querySelector('.top-filters__row-action-list--btn')
     var buttons = document.body.querySelector('.top-filters__row-action-btn')
 
     var w = $(window).outerWidth();
-    //фильтров
+
     if (w < 1020) {
         upRow.append(filterOn)
         upRow.after(buttons)
     }
 }, false);
+
 //адаптация полей зарплаты
 $(document).ready(function() {
     // var groupFields = document.body.querySelector('.list-mobile')
@@ -105,20 +105,55 @@ $(document).ready(function() {
 });
 
 // настройка / сохранение воронки
-var btnSet = document.body.querySelector('.sidebar-filters__setting')
-var btnSave = document.body.querySelector('.none')
-var list = document.body.querySelector('.sidebar-filters__list')
-btnSet.addEventListener('click', function(e) {
-    btnSet.style.display = 'none'
-    btnSave.style.display = 'block'
-    list.classList.add('setting')
+var btnSet = $('.sidebar-filters__setting')
+var btnSave = $('.none')
+var list = $('.sidebar-filters__list')
+var label = list.find('label')
+var checkbox = $('.sidebar-filters__setting').find('.checkbox__lable')
+
+btnSet.click(function(e) {
+    btnSet.css('display', 'none')
+    btnSave.css('display', 'block')
+    list.addClass('setting')
+
+    for (let i = 0; i < label.length; i++) { 
+        if(!label[i].classList.contains('no-edit')) {
+            label[i].classList.add('edit')
+        } else {
+            label[i].classList.add('no-before')
+        }
+        if(label[i].classList.contains('delete')){            
+            label[i].classList.add('del-active')
+        }
+    }    
+    label.find('strong').css('display', 'none')
 });
-btnSave.addEventListener('click', function(e) {
-    btnSave.style.display = 'none'
-    btnSet.style.display = 'block'
-    list.classList.remove('setting')
+btnSave.click(function(e) {
+    btnSet.css('display', 'block')
+    btnSave.css('display', 'none')
+    list.removeClass('setting')     
+    label.removeClass('edit')
+    label.removeClass('no-before')
+    label.removeClass('del-active')
+    label.find('strong').css('display', 'inline-block')
 });
 
+//Hover при настройке фильтров слева
+
+        $('.sidebar-filters__list-items').hover(function () {
+            if ($(this).parent().hasClass('setting')) {
+                if (!$(this).hasClass('hover')) {
+                    $(this).prepend('<img src="/img/sidebar/icons/drag.svg">')
+                    $(this).addClass('hover')
+                } else {
+                    $(this).find('img').detach()
+                    $(this).removeClass('hover')
+                } 
+            }               
+        })
+    
+
+//Поворот стрелки select'а
 $('.select').click(function() {
     if (!$(this).hasClass('revert')) {
         $(this).addClass('revert').focus();
@@ -126,14 +161,14 @@ $('.select').click(function() {
         $(this).removeClass('revert')
     }
 });
+
+//Изменение текста в кнопке
 $(document).ready(function() {
     var w = $(window).outerWidth();
     const btn = $('.top-filters__row-action-btn').find('a').eq(2)
     if (w < 350) {
-
         btn.html('В папку')
     }
-
 })
 
 //Показать, скрыть фильтры
@@ -143,20 +178,16 @@ $('.top-filters__row-setting').click(function() {
         $('.advansed-filters').removeClass('active')
         $('.top-filters__row--second').find('.top-filters__row-setting-title').html('Показать фильтры')
         $('.btn__group').find('.top-filters__row-setting-title').html('Показать фильтры')
-            // $(this).
     } else if (!$('.advansed-filters').hasClass('active')) {
-
         $('.advansed-filters').show()
         $('.advansed-filters').addClass('active')
         $('.top-filters__row--second').find('.top-filters__row-setting-title').html('Скрыть фильтры')
         $('.btn__group').find('.top-filters__row-setting-title').html('Скрыть фильтры')
     }
-
 })
 
 //Кнопки по чекбоксу
 $('.vacancy-header__id--response').click(function() {
-
     const i = $('.main').find('.checkbox__input__vacancy--response')
     console.log(i)
     if (i.is(':checked')) {

@@ -3895,6 +3895,11 @@
             color: #b2b2b2;
             position: relative;
             line-height: 25px;
+            .edit {
+                &::before {
+                    background: url('/img/sidebar/icons/edit.svg') no-repeat !important;
+                }
+            }
             @media (max-width: 1440px) {
                 padding-left: 21px;
                 font-size: 14px;
@@ -3943,6 +3948,77 @@
             }
         }
         
+        .checkbox__label.edit:before {
+            width: 16px;
+            height: 16px;
+            background-size: 16px;
+            background: url('/img/sidebar/icons/edit.svg') no-repeat;
+            @media (max-width: 1440px) {
+                width: 12px;
+                height: 12px;
+                background-size: 12px;                
+            }
+            @media (max-width: 1200px) {
+                width: 11px;
+                height: 11px; 
+                background-size: 11px;               
+            }
+            @media (max-width: 1100px) {
+                width: 12px;
+                height: 12px; 
+                background-size: 12px;                
+            }
+            @media (max-width: 425px) {
+                width: 12px;
+                height: 12px;
+            }
+        }
+        .checkbox__label.no-before:before {            
+            background: none !important;
+        }
+        .checkbox__label.del-active:after { 
+            position: absolute;
+            content: "";           
+            background: url('/img/sidebar/icons/trash.svg') no-repeat ;
+            width: 16px;
+            height: 16px;
+            background-size: 16px;
+            right: -20px;
+            top: 5px;
+            @media (max-width: 1440px) {
+                width: 12px;
+                height: 12px;
+                background-size: 12px;
+                right: -16px;                
+            }
+            @media (max-width: 1200px) {
+                width: 11px;
+                height: 11px; 
+                background-size: 11px;
+                right: -15px; 
+                top: 3px;              
+            }
+            @media (max-width: 1100px) {
+                width: 12px;
+                height: 12px; 
+                background-size: 12px;
+                right: -16px; 
+                top: 4px;               
+            }
+            @media (max-width: 425px) {
+                width: 12px;
+                height: 12px;
+            }
+        }
+        .setting{
+            .checkbox__label {
+                color: #fff!important;                
+            }
+            .checkbox__input:checked+.checkbox__label {
+                font-weight: 400;
+                
+            }
+        }
         .checkbox__input:checked+.checkbox__label {
             font-weight: 600;
             color: #ffffff;
@@ -4504,5 +4580,29 @@
                 font-size: 12px;
                 line-height: 16px;
                 padding: 2.5px 20px 2.5px 8px;
+            }
+        }
+        .hover img {
+            position: absolute;
+            left: -20px;
+            top: 4px;
+            @media (max-width: 1440px) {
+                width: 12px;
+                height: 12px;
+                left: -16px;
+            }
+            @media (max-width: 1200px) {
+                width: 11px;
+                height: 11px;
+                left: -15px;
+            }
+            @media (max-width: 1100px) {
+                width: 12px;
+                height: 12px;
+                left: -16px;
+            }
+            @media (max-width: 425px) {
+                width: 12px;
+                height: 12px;
             }
         }
