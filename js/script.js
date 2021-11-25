@@ -109,7 +109,8 @@ var btnSet = $('.sidebar-filters__setting')
 var btnSave = $('.none')
 var list = $('.sidebar-filters__list')
 var label = list.find('label')
-var checkbox = $('.sidebar-filters__setting').find('.checkbox__lable')
+var input = list.find('input')
+var checkbox = $('.sidebar-filters__setting').find('.checkbox__label')
 
 btnSet.click(function(e) {
     btnSet.css('display', 'none')
@@ -127,6 +128,7 @@ btnSet.click(function(e) {
         }
     }    
     label.find('strong').css('display', 'none')
+    input.prop('checked', false)
 });
 btnSave.click(function(e) {
     btnSet.css('display', 'block')
@@ -137,6 +139,12 @@ btnSave.click(function(e) {
     label.removeClass('del-active')
     label.find('strong').css('display', 'inline-block')
 });
+//Отключение действий input по умолчанию
+$('.checkbox__input').click(function (event) {
+    if($(this).parent().parent().hasClass('setting')){
+        event.preventDefault()
+    }
+})
 
 //Hover при настройке фильтров слева
 

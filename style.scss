@@ -4061,6 +4061,7 @@ footer {
     .checkbox__input:checked + .checkbox__label {
         font-weight: 400;
     }
+    // .edit{&::before{content: none;}}
 }
 
 .checkbox__input:checked + .checkbox__label {
