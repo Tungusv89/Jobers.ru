@@ -196,3 +196,16 @@ $('.vacancy-header__id--response').click(function() {
         $('.top-filters__row-action-btn').css('display', 'none')
     }
 })
+
+//Адаптация на странице профиля
+$(document).ready(function () {
+    const w = $(window).outerWidth();
+    const elemX = $('.profile__img');
+    const elemXParent = $('.profile__img').parent().next();
+    const input = elemXParent.children().eq(0);
+    const linkLoad = elemXParent.children().eq(4);
+    if (w < 480) {
+        elemX.after(linkLoad)
+        elemX.before(input)
+    }
+})
