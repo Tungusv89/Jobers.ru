@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet " href="css/style.css">
     <title>Отклики</title>
 </head>
@@ -30,19 +30,23 @@
                         <nav class="header__column-menu">
                             <ul class="header-bottom-menu__list ">
                                 <li>
-                                    <div class="header-bottom-menu__list-icon "><img src="/img/header/01.svg " alt=" "></div>
+                                    <div class="header-bottom-menu__list-icon "><img src="/img/header/01.svg " alt=" ">
+                                    </div>
                                     <a href="index.html">Вакансии</a>
                                 </li>
                                 <li>
-                                    <div class="header-bottom-menu__list-icon "><img src="/img/header/02.svg " alt=" "></div>
-                                    <a href="response.html" class="active ">Кандидаты</a>
+                                    <div class="header-bottom-menu__list-icon "><img src="/img/header/02.svg " alt=" ">
+                                    </div>
+                                    <a href="response.html">Кандидаты</a>
                                 </li>
                                 <li>
-                                    <div class="header-bottom-menu__list-icon "><img src="/img/header/03.svg " alt=" "></div>
+                                    <div class="header-bottom-menu__list-icon "><img src="/img/header/03.svg " alt=" ">
+                                    </div>
                                     <a href="Тарифы ">Тарифы</a>
                                 </li>
                                 <li>
-                                    <div class="header-bottom-menu__list-icon "><img src="/img/header/04.svg " alt=" "></div>
+                                    <div class="header-bottom-menu__list-icon "><img src="/img/header/04.svg " alt=" ">
+                                    </div>
                                     <a>Ещё</a>
                                     <div class="more ">
                                         <div class="more-body ">
@@ -82,7 +86,8 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="header-bottom-menu__list-icon "><img src="/img/header/05.svg " alt=" "></div>
+                                    <div class="header-bottom-menu__list-icon "><img src="/img/header/05.svg " alt=" ">
+                                    </div>
                                     <a>Поддержка</a>
                                     <div class="support ">
                                         <div class="support-body ">
@@ -98,8 +103,10 @@
                                                 <a href="mailto:zarzov.s@expas.ru ">zarzov.s@expas.ru</a>
                                             </div>
                                             <div class="support__phone before ">
-                                                <a href=" ">8 (812) 200-01-03</a><br>Добавить 208</div>
-                                            <div class="support__info ">Звоните по любому вопросу<br>с 09:00 до 18:00</div>
+                                                <a href=" ">8 (812) 200-01-03</a><br>Добавить 208
+                                            </div>
+                                            <div class="support__info ">Звоните по любому вопросу<br>с 09:00 до 18:00
+                                            </div>
                                         </div>
                                     </div>
                                 </li>
@@ -110,7 +117,8 @@
                 <div class="header__column ">
                     <div class="header__column-login ">
                         <div class="header__column-login-column ">
-                            <div class="header__column-login-column-icon "><img src="/img/header/image.svg " alt=" "></div>
+                            <div class="header__column-login-column-icon "><img src="/img/header/image.svg " alt=" ">
+                            </div>
                         </div>
                         <div class="header__column-login-column ">
                             <div class="header__column-login-column-info ">
@@ -118,7 +126,8 @@
                                 <div class="header__column-login-column-info-number ">Кабинет — 249358</div>
                             </div>
                         </div>
-                        <div class="header__column-login-column-arrow "><img src="/img/header/arrow_down.svg " alt=" "></div>
+                        <div class="header__column-login-column-arrow "><img src="/img/header/arrow_down.svg " alt=" ">
+                        </div>
                         <div class="profile ">
                             <div class="profile-body ">
                                 <div class="profile__list-body ">
@@ -195,43 +204,65 @@
                             <div class="content-profile__row">
                                 <div class="row__column">
                                     <div class="row__column-body">
-                                        <div class="profile__title">Профиль</div>
-                                        <div class="profile__info">
+                                        <div class="profile__title profil">Профиль</div>
+                                        <form class="profile__info">
                                             <div class="profile__column">
-
-                                                <div class="profile__img"><img src="./img/pop-up/support/icons/close.svg " alt=" "></div>
+                                                <div class="profile__img"><img src="./img/main/profile/img.svg" alt=" "></div>
                                             </div>
                                             <div class="profile__column">
-                                                <div class="profile__id-number ">
-                                                    <a href="">id 249358</a>
+                                                <div class="profile__fields">
+                                                    <input type="text" placeholder="id 249358">
                                                 </div>
                                                 <div class="profile__subtitle">Вакансии</div>
                                                 <div class="profile__text">18 вакансий</div>
                                                 <div class="profile__link link">Перейти к списку вакансий</div>
                                                 <div class="profile__link link">Загрузить новое фото</div>
                                             </div>
-
-                                        </div>
-
+                                        </form>
                                     </div>
                                 </div>
                                 <div class="row__column">
-                                    <div class="row__column-body"></div>
+                                    <form class="row__column-body">
+                                        <div class="profile__title contacts">Контакты</div>
+                                        <div class="profile__info profile__info-fields">
+                                            <div class="profile__fields"><input type="text" placeholder="Имя Фамилия *" required id="fio"></div>
+                                            <div class="profile__fields"><input type="text" placeholder="Телефон *" required id="tel"></div>
+                                            <div class="profile__fields"><input type="text" placeholder="Электронная почта" id="email"></div>
+                                            <div class="profile__fields"><input type="text" placeholder="Город" id="city"></div>
+                                        </div>
+                                        <button type="submit" class="btn-blue">
+                                            <a href="">Сохранить</a>
+                                        </button>
+                                    </form>
                                 </div>
                             </div>
                             <div class="content-profile__row">
                                 <div class="row__column">
-                                    <div class="row__column-body"></div>
-                                </div>
-                                <div class="row__column">
-                                    <div class="row__column-body"></div>
-                                </div>
+                                    <form class="row__column-body">
+                                        <div class="profile__title password">Изменение пароля</div>
+                                        <div class="profile__info profile__info-password-fields">
+                                            <div class="profile__fields">
+                                                <div class="fields__title">Текущий пароль *</div>
+                                                <input type="password" required id="actual">
+                                            </div>
+                                            <div class="profile__fields">
+                                                <div class="fields__title">Новый пароль *</div>
+                                                <input type="password" required id="new">
+                                            </div>
+                                            <div class="profile__fields">
+                                                <div class="fields__title">Повторите новый пароль *</div>
+                                                <input type="password" required id="repit-new">
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn-blue">
+                                            <a href="">Сохранить</a>
+                                        </button>
+                                    </form>
+                                </div>                                
                             </div>
                         </div>
                     </div>
                 </div>
-
-
                 <footer>
                     <div class="container ">
                         <div class="footer-body ">
@@ -324,10 +355,11 @@
                             </div>
                         </div>
                     </div>
-                </footer>
+                </footer>      
             </section>
             <aside class="main__column "></aside>
         </div>
+    </div>
     </div>
     <script src="/js/jquery_3.3.1.min.js"></script>
     <script src="/js/script.js "></script>
