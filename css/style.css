@@ -6840,3 +6840,71 @@ padding-bo .vacancy-header--response {
 .profile__info-password-fields input {
   width: 35%;
 }
+
+/*Меню профиль*/
+.profile__menu-item {
+  border: none;
+}
+
+.profile__menu {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 20px;
+  color: #B2B2B2;
+  margin-bottom: 24px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.profile__menu.active {
+  color: #ffffff;
+}
+
+.profile__menu::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-size: 24px;
+  left: 0px;
+}
+
+.prof::before {
+  background: url("/img/sidebar/profile/user.svg");
+}
+
+.prof.active::before {
+  background: url("/img/sidebar/profile/user-white.svg");
+}
+
+.check::before {
+  background: url("/img/sidebar/profile/check.svg");
+}
+
+.check.active::before {
+  background: url("/img/sidebar/profile/check-white.svg");
+}
+
+.company::before {
+  background: url("/img/sidebar/profile/company.svg");
+}
+
+.company.active::before {
+  background: url("/img/sidebar/profile/company-white.svg");
+}
+
+.all-check::before {
+  background: url("/img/sidebar/profile/check.svg");
+}
+
+.all-check.active::before {
+  background: url("/img/sidebar/profile/check-white.svg");
+}
+
+.act::before {
+  background: url("/img/sidebar/profile/check.svg");
+}
+
+.act.active::before {
+  background: url("/img/sidebar/profile/check-white.svg");
+}
