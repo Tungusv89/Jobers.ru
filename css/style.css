@@ -6869,7 +6869,7 @@ padding-bo .vacancy-header--response {
   color: #000000;
   position: relative;
   padding-left: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   border-bottom: 2px solid #e5e5e5;
 }
 
@@ -7060,7 +7060,7 @@ padding-bo .vacancy-header--response {
   }
 }
 
-.profile__fields input {
+.profile__fields span {
   background: #fafafa;
   border: 1px solid #e5e5e5;
   border-radius: 4px;
@@ -7069,10 +7069,11 @@ padding-bo .vacancy-header--response {
   color: #585858;
   padding: 8px 12px 7px;
   width: 58%;
+  display: inline-block;
 }
 
 @media (max-width: 1440px) {
-  .profile__fields input {
+  .profile__fields span {
     font-size: 14px;
     line-height: 19px;
     padding: 6px 9px 6px;
@@ -7080,7 +7081,7 @@ padding-bo .vacancy-header--response {
 }
 
 @media (max-width: 1200px) {
-  .profile__fields input {
+  .profile__fields span {
     font-size: 12px;
     line-height: 16px;
     padding: 5px 8px 4px;
@@ -7088,7 +7089,7 @@ padding-bo .vacancy-header--response {
 }
 
 @media (max-width: 1100px) {
-  .profile__fields input {
+  .profile__fields span {
     font-size: 14px;
     line-height: 19px;
     padding: 6px 9px 6px;
@@ -7096,13 +7097,13 @@ padding-bo .vacancy-header--response {
 }
 
 @media (max-width: 480px) {
-  .profile__fields input {
+  .profile__fields span {
     width: 100%;
   }
 }
 
 @media (max-width: 425px) {
-  .profile__fields input {
+  .profile__fields span {
     font-size: 12px;
     line-height: 16px;
     padding: 5px 8px 4px;
@@ -7201,7 +7202,7 @@ padding-bo .vacancy-header--response {
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
-  color: #5898FF;
+  color: #5898ff;
   cursor: pointer;
 }
 
@@ -7236,7 +7237,8 @@ padding-bo .vacancy-header--response {
   }
 }
 
-.profile__info-fields, .profile__info-password-fields {
+.profile__info-fields,
+.profile__info-password-fields {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7247,57 +7249,67 @@ padding-bo .vacancy-header--response {
 }
 
 @media (max-width: 480px) {
-  .profile__info-fields, .profile__info-password-fields {
+  .profile__info-fields,
+  .profile__info-password-fields {
     padding-top: 12px;
   }
 }
 
-.profile__info-fields .profile__fields, .profile__info-password-fields .profile__fields {
+.profile__info-fields .profile__fields,
+.profile__info-password-fields .profile__fields {
   margin: 15px 0px;
 }
 
 @media (max-width: 1440px) {
-  .profile__info-fields .profile__fields, .profile__info-password-fields .profile__fields {
+  .profile__info-fields .profile__fields,
+  .profile__info-password-fields .profile__fields {
     margin: 11px 0px;
   }
 }
 
 @media (max-width: 1200px) {
-  .profile__info-fields .profile__fields, .profile__info-password-fields .profile__fields {
+  .profile__info-fields .profile__fields,
+  .profile__info-password-fields .profile__fields {
     margin: 10px 0px;
   }
 }
 
 @media (max-width: 1100px) {
-  .profile__info-fields .profile__fields, .profile__info-password-fields .profile__fields {
+  .profile__info-fields .profile__fields,
+  .profile__info-password-fields .profile__fields {
     margin: 11px 0px;
   }
 }
 
 @media (max-width: 480px) {
-  .profile__info-fields .profile__fields, .profile__info-password-fields .profile__fields {
+  .profile__info-fields .profile__fields,
+  .profile__info-password-fields .profile__fields {
     margin: 6px 0px;
   }
 }
 
-.profile__info-fields:first-child, .profile__info-password-fields:first-child {
+.profile__info-fields:first-child,
+.profile__info-password-fields:first-child {
   margin-top: 10px;
 }
 
 @media (max-width: 1440px) {
-  .profile__info-fields:first-child, .profile__info-password-fields:first-child {
+  .profile__info-fields:first-child,
+  .profile__info-password-fields:first-child {
     margin-top: 7px;
   }
 }
 
 @media (max-width: 1200px) {
-  .profile__info-fields:first-child, .profile__info-password-fields:first-child {
+  .profile__info-fields:first-child,
+  .profile__info-password-fields:first-child {
     margin-top: 6px;
   }
 }
 
 @media (max-width: 1100px) {
-  .profile__info-fields:first-child, .profile__info-password-fields:first-child {
+  .profile__info-fields:first-child,
+  .profile__info-password-fields:first-child {
     margin-top: 7px;
   }
 }
@@ -7379,54 +7391,48 @@ padding-bo .vacancy-header--response {
   border: none;
 }
 
-.prof::before {
+.prof a::before {
   background: url("/img/sidebar/profile/user.svg");
 }
 
-.prof.active::before {
+.prof.active a::before {
   background: url("/img/sidebar/profile/user-white.svg");
 }
 
-.check::before {
+.check a::before {
   background: url("/img/sidebar/profile/check.svg");
 }
 
-.check.active::before {
+.check.active a::before {
   background: url("/img/sidebar/profile/check-white.svg");
 }
 
-.company::before {
+.company a::before {
   background: url("/img/sidebar/profile/company.svg");
 }
 
-.company.active::before {
+.company.active a::before {
   background: url("/img/sidebar/profile/company-white.svg");
 }
 
-.all-check::before {
+.all-check a::before {
   background: url("/img/sidebar/profile/check.svg");
 }
 
-.all-check.active::before {
+.all-check.active a::before {
   background: url("/img/sidebar/profile/check-white.svg");
 }
 
-.act::before {
+.act a::before {
   background: url("/img/sidebar/profile/check.svg");
 }
 
-.act.active::before {
+.act.active a::before {
   background: url("/img/sidebar/profile/check-white.svg");
 }
 
 .sidebar-filters__list .profile__menu {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 20px;
-  color: #B2B2B2;
   margin-bottom: 24px;
-  padding-left: 30px;
-  position: relative;
 }
 
 @media (max-width: 1440px) {
@@ -7434,7 +7440,6 @@ padding-bo .vacancy-header--response {
     font-size: 18px;
     line-height: 15px;
     margin-bottom: 18px;
-    padding-left: 23px;
   }
 }
 
@@ -7443,7 +7448,6 @@ padding-bo .vacancy-header--response {
     font-size: 16px;
     line-height: 13px;
     margin-bottom: 16px;
-    padding-left: 20px;
   }
 }
 
@@ -7452,15 +7456,47 @@ padding-bo .vacancy-header--response {
     font-size: 18px;
     line-height: 15px;
     margin-bottom: 18px;
+  }
+}
+
+.sidebar-filters__list .profile__menu.active a {
+  color: #ffffff;
+}
+
+.sidebar-filters__list .profile__menu a {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 20px;
+  color: #b2b2b2;
+  position: relative;
+  padding-left: 30px;
+}
+
+@media (max-width: 1440px) {
+  .sidebar-filters__list .profile__menu a {
+    font-size: 18px;
+    line-height: 15px;
     padding-left: 23px;
   }
 }
 
-.sidebar-filters__list .profile__menu.active {
-  color: #ffffff;
+@media (max-width: 1200px) {
+  .sidebar-filters__list .profile__menu a {
+    font-size: 16px;
+    line-height: 13px;
+    padding-left: 20px;
+  }
 }
 
-.sidebar-filters__list .profile__menu::before {
+@media (max-width: 1100px) {
+  .sidebar-filters__list .profile__menu a {
+    font-size: 18px;
+    line-height: 15px;
+    padding-left: 23px;
+  }
+}
+
+.sidebar-filters__list .profile__menu a::before {
   content: "";
   position: absolute;
   width: 24px;
@@ -7470,7 +7506,7 @@ padding-bo .vacancy-header--response {
 }
 
 @media (max-width: 1440px) {
-  .sidebar-filters__list .profile__menu::before {
+  .sidebar-filters__list .profile__menu a::before {
     width: 18px;
     height: 18px;
     background-size: 18px;
@@ -7478,7 +7514,7 @@ padding-bo .vacancy-header--response {
 }
 
 @media (max-width: 1200px) {
-  .sidebar-filters__list .profile__menu::before {
+  .sidebar-filters__list .profile__menu a::before {
     width: 16px;
     height: 16px;
     background-size: 16px;
@@ -7487,9 +7523,139 @@ padding-bo .vacancy-header--response {
 }
 
 @media (max-width: 1100px) {
-  .sidebar-filters__list .profile__menu::before {
+  .sidebar-filters__list .profile__menu a::before {
     width: 18px;
     height: 18px;
     background-size: 18px;
   }
+}
+
+/*Компании*/
+.profile__info-company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #FFFFFF;
+  border: 2px solid #E5E5E5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  padding: 30px 40px 40px 40px;
+  margin-top: 20px;
+}
+
+.profile__info-company .btn-blue {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin-top: 42px;
+}
+
+.company__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.company::before {
+  background: url("/img/main/company/company.svg");
+}
+
+.new-payer::before {
+  background: url("/img/main/company/payer.svg");
+  top: 2px;
+}
+
+.info-company__title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 41px;
+  color: #000000;
+  margin-bottom: 4px;
+}
+
+.info-company__subtitle {
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+}
+
+.first-row {
+  margin-top: 40px;
+}
+
+.second-row {
+  margin-top: 20px;
+}
+
+.second-row .profile__fields {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
+.second-row .profile__fields:first-child {
+  margin-right: 40px;
+}
+
+.second-row .profile__fields input {
+  width: 100%;
+}
+
+.column-left {
+  margin-right: 20px;
+}
+
+.column-left, .column-right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30%;
+          flex: 1 1 30%;
+}
+
+.column-center {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
+  margin: 0px 20px;
+}
+
+.column-right {
+  margin-left: 20px;
+}
+
+.company__row-column .profile__fields:first-child {
+  margin-bottom: 20px;
+}
+
+.company__row-column .profile__fields input {
+  width: 100%;
+}
+
+.content-profile__body .content-company__row {
+  margin-top: 40px;
+}
+
+.profile__info-payer-fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 30px;
+}
+
+.profile__info-payer-fields .profile__fields {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 27% x;
+          flex: 0 1 27% x;
+}
+
+.profile__info-payer-fields input {
+  width: 100%;
+}
+
+.profile__info-payer-fields .btn-blue {
+  margin-left: 30px;
 }
