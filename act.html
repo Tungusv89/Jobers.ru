@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet " href="css/style.css">
-    <title>Компании</title>
+    <title>Акты</title>
 </head>
 
 <body>
@@ -163,10 +163,10 @@
                             <li class="sidebar-filters__list-items profile__menu check">
                                 <a href="">Лицевой счет</a>
                             </li>
-                            <li class="sidebar-filters__list-items profile__menu company active">
+                            <li class="sidebar-filters__list-items profile__menu company">
                                 <a href="company.html">Компании</a>
                             </li>
-                            <li class="sidebar-filters__list-items profile__menu all-check">
+                            <li class="sidebar-filters__list-items profile__menu all-check active">
                                 <a href="all-check.html">Счета</a>
                             </li>
                             <li class="sidebar-filters__list-items profile__menu act">
@@ -179,81 +179,47 @@
             <section class="main__column ">
                 <div class="content-profile">
                     <div class="container">
-                        <div class="content-profile__body">                            
-                            <div class="content-profile__row">
-                                <div class="row__column">
-                                    <form class="row__column-body">
-                                        <div class="profile__title company">Компании</div>
-                                        <div class="profile__info profile__info-company">
-                                            <div class="info-company__header">
-                                                <div class="info-company__title">ООО "Газелькин"</div>
-                                                <div class="info-company__subtitle">ИНН:  9872345987</div>
-                                            </div>
-                                            <div class="company__row first-row">
-                                                <div class="company__row-column column-left">
-                                                    <div class="profile__fields">
-                                                        <div class="fields__title">Фамилия и инициалы</div>
-                                                        <input type="text" id="fio">
-                                                    </div>
-                                                    <div class="profile__fields">
-                                                        <div class="fields__title">Город</div>
-                                                        <input type="text" id="city">
-                                                    </div>
-                                                </div>
-                                                <div class="company__row-column column-center">
-                                                    <div class="profile__fields">
-                                                        <div class="fields__title">Юридический адрес</div>
-                                                        <input type="text" id="adress-ur">
-                                                    </div>
-                                                    <div class="profile__fields">
-                                                        <div class="fields__title">ОГРН</div>
-                                                        <input type="text" id="ogrn">
-                                                    </div>
-                                                </div> 
-                                                <div class="company__row-column column-right">
-                                                    <div class="profile__fields">
-                                                        <div class="fields__title">КПП</div>
-                                                        <input type="text" id="kpp">
-                                                    </div>
-                                                    <div class="profile__fields">
-                                                        <div class="fields__title">Телефон</div>
-                                                        <input type="text" id="phone">
-                                                    </div>
-                                                </div>                                                                                               
-                                            </div> 
-                                            <div class="company__row second-row">
-                                                <div class="profile__fields">
-                                                    <div class="fields__title">Адрес доставки закрывающих документов</div>
-                                                    <input type="text" id="adress">
-                                                </div>
-                                                <div class="profile__fields">
-                                                    <div class="fields__title">Контактное лицо для передачи документов</div>
-                                                    <input type="text" id="contact">
-                                                </div>                                               
-                                            </div>
-                                            <button type="submit" class="btn-blue">
-                                                <a href="">Сохранить</a>
-                                            </button>                                            
-                                        </div>
-                                        
-                                    </form>
-                                </div>                                
-                            </div>
+                        <div class="content-profile__body">
                             <div class="content-profile__row content-company__row">
                                 <div class="row__column">
-                                    <form class="row__column-body">
-                                        <div class="profile__title new-payer">Добавить нового плательщика</div>
-                                        <div class="profile__info profile__info-payer-fields">
-                                            <div class="profile__fields">
-                                                <div class="fields__title">ИНН</div>
-                                                <input type="text" id="inn">
+                                    <div class="row__column-body">
+                                        <div class="profile__title all-check">Счета</div>                                        
+                                        <div class="all-check__table">
+                                            <div class="all-check__header act__header">
+                                                <li class="all-check__header-title">Номер</li>
+                                                <li class="all-check__header-title">Дата</li>
+                                                <li class="all-check__header-title">Сумма</li>
+                                                <li class="all-check__header-title">Плательщик</li>
+                                                <li class="all-check__header-title">Получатель</li>
+                                                <!-- <li class="all-check__header-title">Статус</li> -->
+                                                <li class="all-check__header-title">Действия</li>
                                             </div>
-                                            <button type="submit" class="btn-blue">
-                                                <a href="">Заполнить данные по ИНН</a>
-                                            </button>                                           
+                                            <div class="all-check__row act__row">
+                                                <li class="all-check__row-title">161550</li>
+                                                <li class="all-check__row-title">28.09.2021</li>
+                                                <li class="all-check__row-title">3 757 р</li>
+                                                <li class="all-check__row-title all-check__row-title--small">ООО "МАДЖЕСТИ +"</li>
+                                                <li class="all-check__row-title all-check__row-title--small">ИП Алиев Руслан Чингизович</li>
+                                                <!-- <li class="all-check__row-title">Ожидает оплаты</li> -->
+                                                <li class="all-check__row-title all-check__row-title--action">
+                                                    <img class="delete" src="/img/main/check/trash.svg" alt="">
+                                                    <img class="download-check" src="/img/main/check/download-check.svg" alt="">
+                                                </li>
+                                            </div>
+                                            <div class="all-check__row act__row">
+                                                <li class="all-check__row-title">161550</li>
+                                                <li class="all-check__row-title">28.09.2021</li>
+                                                <li class="all-check__row-title">3 757 р</li>
+                                                <li class="all-check__row-title all-check__row-title--small">ООО "МАДЖЕСТИ +"</li>
+                                                <li class="all-check__row-title all-check__row-title--small">ИП Алиев Руслан Чингизович</li>
+                                                <!-- <li class="all-check__row-title">Оплачен</li> -->
+                                                <li class="all-check__row-title all-check__row-title--action">
+                                                    <img class="delete" src="/img/main/check/trash.svg" alt="">
+                                                    <img class="download-check" src="/img/main/check/download-check.svg" alt="">
+                                                </li>
+                                            </div>
                                         </div>
-                                        
-                                    </form>
+                                    </div>
                                 </div>                                
                             </div>
                         </div>

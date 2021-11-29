@@ -5760,3 +5760,17 @@ footer {
         height: 18px;        
     }
 }
+
+/*Акты*/
+
+.act__row{
+    width: 85%;
+    @media (max-width: 1100px) {
+        width: 100%;            
+    }
+}
+.act__header{
+    @media (max-width: 1100px) {
+        width: 100%;            
+    }
+}

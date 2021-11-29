@@ -8257,3 +8257,20 @@ padding-bo .vacancy-header--response {
     height: 18px;
   }
 }
+
+/*Акты*/
+.act__row {
+  width: 85%;
+}
+
+@media (max-width: 1100px) {
+  .act__row {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .act__header {
+    width: 100%;
+  }
+}
