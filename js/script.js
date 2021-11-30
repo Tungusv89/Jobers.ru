@@ -152,7 +152,7 @@ $('.checkbox__input').click(function (event) {
             if ($(this).parent().hasClass('setting')) {
                 if (!$(this).hasClass('hover')) {
                     $(this).prepend('<img src="/img/sidebar/icons/drag.svg">')
-                    $(this).addClass('hover')
+                    $(this).addClass('hover')                    
                 } else {
                     $(this).find('img').detach()
                     $(this).removeClass('hover')

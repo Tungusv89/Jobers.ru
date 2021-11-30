@@ -113,7 +113,7 @@ h6 {
 /*---Основная сетка---*/
 @font-face {
   font-family: "ProximaNova-Regular";
-  src: url("fonts/ProximaNova-Regular.eot");
+  src: url("/fonts/ProximaNova-Regular.eot");
   src: local("☺"), url("/fonts/ProximaNova-Regular.woff") format("woff"), url("/fonts/ProximaNova-Regular.ttf") format("ttf"), url("fonts/ProximaNova-Regular.svg") format("svg");
   font-weight: normal;
   font-style: normal;
@@ -121,7 +121,7 @@ h6 {
 
 @font-face {
   font-family: "ProximaNova-Semibold";
-  src: url("fonts/ProximaNova-Semibold.eot");
+  src: url("/fonts/ProximaNova-Semibold.eot");
   src: local("☺"), url("/fonts/ProximaNova-Semibold.woff") format("woff"), url("/fonts/ProximaNova-Semibold.ttf") format("ttf"), url("fonts/ProximaNova-Semibold.svg") format("svg");
   font-weight: normal;
   font-style: normal;
@@ -8269,8 +8269,52 @@ padding-bo .vacancy-header--response {
   }
 }
 
+.act__header {
+  width: 85%;
+}
+
 @media (max-width: 1100px) {
   .act__header {
     width: 100%;
+  }
+}
+
+/*Личный счет*/
+.personal__row-title, .personal__header-title {
+  text-align: start;
+}
+
+.first {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 47%;
+          flex: 0 0 47%;
+}
+
+.links a {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #5898FF;
+}
+
+@media (max-width: 1440px) {
+  .links a {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .links a {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .links a {
+    font-size: 14px;
+    line-height: 19px;
   }
 }

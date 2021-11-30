@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet " href="css/style.css">
-    <title>Профиль</title>
+    <title>Личный счет</title>
 </head>
 
 <body>
@@ -157,10 +157,10 @@
                 <div class="sidebar-filters-body ">
                     <div class="sidebar-filters__item profile__menu-item">                        
                         <ul class="sidebar-filters__list ">
-                            <li class="sidebar-filters__list-items profile__menu prof active">
+                            <li class="sidebar-filters__list-items profile__menu prof ">
                                 <a href="profile.html">Профиль</a>                                
                             </li>
-                            <li class="sidebar-filters__list-items profile__menu check">
+                            <li class="sidebar-filters__list-items profile__menu check active">
                                 <a href="personal-account.html">Лицевой счет</a>
                             </li>
                             <li class="sidebar-filters__list-items profile__menu company">
@@ -180,63 +180,28 @@
                 <div class="content-profile">
                     <div class="container">
                         <div class="content-profile__body">
-                            <div class="content-profile__row">
+                            <div class="content-profile__row content-company__row">
                                 <div class="row__column">
                                     <div class="row__column-body">
-                                        <div class="profile__title profil">Профиль</div>
-                                        <form class="profile__info">
-                                            <div class="profile__column">
-                                                <div class="profile__img"><img src="./img/main/profile/img.svg" alt=" "></div>
+                                        <div class="profile__title all-check">Счета</div>                                        
+                                        <div class="all-check__table">
+                                            <div class="all-check__header act__header personal__header">
+                                                <li class="all-check__header-title personal__header-title first">Наименование</li>
+                                                <li class="all-check__header-title personal__header-title">Количество услуг, шт.</li>                                                
+                                                <li class="all-check__header-title personal__header-title">Действия</li>
                                             </div>
-                                            <div class="profile__column">
-                                                <div class="profile__fields">
-                                                    <span>id 249358</span>
-                                                </div>
-                                                <div class="profile__subtitle">Вакансии</div>
-                                                <div class="profile__text">18 вакансий</div>
-                                                <div class="profile__link link">Перейти к списку вакансий</div>
-                                                <div class="profile__link link">Загрузить новое фото</div>
+                                            <div class="all-check__row act__row">
+                                                <li class="all-check__row-title personal__row-title first">Расширенный с автообновлением</li>
+                                                <li class="all-check__row-title personal__row-title">686</li>
+                                                <li class="all-check__row-title personal__row-title links"><a href="">Опубликовать вакансию</a></li>                                                
                                             </div>
-                                        </form>
+                                            <div class="all-check__row act__row">
+                                                <li class="all-check__row-title personal__row-title first">Расширенный с автообновлением</li>
+                                                <li class="all-check__row-title personal__row-title">686</li>
+                                                <li class="all-check__row-title personal__row-title links"><a href="">Опубликовать вакансию</a></li>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="row__column">
-                                    <form class="row__column-body">
-                                        <div class="profile__title contacts">Контакты</div>
-                                        <div class="profile__info profile__info-fields">
-                                            <div class="profile__fields"><input type="text" placeholder="Имя Фамилия *" required id="fio"></div>
-                                            <div class="profile__fields"><input type="text" placeholder="Телефон *" required id="tel"></div>
-                                            <div class="profile__fields"><input type="text" placeholder="Электронная почта" id="email"></div>
-                                            <div class="profile__fields"><input type="text" placeholder="Город" id="city"></div>
-                                        </div>
-                                        <button type="submit" class="btn-blue">
-                                            <a href="">Сохранить</a>
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="content-profile__row">
-                                <div class="row__column">
-                                    <form class="row__column-body">
-                                        <div class="profile__title password">Изменение пароля</div>
-                                        <div class="profile__info profile__info-password-fields">
-                                            <div class="profile__fields">
-                                                <div class="fields__title">Текущий пароль *</div>
-                                                <input type="password" required id="actual">
-                                            </div>
-                                            <div class="profile__fields">
-                                                <div class="fields__title">Новый пароль *</div>
-                                                <input type="password" required id="new">
-                                            </div>
-                                            <div class="profile__fields">
-                                                <div class="fields__title">Повторите новый пароль *</div>
-                                                <input type="password" required id="repit-new">
-                                            </div>
-                                        </div>
-                                        <button type="submit" class="btn-blue">
-                                            <a href="">Сохранить</a>
-                                        </button>
-                                    </form>
                                 </div>                                
                             </div>
                         </div>
