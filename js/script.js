@@ -217,3 +217,11 @@ $(document).ready(function () {
         elemX.before(input)
     }
 })
+$(document).ready(function () {
+    const w = $(window).outerWidth();
+    if (w < 1100) {
+        
+        $('.header-menu__icon-none').css('display', 'none')
+    }
+    
+})

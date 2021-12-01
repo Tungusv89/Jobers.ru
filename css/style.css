@@ -94,6 +94,7 @@ h6 {
 /*--------------------*/
 /*Оболочка*/
 .wrapper {
+  height: 100%;
   overflow: hidden;
 }
 
@@ -196,6 +197,23 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header__column:first-child.no-backgraund {
+  background: #fafafa;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+@media (max-width: 1440px) {
+  .header__column:first-child.no-backgraund {
+    height: 75px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .header__column:first-child.no-backgraund {
+    border-bottom: none;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -408,6 +426,12 @@ header {
 @media (max-width: 1100px) {
   .btn a {
     padding: 9px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn a {
+    padding: 6px 12px;
   }
 }
 
@@ -1283,6 +1307,13 @@ li.profile__list-item a {
   display: flex;
 }
 
+.main.posted {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
 .main__column:last-child {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 14%;
@@ -1319,6 +1350,35 @@ li.profile__list-item a {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
+    border-right: none;
+  }
+}
+
+.main__center {
+  background-color: #fff;
+  -webkit-box-flex: 0 !important;
+      -ms-flex: 0 0 69% !important;
+          flex: 0 0 69% !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 1100px) {
+  .main__center {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 100% !important;
+            flex: 0 0 100% !important;
     border-right: none;
   }
 }
@@ -8316,5 +8376,63 @@ padding-bo .vacancy-header--response {
   .links a {
     font-size: 14px;
     line-height: 19px;
+  }
+}
+
+/*Размещенные вакансии*/
+.first-12 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 12%;
+          flex: 0 0 12%;
+}
+
+.second-32 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 32%;
+          flex: 0 0 32%;
+}
+
+.posted-vacancies.btn-blue {
+  margin-top: 40px;
+}
+
+@media (max-width: 630px) {
+  .posted-vacancies.btn-blue a {
+    padding: 6px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 630px) {
+  .posted-vacancies.btn-blue {
+    margin-top: 20px;
+  }
+}
+
+.posted::before {
+  width: 14px;
+  height: 14px;
+  background-size: 14px;
+}
+
+@media (max-width: 630px) {
+  .posted {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+@media (max-width: 630px) {
+  .posted .personal__header-title, .posted .personal__row-title {
+    font-size: 10px;
+    line-height: 14px;
+  }
+}
+
+@media (max-width: 630px) {
+  .posted .personal__header-title a, .posted .personal__row-title a {
+    font-size: 10px;
+    line-height: 14px;
   }
 }
