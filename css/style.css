@@ -94,7 +94,6 @@ h6 {
 /*--------------------*/
 /*Оболочка*/
 .wrapper {
-  height: 100%;
   overflow: hidden;
 }
 
@@ -1311,7 +1310,6 @@ li.profile__list-item a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100%;
 }
 
 .main__column:last-child {
@@ -6888,6 +6886,10 @@ padding-bo .vacancy-header--response {
   background: url("/img/main/check/all-check.svg");
 }
 
+.shop::before {
+  background: url("/img/main/purchase/shop.svg");
+}
+
 .profile__title {
   font-family: "ProximaNova-Semibold";
   font-style: normal;
@@ -8435,4 +8437,292 @@ padding-bo .vacancy-header--response {
     font-size: 10px;
     line-height: 14px;
   }
+}
+
+/*Покупки*/
+.first-40 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+}
+
+@media (max-width: 480px) {
+  .first-40 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 37%;
+            flex: 0 0 37%;
+  }
+}
+
+.second-20 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
+}
+
+@media (max-width: 480px) {
+  .second-20 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 44%;
+            flex: 0 0 44%;
+  }
+}
+
+.purchase__table {
+  width: 90%;
+}
+
+@media (max-width: 1100px) {
+  .purchase__table {
+    width: 100%;
+  }
+}
+
+.purchase__header-title {
+  margin-top: 40px;
+  padding: 0px;
+}
+
+@media (max-width: 1440px) {
+  .purchase__header-title {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .purchase__header-title {
+    margin-top: 27px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .purchase__header-title {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .purchase__header-title {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .personal__header-title, .personal__row-title {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 11px 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .personal__header-title, .personal__row-title {
+    font-size: 10px;
+    line-height: 14px;
+    padding: 7px 0px;
+  }
+}
+
+.purchase__row-title {
+  margin-top: 20px;
+  padding: 0px;
+}
+
+@media (max-width: 1440px) {
+  .purchase__row-title {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .purchase__row-title {
+    margin-top: 13px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .purchase__row-title {
+    margin-top: 15px;
+  }
+}
+
+.purchase-before {
+  position: relative;
+  padding-left: 32px;
+}
+
+@media (max-width: 1440px) {
+  .purchase-before {
+    padding-left: 24px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .purchase-before {
+    padding-left: 21px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .purchase-before {
+    padding-left: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .purchase-before {
+    padding-left: 18px;
+  }
+}
+
+.purchase-before::before {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-size: 24px;
+  background: url("/img/main/purchase/checkcircle.svg");
+  left: 0px;
+}
+
+@media (max-width: 1440px) {
+  .purchase-before::before {
+    width: 18px;
+    height: 18px;
+    background-size: 18px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .purchase-before::before {
+    width: 16px;
+    height: 16px;
+    background-size: 16px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .purchase-before::before {
+    width: 18px;
+    height: 18px;
+    background-size: 18px;
+  }
+}
+
+@media (max-width: 425px) {
+  .purchase-before::before {
+    width: 14px;
+    height: 14px;
+    background-size: 14px;
+  }
+}
+
+.purchase__prise {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 49px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1440px) {
+  .purchase__prise {
+    font-size: 27px;
+    line-height: 37px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .purchase__prise {
+    font-size: 24px;
+    line-height: 33px;
+    margin-top: 27px;
+    margin-bottom: 27px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .purchase__prise {
+    font-size: 27px;
+    line-height: 37px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .purchase__prise {
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.posted-vacancies.purchase-btn {
+  margin-bottom: 40px;
+  background: none;
+}
+
+@media (max-width: 1440px) {
+  .posted-vacancies.purchase-btn {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    background: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .posted-vacancies.purchase-btn {
+    margin-top: 0px;
+    margin-bottom: 27px;
+    background: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .posted-vacancies.purchase-btn {
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .posted-vacancies.purchase-btn {
+    margin-bottom: 17px;
+  }
+}
+
+.purchase-last {
+  margin-bottom: 75px;
+}
+
+@media (max-width: 1440px) {
+  .purchase-last {
+    margin-bottom: 56px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .purchase-last {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .purchase-last {
+    margin-bottom: 56px;
+  }
+}
+
+@media (max-width: 480px) {
+  .purchase-last {
+    margin: 0px;
+  }
+}
+
+.posted .all-check__table {
+  margin-bottom: 60px;
 }
