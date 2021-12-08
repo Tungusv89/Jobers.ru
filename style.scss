@@ -4830,6 +4830,11 @@ footer {
         background: url('/img/main/purchase/shop.svg');
     }
 }
+.note-pencil {
+    &::before{
+        background: url('/img/main/form-vacancy/note-pencil.svg');
+    }
+}
 .profile__title {
     font-family: "ProximaNova-Semibold";
     font-style: normal;
@@ -5846,7 +5851,7 @@ footer {
         @media (max-width: 630px) {
             padding: 6px; 
             font-size: 12px;
-line-height: 16px;       
+            line-height: 16px;       
         }
     }
     @media (max-width: 630px) {
@@ -6052,4 +6057,351 @@ line-height: 16px;
 }
 .posted .all-check__table {
     margin-bottom: 60px;
+}
+/*Форма вакансии*/
+.form-vacancy .form__fields {
+    input{
+        width: 44%;
+        // background-color: #E5E5E5;
+        color: #A1A1A1;
+    }
+}
+.form-vacancy {
+    .input-duble.input{
+        input{
+            color: #A1A1A1;
+            background: #fafafa;
+        }
+    }
+    .select{
+        display: flex;
+        flex-direction: column;
+        width: 44%;
+        &::after{
+            top: 12px;
+        }
+        select{
+            color: #A1A1A1;
+            padding: 8px 32px 7px 12px;
+        }
+    }
+    .fields__title{
+        margin-top: 30px;
+        @media (max-width: 1440px) {        
+            margin-top: 23px;
+        }
+        @media (max-width: 1200px) {        
+            margin-top: 20px;
+        }
+        @media (max-width: 1100px) {        
+            margin-top: 23px;
+        }
+        @media (max-width: 480px) {
+            margin-top: 20px;        
+        }
+    }
+}
+.main__form-vacancy {
+    background-color: #fff;
+    .main__center {
+        background-color: #fff;
+    }
+    .content-profile__body{        
+        width: 67%;
+        @media (max-width: 1100px) {        
+            width: 100%;
+        }
+    }
+}
+.form-format {
+    background: #FFFFFF;
+    border-radius: 4px 4px 0px 0px;
+    border: 1px solid #E5E5E5;
+    border-bottom: none;
+    img{
+        cursor: pointer;
+        margin: 8px 4px;
+        @media (max-width: 1440px) {        
+            width: 18px;
+            height: 18px;            
+        }
+        @media (max-width: 1200px) {        
+            width: 16px;
+            height: 16px;            
+        }
+        @media (max-width: 1100px) {        
+            width: 18px;
+            height: 18px;
+        }
+        @media (max-width: 480px) {
+            width: 14px;
+            height: 14px;        
+        }
+        &:first-child{
+            margin-left: 12px;
+            @media (max-width: 1440px) {        
+                margin-left: 9px;
+            }
+            @media (max-width: 1200px) {        
+                margin-left: 8px;
+            }
+            @media (max-width: 1100px) {        
+                margin-left: 9px;
+            }
+            @media (max-width: 480px) {
+                margin-left: 8px;       
+            }
+        }
+    }
+}
+textarea {
+    width: 100%;
+    padding: 15px 12px 24px 12px;
+    font-size: 18px;
+    line-height: 25px;
+    background: #FAFAFA;
+    border: 1px solid #E5E5E5;  
+    
+    border-radius: 4px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    overflow-x: hidden;
+    resize: none;
+    outline: none;    
+    color: #A1A1A1;
+    @media (max-width: 1440px) {        
+        padding: 11px 9px 18px 9px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    @media (max-width: 1200px) {        
+        padding: 10px 8px 16px 8px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    @media (max-width: 1100px) {        
+        padding: 11px 9px 18px 9px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    @media (max-width: 480px) {
+        padding: 11px 8px 12px 8px;
+        font-size: 12px;
+        line-height: 16px;       
+    }
+}
+.h240{
+    height: 240px;
+    @media (max-width: 1440px) {        
+        height: 200px;        
+    }
+    @media (max-width: 1200px) {        
+        height: 166px;        
+    }
+    @media (max-width: 1100px) {        
+        height: 200px;        
+    }
+    @media (max-width: 480px) {
+        height: 206px;               
+    }
+}
+.h314{
+    height: 314px;
+    @media (max-width: 1440px) {        
+        height: 240px;        
+    }
+    @media (max-width: 1200px) {        
+        height: 204px;        
+    }
+    @media (max-width: 1100px) {        
+        height: 240px;        
+    }
+    @media (max-width: 480px) {
+        height: 230px;              
+    }
+}
+.h190{
+    height: 190px;
+    @media (max-width: 1440px) {        
+        height: 164px;        
+    }
+    @media (max-width: 1200px) {        
+        height: 140px;        
+    }
+    @media (max-width: 1100px) {        
+        height: 145px;        
+    }
+    @media (max-width: 480px) {
+        height: 167px;              
+    }
+}
+.form-vacancy .w100{
+    input{
+        width: 100%;
+    }
+}
+.form__map {
+    margin-top: 30px;
+    @media (max-width: 1440px) {        
+        margin-top: 23px;
+    }
+    @media (max-width: 1200px) {        
+        margin-top: 20px;
+    }
+    @media (max-width: 1100px) {        
+        margin-top: 23px;
+    }
+    @media (max-width: 480px) {
+        margin-top: 12px;       
+    }    
+}
+.form-hidden{
+    display: none;
+}
+.form-btn {
+    margin-bottom: 100px;
+    padding: 12px 0px;
+    @media (max-width: 1440px) {        
+        margin-bottom: 75px;
+        padding: 9px 0px;
+    }
+    @media (max-width: 1200px) {        
+        margin-bottom: 66px;
+        padding: 8px 0px;
+    }
+    @media (max-width: 1100px) {        
+        margin-bottom: 75px;
+        padding: 9px 0px;
+    }
+    @media (max-width: 480px) {
+        margin-bottom: 34px;
+        padding: 8px 0px;       
+    }
+}
+.tariff__item{
+    margin-bottom: 20px;
+    @media (max-width: 1440px) {        
+        margin-bottom: 15px;        
+    }
+    @media (max-width: 1200px) {        
+        margin-bottom: 13px;        
+    }
+    @media (max-width: 1100px) {        
+        margin-bottom: 15px;        
+    }
+    @media (max-width: 480px) {
+        margin-bottom: 12px;               
+    }
+    .radio__label{
+        padding-left: 32px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        color: #000000;
+        @media (max-width: 1440px) {        
+            padding-left: 24px;
+            font-size: 14px;
+            line-height: 19px;        
+        }
+        @media (max-width: 1200px) {        
+            padding-left: 22px;
+            font-size: 12px;
+            line-height: 16px;        
+        }
+        @media (max-width: 1100px) {        
+            padding-left: 24px;
+            font-size: 14px;
+            line-height: 19px;        
+        }
+        @media (max-width: 480px) {
+            padding-left: 18px;
+            font-size: 12px;
+            line-height: 16px;               
+        }
+        &::before{
+            background: url('/img/main/form-vacancy/checkcircle.svg') no-repeat;
+            width: 24px;
+            height: 24px;
+            top: 0;
+            background-size: 24px;
+            @media (max-width: 1440px) {        
+                width: 18px;
+                height: 18px;
+                background-size: 18px;        
+            }
+            @media (max-width: 1200px) {        
+                width: 16px;
+                height: 16px;
+                background-size: 16px;        
+            }
+            @media (max-width: 1100px) {        
+                width: 18px;
+                height: 18px;
+                background-size: 18px;        
+            }
+            @media (max-width: 480px) {
+                width: 14px;
+                height: 14px; 
+                background-size: 14px;             
+            }
+        }
+    }
+    .radio__input:checked + .radio__label {
+        color: #000000;
+    }
+    .radio__input:checked + .radio__label::before {
+        background: url('/img/main/form-vacancy/checkedcircle.svg') no-repeat;
+    }
+    p{
+        padding-top: 8px;
+    }
+}
+.form__btn-body{
+    .btn-gray {
+        display: none;
+        margin-left: 20px;
+        @media (max-width: 1440px) {        
+            margin-left: 15px;        
+        }
+        @media (max-width: 1200px) {        
+            margin-left: 13px;        
+        }
+        @media (max-width: 1100px) {        
+            margin-left: 15px;        
+        }
+        @media (max-width: 480px) {
+            margin-left: 12px;               
+        }
+    }
+}
+.btn-gray{    
+    a{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        color: #FFFFFF;
+        padding: 12px 24px;
+        background: #A1A1A1;
+        border-radius: 4px;
+        @media (max-width: 1440px) {        
+            font-size: 14px;
+            line-height: 19px;            
+            padding: 9px 18px;        
+        }
+        @media (max-width: 1200px) {        
+            font-size: 12px;
+            line-height: 16px;            
+            padding: 8px 16px;        
+        }
+        @media (max-width: 1100px) {        
+            font-size: 14px;
+            line-height: 19px;            
+            padding: 9px 18px;       
+        }
+        @media (max-width: 480px) {
+            font-size: 12px;
+            line-height: 16px;            
+            padding: 6px;               
+        }
+    }
 }

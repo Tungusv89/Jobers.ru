@@ -79,10 +79,10 @@ $('.vacancy-btn__more').click(function() {
 });
 
 //адаптация фильтров
-document.addEventListener('DOMContentLoaded', function() {
-    var filterOn = document.body.querySelector('.top-filters__row-setting')
-    var upRow = document.body.querySelector('.top-filters__row-action-list--btn')
-    var buttons = document.body.querySelector('.top-filters__row-action-btn')
+$(document).ready(function() {
+    var filterOn = $('.top-filters__row-setting')
+    var upRow = $('.top-filters__row-action-list--btn')
+    var buttons = $('.top-filters__row-action-btn')
 
     var w = $(window).outerWidth();
 
@@ -225,3 +225,18 @@ $(document).ready(function () {
     }
     
 })
+//Появление блока в форме вакансии
+$('.form-btn').click(function () {
+    $('.form-hidden').css('display', 'block')
+    $(this).next().css('display', 'inline-block')
+})
+//Адаптация карты Яндекс
+setTimeout(() => {     
+    const w = $(window).outerWidth();
+    console.log(w);
+    if (w < 480) { 
+        console.log($('.ymaps-2-1-79-map'));       
+        $('.ymaps-2-1-79-map').eq(0).css('height', '132px') 
+        $('ymaps').eq(0).css('height', '132px')       
+    }   
+}, 1000);
