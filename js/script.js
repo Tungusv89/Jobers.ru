@@ -232,11 +232,14 @@ $('.form-btn').click(function () {
 })
 //Адаптация карты Яндекс
 setTimeout(() => {     
-    const w = $(window).outerWidth();
-    console.log(w);
-    if (w < 480) { 
-        console.log($('.ymaps-2-1-79-map'));       
+    const w = $(window).outerWidth();    
+    if (w < 480) {               
         $('.ymaps-2-1-79-map').eq(0).css('height', '132px') 
         $('ymaps').eq(0).css('height', '132px')       
     }   
 }, 1000);
+//Появление контактов
+$('.page-vacancies__btn').click(function () {
+    $('.page-vacancies__contacts').css('display', 'block')
+    $(this).css('display', 'none')
+})

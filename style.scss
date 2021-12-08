@@ -2837,7 +2837,7 @@ padding-bo .vacancy-header--response {
     @media (max-width: 1440px) {
         font-size: 14px;
         line-height: 19px;
-        // padding-left: 21px;
+        // 
     }
     @media (max-width: 1200px) {
         font-size: 12px;
@@ -6427,4 +6427,404 @@ textarea {
             padding: 6px;               
         }
     }
+}
+/*Страница вакансии*/
+.page-vacancies{
+    .fields__title{
+        margin-bottom: 20px;
+        @media (max-width: 1440px) {        
+            margin-bottom: 15px;        
+        }
+        @media (max-width: 1200px) {        
+            margin-bottom: 13px;        
+        }
+        @media (max-width: 1100px) {        
+            margin-bottom: 15px;        
+        }
+        @media (max-width: 480px) {
+            margin-bottom: 8px;               
+        }
+    }
+    .form__btn-body{
+        display: flex;
+        margin: 40px 0;
+        @media (max-width: 1440px) {        
+            margin: 30px 0;        
+        }
+        @media (max-width: 1200px) {        
+            margin: 27px 0;         
+        }
+        @media (max-width: 1100px) {        
+            margin: 30px 0;         
+        }
+        @media (max-width: 480px) {
+            margin: 20px 0;               
+        }
+    }
+}
+
+.page-vacancies__title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px;
+    margin-top: 40px;
+    @media (max-width: 1440px) {
+        font-size: 23px;
+        line-height: 31px;        
+        margin-top: 30px;        
+    }
+    @media (max-width: 1200px) {        
+        font-size: 20px;
+        line-height: 27px;        
+        margin-top: 27px;         
+    }
+    @media (max-width: 1100px) {        
+        font-size: 23px;
+        line-height: 31px;        
+        margin-top: 30px;         
+    }
+    @media (max-width: 480px) {
+        font-size: 18px;
+        line-height: 25px;        
+        margin-top: 20px;               
+    }
+}
+.page-vacancies__wages {
+    font-size: 24px;
+    line-height: 33px;
+    margin-top: 20px;
+    @media (max-width: 1440px) {
+        font-size: 18px;
+        line-height: 25px;
+        margin-top: 15px;        
+    }
+    @media (max-width: 1200px) {        
+        font-size: 16px;
+        line-height: 25px;        
+        margin-top: 13px;         
+    }
+    @media (max-width: 1100px) {        
+        font-size: 18px;
+        line-height: 25px;
+        margin-top: 15px;         
+    }
+    @media (max-width: 480px) {
+        font-size: 18px;
+        line-height: 25px;        
+        margin-top: 13px;               
+    }
+}
+.page-vacancies__company {
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: uppercase;
+    color: #5898FF;
+    margin-top: 8px;
+    @media (max-width: 1440px) {
+        font-size: 18px;
+        line-height: 25px;
+        margin-top: 6px;        
+    }
+    @media (max-width: 1200px) {        
+        font-size: 16px;
+        line-height: 25px;        
+        margin-top: 5px;         
+    }
+    @media (max-width: 1100px) {        
+        font-size: 18px;
+        line-height: 25px;
+        margin-top: 6px;         
+    }
+    @media (max-width: 480px) {
+        font-size: 18px;
+        line-height: 25px;        
+        margin-top: 8px;              
+    }
+}
+.page-vacancies__location {
+    line-height: 25px;
+    padding-left: 28px;
+    position: relative;
+    margin-top: 20px;
+    @media (max-width: 1440px) {
+        font-size: 14px;
+        line-height: 19px;
+        margin-top: 15px;
+        padding-left: 24px;        
+    }
+    @media (max-width: 1200px) {        
+        font-size: 12px;
+        line-height: 16px;        
+        margin-top: 13px;
+        padding-left: 21px;         
+    }
+    @media (max-width: 1100px) {        
+        font-size: 14px;
+        line-height: 19px;
+        margin-top: 15px;
+        padding-left: 24px;         
+    }
+    @media (max-width: 480px) {
+        font-size: 12px;
+        line-height: 16px;        
+        margin-top: 13px;
+        padding-left: 18px;               
+    }
+    &::before{
+        position: absolute;
+        content: " ";
+        width: 24px;
+        height: 24px;
+        background-size: 24px;
+        left: 0;
+        background-image: url('/img/main/page-vacancies/mappin.svg');
+        @media (max-width: 1440px) {
+            width: 18px;
+            height: 18px;
+            background-size: 18px;
+            left: 0;        
+        }
+        @media (max-width: 1200px) {        
+            width: 16px;
+            height: 16px;
+            background-size: 16px;
+            left: 0;         
+        }
+        @media (max-width: 1100px) {        
+            width: 18px;
+            height: 18px;
+            background-size: 18px;
+            left: 0;         
+        }
+        @media (max-width: 480px) {
+            width: 14px;
+            height: 14px;
+            background-size: 14px;
+            left: 0;               
+        }
+    }
+}
+.page-vacancies__param {
+    margin-top: 40px;
+    @media (max-width: 1440px) {               
+        margin-top: 30px;        
+    }
+    @media (max-width: 1200px) {       
+        margin-top: 27px;         
+    }
+    @media (max-width: 1100px) {
+        margin-top: 30px;         
+    }
+    @media (max-width: 480px) {                
+        margin-top: 20px;               
+    }
+}
+.page-vacancies__parametres {
+    padding-bottom: 4px;
+}
+.page-vacancies__company-info {
+    margin: 40px 0;
+    line-height: 25px;
+    @media (max-width: 1440px) {               
+        margin: 30px 0;
+        line-height: 19px;        
+    }
+    @media (max-width: 1200px) {       
+        margin: 27px 0;
+        line-height: 16px;         
+    }
+    @media (max-width: 1100px) {
+        margin: 30px 0;
+        line-height: 19px;         
+    }
+    @media (max-width: 480px) {                
+        margin: 20px 0;
+        line-height: 16px;               
+    }
+}
+.vacancy__list {
+    margin-bottom: 40px;
+    @media (max-width: 1440px) {               
+        margin-bottom: 30px;
+    }
+    @media (max-width: 1200px) {       
+        margin-bottom: 27px;
+    }
+    @media (max-width: 1100px) {
+        margin-bottom: 30px;
+    }
+    @media (max-width: 480px) {                
+        margin-bottom: 20px;
+    }
+    li{
+        padding-left: 22px;
+        position: relative;
+        line-height: 25px;
+        @media (max-width: 1440px) {               
+            line-height: 19px;
+            padding-left: 20px;        
+        }
+        @media (max-width: 1200px) {       
+            line-height: 16px;
+            padding-left: 16px;         
+        }
+        @media (max-width: 1100px) {
+            line-height: 19px;
+            padding-left: 20px;         
+        }
+        @media (max-width: 480px) {              
+            line-height: 16px;
+            padding-left: 16px;               
+        }
+        &::before{
+            position: absolute;
+            content: " ";
+            width: 18px;
+            height: 18px;
+            background-size: 18px;
+            left: 0;
+            top: 3px;
+            background-image: url('/img/main/page-vacancies/check.svg');
+            @media (max-width: 1440px) {               
+                width: 14px;
+                height: 14px;
+                background-size: 14px;        
+            }
+            @media (max-width: 1200px) {       
+                width: 12px;
+                height: 12px;
+                background-size: 12px;         
+            }
+            @media (max-width: 1100px) {
+                width: 14px;
+                height: 14px;
+                background-size: 14px;         
+            }
+            @media (max-width: 480px) {              
+                width: 12px;
+                height: 12px;
+                background-size: 12px;               
+            }
+        }
+    }
+}
+
+.form__btn-body .page-vacancies__btn{
+    padding: 12px 0px;
+    margin: 0px;
+    @media (max-width: 480px) {              
+        padding: 6px;               
+    }
+}
+.page-vacancies__contacts {
+    display: none;
+}
+.page-vacancies__contacts-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    @media (max-width: 1440px) {
+        font-size: 14px;
+        line-height: 19px;        
+    }
+    @media (max-width: 1200px) {
+        font-size: 12px;
+        line-height: 16px;        
+    }
+    @media (max-width: 1100px) {
+        font-size: 14px;
+        line-height: 19px;        
+    }
+    @media (max-width: 480px) {
+        font-size: 12px;
+        line-height: 16px;        
+    } 
+}
+.page-vacancies__contacts-list {
+    margin-top: 20px;
+    @media (max-width: 1440px) {        
+        margin-top: 15px;                
+    }
+    @media (max-width: 1200px) {        
+        margin-top: 13px;                 
+    }
+    @media (max-width: 1100px) {    
+        margin-top: 15px;                 
+    }
+    @media (max-width: 480px) {                
+        margin-top: 13px;                       
+    }
+    li{
+        padding-left: 32px;
+        position: relative;
+        line-height: 25px;
+        @media (max-width: 1440px) {        
+            padding-left: 24px;            
+            line-height: 19px;                
+        }
+        @media (max-width: 1200px) {
+            padding-left: 21px;        
+            line-height: 16px;                 
+        }
+        @media (max-width: 1100px) {
+            padding-left: 24px;    
+            line-height: 19px;                 
+        }
+        @media (max-width: 480px) {
+            padding-left: 16px;                
+            line-height: 16px;                        
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            background-size: 24px;
+            left: 0;
+            @media (max-width: 1440px) {
+                width: 18px;
+                height: 18px;
+                background-size: 18px;
+                left: 0;        
+            }
+            @media (max-width: 1200px) {        
+                width: 16px;
+                height: 16px;
+                background-size: 16px;
+                left: 0;         
+            }
+            @media (max-width: 1100px) {        
+                width: 18px;
+                height: 18px;
+                background-size: 18px;
+                left: 0;         
+            }
+            @media (max-width: 480px) {
+                width: 12px;
+                height: 12px;
+                background-size: 12px;
+                left: 0;               
+            }          
+        }
+    }
+}
+.page-vacancies__contacts-text {
+}
+.phone {
+    &::before{
+        background-image: url('/img/main/page-vacancies/phone.svg');
+        background-repeat: no-repeat;
+    }     
+}
+.email {
+    &::before{
+        background-image: url('/img/main/page-vacancies/email.svg');
+        background-repeat: no-repeat;
+    }     
+}
+.fio {
+    &::before{
+        background-image: url('/img/main/page-vacancies/user.svg');
+        background-repeat: no-repeat;
+    }     
 }
