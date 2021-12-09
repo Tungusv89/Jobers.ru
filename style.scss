@@ -580,6 +580,7 @@ header {
     display: none;
     position: absolute;
     top: 34px;
+    right: 132px;
     width: 300px;
     height: 187px;
     background: #ffffff;
@@ -6965,5 +6966,12 @@ body{
     @media (max-width: 480px) {
         font-size: 9px;
         line-height: 13px;               
+    }
+}
+
+.support-sub {
+    .support{
+        top: 175px;
+        right: 0px;
     }
 }

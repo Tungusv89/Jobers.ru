@@ -34,14 +34,22 @@ function burger(event) {
 
 //вызов модального окна "Еще"
 $('.header-bottom-menu__list').find('li').eq(3).on('click', function() {
-    if (!$('.more').hasClass('active')) {
-        $('.more').addClass('active');
+    if (!$('.more').hasClass('active')) {        
         $('.more').css('display', 'block');
-    } else {
-        $('.more').removeClass('active');
+        $('.more').addClass('active');
+        $('.header-bottom-menu__list').append($('.more'))
+    } else if($('.more').hasClass('active')) {        
         $('.more').css('display', 'none');
+        $('.more').removeClass('active');
     }
 });
+// $('.header-bottom-menu__list').find('li').eq(3).on('click', function() {    
+//     if ($('.more').hasClass('active')) {  
+//         console.log('active');      
+//         // $('.more').css('display', 'none');
+//         // $('.more').removeClass('active');
+//     }
+// });
 //вызов модального окна "Профиль"
 $('.header__column-login').on('click', function() {
     if (!$('.profile').hasClass('active')) {
@@ -61,8 +69,20 @@ $('.support').parent().on('click', function() {
     } else {
         $('.support').removeClass('active');
         $('.support').css('display', 'none');
-    }
+        
+    }   
 });
+
+$('.support-sub').click(function () {
+    if (!$('.support').hasClass('active')) {
+        $('.support-sub').append($('.support'))        
+        $('.support').addClass('active');
+        $('.support').css('display', 'block');
+    } else {
+        $('.support').removeClass('active');
+        $('.support').css('display', 'none');
+    }
+})
 
 $('.vacancy-btn__more').click(function() {
     var elem = $(this).parent().parent().next();
@@ -261,3 +281,4 @@ $('.new-payer__close').on('click', function() {
         $('.new-payer').css('display', 'none');
     }
 });
+
