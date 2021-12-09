@@ -243,3 +243,21 @@ $('.page-vacancies__btn').click(function () {
     $('.page-vacancies__contacts').css('display', 'block')
     $(this).css('display', 'none')
 })
+//Добавление нового плательщика
+// $('.new-payer__click').click(function () {
+//     $('.new-payer').css('display', 'block')
+// })
+
+//вызов модального окна "Поддержка"
+$('.new-payer__click').on('click', function() {
+    if (!$('.new-payer').hasClass('active')) {
+        $('.new-payer').addClass('active');
+        $('.new-payer').css('display', 'block');
+    } 
+});
+$('.new-payer__close').on('click', function() {
+    if($('.new-payer').hasClass('active')) {
+        $('.new-payer').removeClass('active');
+        $('.new-payer').css('display', 'none');
+    }
+});

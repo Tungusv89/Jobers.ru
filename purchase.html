@@ -76,7 +76,7 @@
                                                         <img src="/img/pop-up/icons/06.svg " alt=" ">
                                                         <a>Тарифы</a>
                                                     </li>
-                                                    <li class="more__list-item ">
+                                                    <li class="more__list-item support">
                                                         <img src="/img/pop-up/icons/07.svg " alt=" ">
                                                         <a>Поддержка</a>
                                                     </li>
@@ -160,8 +160,7 @@
                             <div class="">
                                 <div class="row__column">
                                     <form class="row__column-body">
-                                        <div class="profile__title shop">Оформление покупки</div> 
-                                                                               
+                                        <div class="profile__title shop">Оформление покупки</div>                                                                               
                                         <div class="all-check__table purchase__table">
                                             <div class="all-check__header personal__header">
                                                 <li class="all-check__header-title personal__header-title first-40">Заказанные услуги</li>
@@ -176,12 +175,12 @@
                                         </div>
                                         <div class="personal__header-title all-check__header-title purchase__header-title">Плательщик</div>
                                         <div class="personal__row-title all-check__row-title purchase__row-title purchase-before">ИП Алиев Руслан Чингизович, ИНН:  9872345987, 198206, г. Санкт-Петербург, ул. Пионерстроя, дом 27, квартира 14</div>
-                                        <div class="personal__row-title links purchase__row-title all-check__row-title"><a href="">Добавить нового плательщика</a></div>
+                                        <div class="personal__row-title links purchase__row-title all-check__row-title new-payer__click"><a >Добавить нового плательщика</a></div>                                        
                                         <div class="personal__header-title all-check__header-title purchase__header-title">Способ оплаты</div>
                                         <div class="personal__row-title all-check__row-title purchase__row-title purchase-before">Безналичная оплата</div>
                                         <div class="purchase__prise">6375 руб.</div>
                                         <button type="submit" class="posted-vacancies purchase-btn btn-blue"><a href="">Скачать счёт</a></button>
-                                        <div class="personal__row-title purchase__row-title all-check__row-title purchase-last">Счет можно будет скачать в разделе "Счета"</div>                                        
+                                        <div class="personal__row-title purchase__row-title all-check__row-title purchase-last">Счет можно будет скачать в разделе "Счета"</div>                                                                                
                                     </form>
                                 </div>                                
                             </div>
@@ -284,6 +283,32 @@
             </section>            
         </div>
     </div>
+    </div>
+    <div class="new-payer">
+        <form class="new-payer-body">
+             <div class="support-first-line ">
+                <div class="support__id ">Новый плательщик</div>
+                <div class="support__close new-payer__close"><img src="./img/pop-up/support/icons/close.svg " alt=" "></div>                                                    
+            </div>
+            <div class="fields__title new-payer__title">ИНН</div>
+            <div class="new-payer__inn">
+                <div class="profile__fields form__fields">                    
+                    <input type="text" required id="name-vacancy">
+                </div>
+                <button type="submit" class="btn-blue"><a href="">Заполнить</a></button>
+            </div>
+            
+            <div class="inn-info">Укажите ИНН вашей компании и мы автоматически подставим данные реквизитов</div>                                                
+            <div class="profile__fields form__fields">
+                <div class="fields__title">Наименование</div>
+                <input type="text" required id="name-vacancy">
+            </div>
+            <div class="profile__fields form__fields">
+                <div class="fields__title">Юридический адрес</div>
+                <input type="text" required id="name-vacancy">
+            </div>            
+            <button type="submit" class="btn-blue new-payer__btn"> <a href="">Сохранить</a></button>
+        </form>
     </div>
     <script src="/js/jquery_3.3.1.min.js"></script>
     <script src="/js/script.js "></script>

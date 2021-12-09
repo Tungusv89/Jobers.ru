@@ -6828,3 +6828,142 @@ textarea {
         background-repeat: no-repeat;
     }     
 }
+//Добавление нового плательщика
+.new-payer{
+    display: none;
+    width: 563px;
+    height: auto;
+    position: absolute;
+    background: #ffffff;
+    border: 1px solid #e5e5e5 !important;
+    border-radius: 4px;
+    margin: 0;
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    @media (max-width: 1440px) {
+        width: 422px;       
+    }
+    @media (max-width: 1200px) {        
+        width: 375px;         
+    }
+    @media (max-width: 1100px) {        
+        width: 422px;       
+    }
+    @media (max-width: 480px) {
+        width: 300px;               
+    } 
+}
+body{
+    position: relative;
+}
+.new-payer-body {
+    padding: 30px 40px;
+    @media (max-width: 1440px) {
+        padding: 23px 30px;       
+    }
+    @media (max-width: 1200px) {        
+        padding: 20px 27px;         
+    }
+    @media (max-width: 1100px) {        
+        padding: 23px 30px;        
+    }
+    @media (max-width: 480px) {
+        padding: 20px 27px;               
+    } 
+    .fields__title{
+        padding-top: 20px;
+        @media (max-width: 1440px) {
+            padding-top: 15px;       
+        }
+        @media (max-width: 1200px) {        
+            padding-top: 13px;         
+        }
+        @media (max-width: 1100px) {        
+            padding-top: 15px;       
+        }
+        @media (max-width: 480px) {
+            padding-top: 13px;               
+        } 
+    }
+    .btn-blue {
+        padding: 0px;
+    }
+}
+.support__id {
+}
+.support__close {
+}
+.new-payer__inn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .profile__fields{
+        width: 65%;
+    }
+    input{
+        width: 90%;
+    }
+}
+.profile__fields {
+}
+.form__fields {
+}
+.fields__title {
+}
+.new-payer .new-payer-body .new-payer__title {
+    padding-top: 40px;
+    @media (max-width: 1440px) {
+        padding-top: 30px;       
+    }
+    @media (max-width: 1200px) {        
+        padding-top: 27px;         
+    }
+    @media (max-width: 1100px) {        
+        padding-top: 30px;       
+    }
+    @media (max-width: 480px) {
+        padding-top: 27px;               
+    }
+}
+.btn-blue {
+}
+.new-payer__btn {
+    // padding: 12px 0;
+    display: flex;
+    margin-top: 20px;
+    @media (max-width: 1440px) {
+        margin-top: 15px;       
+    }
+    @media (max-width: 1200px) {        
+        margin-top: 13px;         
+    }
+    @media (max-width: 1100px) {        
+        margin-top: 15px;       
+    }
+    @media (max-width: 480px) {
+        margin-top: 13px;               
+    }
+}
+.inn-info {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #A1A1A1;
+    margin-top: 4px;
+    @media (max-width: 1440px) {
+        font-size: 10px;
+        line-height: 14px;       
+    }
+    @media (max-width: 1200px) {        
+        font-size: 9px;
+        line-height: 13px;         
+    }
+    @media (max-width: 1100px) {        
+        font-size: 10px;
+        line-height: 14px;       
+    }
+    @media (max-width: 480px) {
+        font-size: 9px;
+        line-height: 13px;               
+    }
+}
